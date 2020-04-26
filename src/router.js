@@ -10,16 +10,10 @@ export default new Router({
       path: '/',
       component: () => import('@/views/homepage/Index'),
       children: [{
-          name: 'About',
-          path: 'about',
-          component: () => import('@/views/homepage/pages/About'),
-        },
-        {
-          name: 'Help',
-          path: 'help',
-          component: () => import('@/views/homepage/pages/Help')
-        }
-      ]
+        name: 'Landing',
+        path: '/',
+        component: () => import('@/views/homepage/pages/Landing'),
+      }]
     },
     {
       path: '/home',

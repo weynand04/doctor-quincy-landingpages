@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app" class="app">
     <HomepageCoreAppBar />
     <HompageCoreView />
     <HomepageCoreFooter />
@@ -21,3 +21,9 @@ export default {
   methods: {}
 };
 </script>
+
+<style>
+.app {
+  background-color: white !important;
+}
+</style>

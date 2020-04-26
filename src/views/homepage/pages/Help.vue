@@ -1,9 +1,5 @@
 <template>
-  <v-container>
-    <v-card>
-      <v-card-title>INI HALAMAN HELP DR QUINCY</v-card-title>
-    </v-card>
-  </v-container>
+  <v-container fluid></v-container>
 </template>
 
 <script>
