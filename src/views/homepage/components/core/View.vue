@@ -1,13 +1,19 @@
 <template>
-  <v-content>
+  <v-content style="background-color:white;">
     <router-view />
+
+    <HomepageCoreFooter />
   </v-content>
 </template>
 
 <script>
+import HomepageCoreFooter from "./Footer";
+
 export default {
   name: "HompageCoreView",
-  components: {},
+  components: {
+    HomepageCoreFooter
+  },
   methods: {}
 };
 </script>
