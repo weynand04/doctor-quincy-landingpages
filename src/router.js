@@ -10,14 +10,16 @@ export default new Router({
       path: '/',
       component: () => import('@/views/homepage/Index'),
       children: [{
-        name: 'Landing',
-        path: '/',
-        component: () => import('@/views/homepage/pages/Landing'),
-      }]
-    },
-    {
-      path: '/home',
-      component: () => import('@/views/homepage/Index'),
+          name: 'Landing',
+          path: '/',
+          component: () => import('@/views/homepage/pages/Landing'),
+        },
+        {
+          name: 'Help',
+          path: 'help',
+          component: () => import('@/views/homepage/pages/Help')
+        }
+      ]
     },
     {
       path: '/pages',

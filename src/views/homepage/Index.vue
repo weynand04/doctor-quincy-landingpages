@@ -1,20 +1,21 @@
 <template>
-  <v-app id="App">
-    <HomepageCoreAppBar />
-    <HompageCoreView />
+  <v-app>
+    <link
+      href="https://fonts.googleapis.com/css?family=Corbel:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <Homepage-Core-AppBar />
+
+    <Homepage-Core-View />
   </v-app>
 </template>
 
 <script>
-import HomepageCoreAppBar from "./components/core/AppBar";
-import HompageCoreView from "./components/core/View";
-
 export default {
   name: "hompageIndex",
   components: {
-    HomepageCoreAppBar,
-    HompageCoreView
-  },
-  methods: {}
+    HomepageCoreAppBar: () => import("./components/core/AppBar"),
+    HomepageCoreView: () => import("./components/core/View")
+  }
 };
 </script>
