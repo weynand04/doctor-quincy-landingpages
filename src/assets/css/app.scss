@@ -661,31 +661,54 @@ body {
 }
 
 .v-footer {
-  padding: 20px 0 20px 4px;
-  border-top: 1px solid #e7e7e7 !important;
+  padding: 20px 0 0px 4px;
+  border-top: 0px solid #e7e7e7 !important;
   position: relative;
 
   a {
-    padding: 15px 18px 15px 16px;
-    font-size: 12px !important;
+    color: #fff !important;
+    padding: 15px 18px 0px 16px;
+    font-size: 13px !important;
+    text-decoration-line: none !important;
+  }
+
+  a:hover {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
   }
 
   .body-1 {
-    font-size: 16px !important;
+    font-size: 14px !important;
     padding-right: 18px;
+    margin-top: 10px !important;
     letter-spacing: 0 !important;
 
-    a {
-      color: #9c27b0 !important;
-      padding: 0;
-      text-transform: inherit !important;
-      font-size: 16px !important;
-      font-weight: 300 !important;
+    p {
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+
+      a {
+        padding-right: 0px !important;
+        text-transform: inherit !important;
+        letter-spacing: 0px !important;
+        color: #FFFFFF;
+        opacity: 1;
+      }
     }
+
   }
 
   .v-icon {
     margin-top: -3px;
+  }
+
+  .v-list {
+    padding: 0em;
+    margin: 0em;
+
+    .v-list-item {
+      margin-top: -1.5em;
+    }
   }
 
   &.v-footer--absolute {

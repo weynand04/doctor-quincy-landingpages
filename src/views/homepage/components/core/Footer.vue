@@ -1,29 +1,36 @@
 <template>
-  <v-footer id="footer" padless color="#9E9E9E">
-    <v-row class="align-content-center" style="background-color:#6B6B6B;">
+  <v-footer dark padless>
+    <!-- app contact dan link penting -->
+    <v-row no-gutters class="col-12">
       <!-- logo -->
-      <v-col md="6" sm="12" class="d-flex justify-center">
-        <v-card flat color="transparent" class="d-flex justify-space-around align-self-center">
-          <v-img src="@/assets/logo.jpg" height="40" width="199" aspect-ratio="2" contain></v-img>
+      <v-col md="6" sm="12" align-self="center">
+        <v-card flat color="transparent" class="d-flex justify-space-around">
+          <v-card-title class="display-2 font-weight-bold white--text">GET APP</v-card-title>
           <v-img
             src="@/assets/image/Playstore.png"
-            height="40"
-            width="199"
-            aspect-ratio="2"
+            max-height="40"
+            max-width="199"
+            aspect-ratio="1.7"
             contain
           ></v-img>
-          <v-img src="@/assets/image/AppStore.png" height="40" width="199" aspect-ratio="2" contain></v-img>
+          <v-img
+            src="@/assets/image/AppStore.png"
+            max-height="40"
+            max-width="199"
+            aspect-ratio="1.7"
+            contain
+          ></v-img>
         </v-card>
       </v-col>
 
       <!-- questions -->
-      <v-col md="2" sm="4">
-        <v-card color="transparent" flat>
+      <v-col md="2" sm="4" class="d-flex justify-center">
+        <v-card flat color="transparent" class="align-self-start">
           <v-list color="transparent">
             <v-subheader class="white--text font-weight-bold body-1 justify-center">Ada pertanyaan?</v-subheader>
             <v-list-item class="white--text font-regular body-2 text-center">
               <v-list-item-content>
-                <v-list-item-title style="margin-top:-5px; margin-bottom:5px">
+                <v-list-item-title>
                   <a href="#">(021-987869)</a>
                 </v-list-item-title>
               </v-list-item-content>
@@ -33,8 +40,8 @@
       </v-col>
 
       <!-- Sosial media Info -->
-      <v-col md="2" sm="4">
-        <v-card color="transparent" flat>
+      <v-col md="2" sm="4" class="d-flex justify-center">
+        <v-card flat color="transparent" class="align-self-start">
           <v-list color="transparent">
             <v-subheader
               class="white--text font-weight-bold body-1 justify-left"
@@ -51,8 +58,8 @@
       </v-col>
 
       <!-- Important link -->
-      <v-col md="2" sm="4">
-        <v-card color="transparent" flat>
+      <v-col md="2" sm="4" class="d-flex justify-center">
+        <v-card flat color="transparent" class="align-self-start">
           <v-list color="transparent">
             <v-subheader class="white--text font-weight-bold body-1 justify-left">Link penting</v-subheader>
             <v-list-item v-for="(l, i) in linkitems" :key="i" class="font-regular body-2">
@@ -67,19 +74,12 @@
       </v-col>
     </v-row>
 
-    <!-- Disclaimer -->
-    <v-row class="d-flex text-center align-content-center" style="height: 86px;">
-      <v-col md="12" sm="12">
-        <p
-          class="font-weight-medium mb-0 pb-0"
-        >© 2019 Doctor Quincy - Hak cipta dilindungi undang-undang. Didukung oleh PT Kimia Farma (Persero)</p>
-        <p class="font-weight-regular white--text text--lighten-1 mb-0 pb-0">
-          <a
-            v-for="(d, i) in claimitems"
-            :key="i"
-            :href="d.link"
-            class="font-regular pl-1 pt-2"
-          >{{d.name}}</a>
+    <!-- Disclaimer & Copyrigth-->
+    <v-row no-gutters class="col-12" style="background: #9E9E9E">
+      <v-col cols="12" class="text-center body-1">
+        <p>© 2019 Doctor Quincy - Hak cipta dilindungi undang-undang. Didukung oleh PT Kimia Farma (Persero)</p>
+        <p>
+          <a v-for="(d, i) in claimitems" :key="i" :href="d.link">{{d.name}}</a>
         </p>
       </v-col>
     </v-row>
@@ -151,18 +151,3 @@ export default {
   })
 };
 </script>
-
-<style>
-#footer a {
-  color: #ffffff;
-}
-a:link {
-  text-decoration: none;
-}
-#footer a:hover {
-  text-decoration-color: #f8b218;
-  text-shadow: 0.1px 0px;
-  color: #f8b218;
-  opacity: 0.8;
-}
-</style>
