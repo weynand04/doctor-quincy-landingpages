@@ -22,7 +22,7 @@
           <v-btn text to="/">Home</v-btn>
         </v-toolbar-items>
         <v-toolbar-items>
-          <v-menu offset-y transition="scale-transition" v-model="menu1">
+          <v-menu offset-y transition="scale-transition">
             <template v-slot:activator="{on}">
               <v-btn text v-on="on">Jadilah Mitra kami</v-btn>
             </template>
@@ -53,7 +53,7 @@
             <v-list>
               <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
                 <v-list-item-title>
-                  <v-btn text block class="justify-start">{{ Menuitem.title }}</v-btn>
+                  <v-btn text block class="justify-start" :to="Menuitem.link">{{ Menuitem.title }}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
@@ -74,14 +74,17 @@ export default {
     message: false,
     hints: true,
     Menuitem: [
-      { title: "Cara kerja" },
-      { title: "Penyakit yang kami tangani" },
-      { title: "Penyakit yang tidak kami tangani" },
-      { title: "Home health care" },
-      { title: "Media & Berita" },
-      { title: "Awesome promo" },
-      { title: "Lowongan kerja" },
-      { title: "Even kesehatan" }
+      { title: "Cara kerja", link: "/carakerja" },
+      { title: "Penyakit yang kami tangani", link: "/yang-kami-tangani" },
+      {
+        title: "Penyakit yang tidak kami tangani",
+        link: "/tidak-kami-tangani"
+      },
+      { title: "Home health care", link: "/home-health-care" },
+      { title: "Media & Berita", link: "/blog" },
+      { title: "Awesome promo", link: "/prom" },
+      { title: "Lowongan kerja", link: "/loker" },
+      { title: "Even kesehatan", link: "/event" }
     ]
   })
 };
