@@ -1,9 +1,8 @@
   <template>
   <v-app-bar app elevate-on-scroll color="#FFFF">
     <v-container>
-      <v-toolbar flat class="v-toolbar">
+      <v-toolbar flat>
         <!-- logo -->
-        <!-- <v-app-bar-nav-icon class="d-none d-sm-flex d-md-none"></v-app-bar-nav-icon> -->
         <v-toolbar-title class="d-none d-sm-none d-md-flex">
           <a href="/">
             <v-img
@@ -16,23 +15,30 @@
             ></v-img>
           </a>
         </v-toolbar-title>
+        <v-spacer></v-spacer>
 
         <!-- menu mitra dan konseling -->
-        <v-toolbar-items class="d-none d-sm-none d-md-flex">
-          <v-menu offset-y transition="scale-transition">
-            <template v-slot:activator="{ on }">
+        <v-toolbar-items>
+          <v-btn text to="/">Home</v-btn>
+        </v-toolbar-items>
+        <v-toolbar-items>
+          <v-menu offset-y transition="scale-transition" v-model="menu1">
+            <template v-slot:activator="{on}">
               <v-btn text v-on="on">Jadilah Mitra kami</v-btn>
-              <v-btn text to="/help">Konseling</v-btn>
             </template>
             <v-list>
               <v-list-item v-for="(item, index) in items" :key="index">
                 <v-list-item-title>
-                  <a href="#">{{item.title}}</a>
+                  <v-btn text>{{item.title}}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </v-toolbar-items>
+        <v-toolbar-items>
+          <v-btn class="ml-2 pl-2" text to="/help">help</v-btn>
+        </v-toolbar-items>
+
         <v-spacer></v-spacer>
 
         <!-- menu expand -->
@@ -46,8 +52,8 @@
             </template>
             <v-list>
               <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
-                <v-list-item-title class="fucek">
-                  <a>{{ Menuitem.title }}</a>
+                <v-list-item-title>
+                  <v-btn text block class="justify-start">{{ Menuitem.title }}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
@@ -80,6 +86,3 @@ export default {
   })
 };
 </script>
-
-<style>
-</style>
