@@ -1,5 +1,5 @@
 <template>
-  <v-content style="background-color:#FFF">
+  <v-content>
     <router-view />
 
     <Homepage-Core-Footer />
