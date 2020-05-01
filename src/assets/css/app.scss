@@ -664,6 +664,30 @@ body {
   border-top: 1px solid #e7e7e7 !important;
   position: relative;
 
+  .v-breadcrumbs {
+    a {
+      color: #fff;
+      font-size: 13px !important;
+    }
+
+    a:hover {
+      color: #F8B218;
+      text-decoration: underline;
+    }
+  }
+
+  .v-list {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #F8B218;
+      text-decoration: underline;
+    }
+  }
+
   a {
     padding: 15px 18px 15px 16px;
     font-size: 12px !important;
