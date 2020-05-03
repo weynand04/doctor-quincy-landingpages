@@ -1,7 +1,7 @@
   <template>
   <v-app-bar app elevate-on-scroll color="#FFFF">
     <v-container>
-      <v-toolbar flat>
+      <v-toolbar flat dense>
         <!-- logo -->
         <v-toolbar-title class="d-none d-sm-none d-md-flex">
           <a href="/">
@@ -19,24 +19,24 @@
 
         <!-- menu mitra dan konseling -->
         <v-toolbar-items>
-          <v-btn text to="/">Home</v-btn>
+          <v-btn class="text-capitalize" text to="/">Home</v-btn>
         </v-toolbar-items>
         <v-toolbar-items>
           <v-menu offset-y transition="scale-transition">
             <template v-slot:activator="{on}">
-              <v-btn text v-on="on">Jadilah Mitra kami</v-btn>
+              <v-btn text v-on="on" class="text-capitalize">Jadilah Mitra kami</v-btn>
             </template>
             <v-list>
               <v-list-item v-for="(item, index) in items" :key="index">
                 <v-list-item-title>
-                  <v-btn text>{{item.title}}</v-btn>
+                  <v-btn text class="text-capitalize">{{item.title}}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </v-toolbar-items>
         <v-toolbar-items>
-          <v-btn class="ml-2 pl-2" text to="/help">help</v-btn>
+          <v-btn class="ml-2 pl-2 text-capitalize" text to="/help">help</v-btn>
         </v-toolbar-items>
 
         <v-spacer></v-spacer>
@@ -53,7 +53,12 @@
             <v-list>
               <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
                 <v-list-item-title>
-                  <v-btn text block class="justify-start" :to="Menuitem.link">{{ Menuitem.title }}</v-btn>
+                  <v-btn
+                    text
+                    block
+                    class="justify-start text-capitalize"
+                    :to="Menuitem.link"
+                  >{{ Menuitem.title }}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
