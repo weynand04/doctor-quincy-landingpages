@@ -18,6 +18,31 @@ export default new Router({
           name: 'Help',
           path: 'help',
           component: () => import('@/views/homepage/pages/Help')
+        },
+        {
+          name: 'Carakerja',
+          path: 'carakerja',
+          component: () => import('@/views/homepage/pages/Carakerja')
+        },
+        {
+          name: 'Ditangani',
+          path: 'yang-di-tangani',
+          component: () => import('@/views/homepage/pages/Ditangani')
+        },
+        {
+          name: 'TidakDitangani',
+          path: 'tidak-di-tangani',
+          component: () => import('@/views/homepage/pages/Tidakditangani')
+        },
+        {
+          name: 'Homehealtcare',
+          path: 'health-care',
+          component: () => import('@/views/homepage/pages/Healthcare')
+        },
+        {
+          name: 'Pelankes',
+          path: 'penyedia-lanyanan-kesehatan',
+          component: () => import('@/views/homepage/pages/Pelankes')
         }
       ]
     },
