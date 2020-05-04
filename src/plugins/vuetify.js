@@ -5,7 +5,7 @@ import i18n from '@/i18n'
 Vue.use(Vuetify)
 
 const theme = {
-  primary: '#E91E63',
+  primary: '#F8B218',
   secondary: '#9C27b0',
   accent: '#9C27b0',
   info: '#00CAE3'
