@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <!-- section #1 -->
     <v-row dense align="stretch" class="d-flex">
       <v-col md="4" sm="12">
         <v-card flat class="pl-12 ml-8">
@@ -24,47 +25,10 @@
       </v-col>
     </v-row>
 
-    <v-row class="d-flex" style="background-color:#FCFCFC;">
-      <v-col md="6" sm="12" align-self="center">
-        <v-card flat color="transparent">
-          <v-img
-            src="@/assets/image/undraw_mobile_development_8gyo.svg"
-            position="center"
-            contain
-            aspect-ratio="2"
-          ></v-img>
-        </v-card>
-      </v-col>
-      <v-col md="6" sm="12" align-self="center">
-        <v-card flat color="transparent">
-          <v-card-title class="font-weight-black orange--text darken-3">Apa Itu Dr.Quincy</v-card-title>
-          <v-card-subtitle>The Envolving Benefits Of Telemedicine</v-card-subtitle>
-          <v-card-text class="d-flex align-content-start">
-            <v-img
-              src="@/assets/image/google-play-badge.svg"
-              position="left"
-              max-height="40"
-              max-width="199"
-              aspect-ratio="1.7"
-              contain
-            ></v-img>
-            <v-img
-              src="@/assets/image/download-on-the-app-store-apple.svg"
-              position="left"
-              max-height="40"
-              max-width="199"
-              aspect-ratio="1.7"
-              contain
-            ></v-img>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-
     <v-row class="justify-space-around">
       <v-col md="12" sm="12"></v-col>
       <v-col md="4" sm="12" align-self="center" class="justify-spcace-around">
-        <v-img src="@/assets/image/undraw_medical_research_qg4d.svg" aspect-ratio="2" contain />
+        <v-img src="@/assets/image/undraw_medical_care_movn.svg" aspect-ratio="2" contain />
       </v-col>
       <v-col md="8" sm="12" align-self="start">
         <v-card height="200" flat>
