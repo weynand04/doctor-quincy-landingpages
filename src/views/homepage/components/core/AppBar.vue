@@ -43,19 +43,18 @@
         <router-link to="/">Home</router-link>
         <router-link to="#">
           Be our Partners
-          <v-icon small color="black">mdi-chevron-down</v-icon>
+          <v-icon small>mdi-chevron-down</v-icon>
         </router-link>
         <router-link to="help">Help</router-link>
       </v-toolbar-items>
       <v-spacer></v-spacer>
 
-      <!-- menu expand -->
+      <!-- menu expand FIX -->
       <v-toolbar-items>
-        <v-menu offset-x offset-y left transition="slide-y-transition">
+        <v-menu offset-x offset-y left transition="slide-y-transition" v-model="show">
           <template v-slot:activator="{ on }">
-            <v-btn v-on="on" icon>
-              <v-icon>mdi-menu</v-icon>
-              <!-- <v-icon v-else>mdi-close</v-icon> -->
+            <v-btn v-on="on" @click="show = !show" icon>
+              <v-icon>{{ show ? 'mdi-close' : 'mdi-menu' }}</v-icon>
             </v-btn>
           </template>
           <v-list>
@@ -74,7 +73,9 @@
 <script>
 export default {
   name: "HompageCoreAppbar",
+
   data: () => ({
+    show: false,
     Menuitem: [
       { title: "Cara kerja", link: "/carakerja" },
       { title: "Penyakit yang kami tangani", link: "/yang-di-tangani" },
