@@ -1,34 +1,57 @@
+<style lang="scss" scoped>
+.v-application {
+  a {
+    color: black !important;
+    margin: auto 10px !important;
+    font-size: 15px !important;
+    text-decoration: none;
+  }
+  a:focus,
+  a:hover {
+    font-size: 14px !important;
+    font-weight: bold;
+    border-bottom: 3px solid #f8b218;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  a:hover,
+  a:focus {
+    color: #f8b218 !important;
+  }
+}
+</style>
   <template>
   <v-app-bar app elevate-on-scroll color="#FFFF">
     <v-toolbar flat dense>
       <!-- logo FIX -->
       <div class="ml-12 pl-8">
         <v-toolbar-title class="d-none d-sm-none d-md-flex">
-          <a href="/" target="_blank">
-            <v-img
-              src="@/assets/logo.jpg"
-              class="logo"
-              aspect-ratio="1.7"
-              height="52"
-              width="199"
-              contain
-            ></v-img>
-          </a>
+          <v-img
+            src="@/assets/logo.jpg"
+            class="logo"
+            aspect-ratio="1.7"
+            height="52"
+            width="199"
+            contain
+          ></v-img>
         </v-toolbar-title>
       </div>
       <v-spacer></v-spacer>
 
       <!-- menu mitra dan konseling -->
       <v-toolbar-items>
-        <v-btn text to="/">Home</v-btn>
-        <v-btn text to="#">Be our Partner</v-btn>
-        <v-btn text to="#">Help</v-btn>
+        <router-link to="/">Home</router-link>
+        <router-link to="#">
+          Be our Partners
+          <v-icon small color="black">mdi-chevron-down</v-icon>
+        </router-link>
+        <router-link to="help">Help</router-link>
       </v-toolbar-items>
       <v-spacer></v-spacer>
 
       <!-- menu expand -->
       <v-toolbar-items>
-        <v-menu offset-x offset-y left transition="slide-y-transition" v-model="menu">
+        <v-menu offset-x offset-y left transition="slide-y-transition">
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" icon>
               <v-icon>mdi-menu</v-icon>
@@ -38,7 +61,7 @@
           <v-list>
             <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
               <v-list-item-title>
-                <a :href="Menuitem.link">{{Menuitem.title}}</a>
+                <router-link :to="Menuitem.link">{{Menuitem.title}}</router-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
