@@ -51,10 +51,10 @@
 
       <!-- menu expand FIX -->
       <v-toolbar-items>
-        <v-menu offset-x offset-y left transition="slide-y-transition" v-model="show">
+        <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
           <template v-slot:activator="{ on }">
-            <v-btn v-on="on" @click="show = !show" icon>
-              <v-icon>{{ show ? 'mdi-close' : 'mdi-menu' }}</v-icon>
+            <v-btn v-on="on" @click="expand = !expand" icon>
+              <v-icon>{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
             </v-btn>
           </template>
           <v-list>
@@ -75,7 +75,7 @@ export default {
   name: "HompageCoreAppbar",
 
   data: () => ({
-    show: false,
+    expand: false,
     Menuitem: [
       { title: "Cara kerja", link: "/carakerja" },
       { title: "Penyakit yang kami tangani", link: "/yang-di-tangani" },
