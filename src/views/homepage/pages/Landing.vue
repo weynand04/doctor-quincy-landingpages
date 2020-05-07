@@ -20,6 +20,7 @@
       </v-col>
     </v-row>
 
+    <!-- section #2 -->
     <v-row class="col-12 d-flex" style="background-color:#FCFCFC;">
       <v-col md="6">
         <v-card flat color="transparent">
@@ -57,6 +58,7 @@
       </v-col>
     </v-row>
 
+    <!-- section #3 -->
     <v-row class="justify-space-around">
       <v-col md="4" sm="12">
         <v-img src="@/assets/image/gambar lain-09.png" />
@@ -67,7 +69,7 @@
             class="font-weight-black orange--text darken-3"
           >Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy</v-card-title>
           <v-window v-model="onboarding" reverse>
-            <v-window-item v-for="n in length" :key="n.text">
+            <v-window-item v-for="n in dt_sec3" :key="n.text">
               <v-card-text class="body-1 font-weight-light">{{n.text}}</v-card-text>
             </v-window-item>
           </v-window>
@@ -78,7 +80,7 @@
             <v-icon>mdi-chevron-left</v-icon>
           </v-btn>
           <v-item-group v-model="onboarding" class="text-center" mandatory>
-            <v-item v-for="(n, i) in length" :key="`btn-${i}`" v-slot:default="{ active, toggle }">
+            <v-item v-for="(n, i) in dt_sec3" :key="`btn-${i}`" v-slot:default="{ active, toggle }">
               <v-btn :input-value="active" icon @click="toggle">
                 <v-icon small>mdi-record</v-icon>
               </v-btn>
@@ -107,6 +109,7 @@
       </v-col>
     </v-row>
 
+    <!-- Section #4 -->
     <v-row>
       <v-col cols="12" style="background-color:#F8F8F8;" class="d-flex justify-space-around">
         <p
@@ -120,24 +123,18 @@
       </v-col>
     </v-row>
 
+    <!-- Section #5 -->
     <v-row>
-      <v-img src="@/assets/image/Mask Group 9.png" aspect-ratio="2.4" position="top">
+      <v-img
+        src="@/assets/image/Mask Group 9.png"
+        aspect-ratio="2.4"
+        position="top center"
+        gradient="to top right, rgba(248, 178, 24, 0.7), rgba(248, 178, 24, 0.7)"
+      >
         <v-col class="d-flex justify-center">
-          <v-card width="350" class="mr-10">
-            <v-card-title
-              class="font-weight-bold orange--text darken-3 text-left text-break"
-            >Perawatan Kesehatan Yang Berkualitas Dimulai Dengan Dokter Yang Berkualitas</v-card-title>
-            <v-card-text
-              class="body-1 font-weight-light"
-            >Kami menjamin kesehatan kamu dari A hingga Z dan Dokter Quincy disini untuk mendukung kesejahteraan kamu seiring waktu. Dari dokter hingga psikolog, kami membantu mendukung perjalanan kesehatan kamu. Tim dokter kami yang penuh kasih dan tepercaya berasal dari berbagai latar belakang dan spesialisasi. Mereka akan menciptakan jenis hubungan baru dengan kamu dengan meluangkan waktu untuk mendengarkan dan memperhatikan detail masalah kesehatan kamu. Dokter kami sedang merevolusi akses layanan kesehatan yang berkualitas. Mereka dilatih secara profesional untuk menggunakan teknologi virtual untuk menangani banyak kondisi non-darurat. Tim ahli medis kami adalah para dokter dengan pengalaman bertahun-tahun.</v-card-text>
-          </v-card>
-          <v-card width="350">
-            <v-card-title
-              class="font-weight-bold orange--text darken-3 text-left text-break"
-            >Biaya Terjangkau Dan Transparan</v-card-title>
-            <v-card-text
-              class="body-1 font-weight-light"
-            >Layanan Doctor Quincy tersedia secara nasional dan internasional, dengan atau tanpa asuransi. Gratis untuk bergabung, dan biaya dokter kunjungan kamu selalu ditampilkan di muka sehingga kamu tahu berapa biayanya, tanpa tagihan kejutan nanti. Kami bekerja dengan asuransi lainnya termasuk BPJS, pegawai pengusahaan dan pegawai negeri. Doctor Quincy menawarkan akses kesehatan yang terjangkau, transparan, lebih mudah dan tidak merepotkan untuk semua orang. Kami baru saja memulai perjalanan merevolusi layanan kesehatan di Indonesia dan menjadikannya lebih mudah diakses oleh orang-orang di mana saja. Inovasi kesehatan digital mengubah hidup kita menjadi lebih baik dan inovatif, solusi kesehatan generasi baru ini akan membantu memecahkan banyak tantangan dalam perawatan kesehatan primer dan mengatasi kebutuhan pasien, dokter, dan masih banyak lagi.</v-card-text>
+          <v-card v-for="(n, i) in dt_sec5" :key="i" width="350" class="mr-10">
+            <v-card-title class="orange--text darken-3 text-left text-break">{{n.title}}</v-card-title>
+            <v-card-text class="body-1 font-weight-light">{{n.text}}}</v-card-text>
           </v-card>
         </v-col>
       </v-img>
@@ -149,7 +146,7 @@
 export default {
   name: "Home",
   data: () => ({
-    length: [
+    dt_sec3: [
       {
         text:
           "Sekarang kamu dapat memiliki dokter sesuai permintaan dengan mudah dan bebas repot mengunjungi kamu dalam hitungan menit sesuai kenyamanan kamu, hanya dengan menggunakan ponsel cerdas, tablet, atau laptop kamu 24 jam sehari."
@@ -163,17 +160,30 @@ export default {
           "Dapatkan akses ke layanan kesehatan berkualitas tanpa harus meninggalkan rumah, pekerjaan, atau dimanapun kamu berada. Betapa mudahnya menerima perawatan yang terjangkau dan berkualitas tanpa bepergian ke rumah sakit! Resep obat dapat dikirim langsung ke apotek jika diperlukan secara medis."
       }
     ],
-    onboarding: 0
+    onboarding: 0,
+    dt_sec5: [
+      {
+        title:
+          "Perawatan Kesehatan Yang Berkualitas Dimulai Dengan Dokter Yang Berkualitas",
+        text:
+          "Kami menjamin kesehatan kamu dari A hingga Z dan Dokter Quincy disini untuk mendukung kesejahteraan kamu seiring waktu. Dari dokter hingga psikolog, kami membantu mendukung perjalanan kesehatan kamu. Tim dokter kami yang penuh kasih dan tepercaya berasal dari berbagai latar belakang dan spesialisasi. Mereka akan menciptakan jenis hubungan baru dengan kamu dengan meluangkan waktu untuk mendengarkan dan memperhatikan detail masalah kesehatan kamu. Dokter kami sedang merevolusi akses layanan kesehatan yang berkualitas. Mereka dilatih secara profesional untuk menggunakan teknologi virtual untuk menangani banyak kondisi non-darurat. Tim ahli medis kami adalah para dokter dengan pengalaman bertahun-tahun."
+      },
+      {
+        title: "Biaya Terjangkau Dan Transparan",
+        text:
+          "Layanan Doctor Quincy tersedia secara nasional dan internasional, dengan atau tanpa asuransi. Gratis untuk bergabung, dan biaya dokter kunjungan kamu selalu ditampilkan di muka sehingga kamu tahu berapa biayanya, tanpa tagihan kejutan nanti. Kami bekerja dengan asuransi lainnya termasuk BPJS, pegawai pengusahaan dan pegawai negeri. Doctor Quincy menawarkan akses kesehatan yang terjangkau, transparan, lebih mudah dan tidak merepotkan untuk semua orang. Kami baru saja memulai perjalanan merevolusi layanan kesehatan di Indonesia dan menjadikannya lebih mudah diakses oleh orang-orang di mana saja. Inovasi kesehatan digital mengubah hidup kita menjadi lebih baik dan inovatif, solusi kesehatan generasi baru ini akan membantu memecahkan banyak tantangan dalam perawatan kesehatan primer dan mengatasi kebutuhan pasien, dokter, dan masih banyak lagi."
+      }
+    ]
   }),
 
   methods: {
     next() {
       this.onboarding =
-        this.onboarding + 1 === this.length ? 0 : this.onboarding + 1;
+        this.onboarding + 1 === this.dt_sec3 ? 0 : this.onboarding + 1;
     },
     prev() {
       this.onboarding =
-        this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1;
+        this.onboarding - 1 < 0 ? this.dt_sec3 - 1 : this.onboarding - 1;
     }
   }
 };
