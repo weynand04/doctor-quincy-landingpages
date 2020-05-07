@@ -24,28 +24,13 @@
   <v-app-bar app elevate-on-scroll color="#FFFF">
     <v-toolbar flat dense>
       <!-- logo FIX -->
-      <div class="ml-12 pl-8">
-        <v-toolbar-title class="d-none d-sm-none d-md-flex">
-          <v-img
-            src="@/assets/logo.jpg"
-            class="logo"
-            aspect-ratio="1.7"
-            height="52"
-            width="199"
-            contain
-          ></v-img>
-        </v-toolbar-title>
+      <div class="ml-12 pl-12">
+        <v-toolbar-title class="logo__title">Dr. Quincy</v-toolbar-title>
       </div>
-      <v-spacer></v-spacer>
-
       <!-- menu mitra dan konseling -->
+      <v-spacer></v-spacer>
       <v-toolbar-items>
-        <router-link to="/">Home</router-link>
-        <router-link to="#">
-          Be our Partners
-          <v-icon small>mdi-chevron-down</v-icon>
-        </router-link>
-        <router-link to="help">Help</router-link>
+        <router-link v-for="n in toolitems" :key="n.title" text :to="n.path">{{n.title}}</router-link>
       </v-toolbar-items>
       <v-spacer></v-spacer>
 
@@ -54,13 +39,13 @@
         <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" @click="expand = !expand" icon>
-              <v-icon>{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
+              <v-icon x-large>{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
             </v-btn>
           </template>
           <v-list>
             <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
               <v-list-item-title>
-                <router-link :to="Menuitem.link">{{Menuitem.title}}</router-link>
+                <router-link :to="Menuitem.path">{{Menuitem.title}}</router-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
@@ -77,13 +62,27 @@ export default {
   data: () => ({
     expand: false,
     Menuitem: [
-      { title: "Cara kerja", link: "/carakerja" },
-      { title: "Penyakit yang kami tangani", link: "/yang-di-tangani" },
+      { title: "Cara kerja", path: "/carakerja" },
+      { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
       {
         title: "Penyakit yang tidak kami tangani",
-        link: "/tidak-di-tangani"
+        path: "/tidak-di-tangani"
       },
-      { title: "Home health care", link: "/health-care" }
+      { title: "Home health care", path: "/health-care" }
+    ],
+    toolitems: [
+      {
+        path: "/",
+        title: "Home"
+      },
+      {
+        path: "/#",
+        title: "Be our Partner"
+      },
+      {
+        path: "/help",
+        title: "Help"
+      }
     ]
   })
 };
