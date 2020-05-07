@@ -21,7 +21,7 @@
     </v-row>
 
     <!-- section #2 -->
-    <v-row class="col-12 d-flex" style="background-color:#FCFCFC;">
+    <v-row style="background-color:#FCFCFC;">
       <v-col md="6">
         <v-card flat color="transparent">
           <v-img
@@ -34,7 +34,7 @@
       </v-col>
       <v-col md="6" align-self="center">
         <v-card flat color="transparent">
-          <v-card-title>Apa Itu Dr.Quincy</v-card-title>
+          <v-card-title class="font-weight-bold orange--text darken-3">Apa Itu Dr.Quincy</v-card-title>
           <v-card-subtitle>The Envolving Benefits Of Telemedicine</v-card-subtitle>
           <v-card-text class="d-flex align-content-start">
             <v-img
@@ -47,7 +47,7 @@
             ></v-img>
             <v-img
               src="@/assets/image/download-on-the-app-store-apple.svg"
-              position="left"
+              position="left center"
               max-height="40"
               max-width="199"
               aspect-ratio="1.7"
@@ -66,7 +66,7 @@
       <v-col md="8" sm="12" align-self="start">
         <v-card height="200" flat>
           <v-card-title
-            class="font-weight-black orange--text darken-3"
+            class="font-weight-bold orange--text darken-3"
           >Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy</v-card-title>
           <v-window v-model="onboarding" reverse>
             <v-window-item v-for="n in dt_sec3" :key="n.text">
@@ -110,7 +110,7 @@
     </v-row>
 
     <!-- Section #4 -->
-    <v-row>
+    <v-row dense>
       <v-col cols="12" style="background-color:#F8F8F8;" class="d-flex justify-space-around">
         <p
           class="text-center col-6"
@@ -134,10 +134,53 @@
         <v-col class="d-flex justify-center">
           <v-card v-for="(n, i) in dt_sec5" :key="i" width="350" class="mr-10">
             <v-card-title class="orange--text darken-3 text-left text-break">{{n.title}}</v-card-title>
-            <v-card-text class="body-1 font-weight-light">{{n.text}}}</v-card-text>
+            <v-card-text class="body-1 font-weight-light">{{n.text}}</v-card-text>
           </v-card>
         </v-col>
       </v-img>
+    </v-row>
+
+    <!-- section #6 -->
+    <v-row class="d-flex justify-center">
+      <v-col cols="12" md="6">
+        <v-img src="@/assets/image/gambar lain-01.png" max-height="601" max-width="566" contain />
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-card flat width="450">
+          <v-card-text class="body-1 font-weight-ligh">
+            <p>Dokter Quincy memberikan layanan langsung kepada konsumen, puluhan juta orang Indonesia akan menikmati kunjungan kesehatan medis termasuk layanan kesehatan jiwa, perawatan pencegahan, perawatan kronis, perawatan darurat, dan kesehatan perilaku.</p>
+            <p>Misi Doctor Quincy adalah meningkatkan kesehatan masyarakat melalui perawatan dan inovasi yang penuh kasih. Untuk mengakses Doctor Quincy, kamu dapat mengunduh aplikasi kami secara gratis di (iTunes atau Google Play).</p>
+            <p>Dokter Quincy secara langsung sedang mengubah kehidupan lebih dari 100 juta jiwa orang dengan akses melalui layanan kesehatan berkualitas tanpa harus meninggalkan rumah mereka.</p>
+            <p
+              class="red--text font-weight-bold"
+            >Kendalikan Kesehatan Kamu Hari Ini Juga! Bergabunglah Dengan Jutaan Orang Yang Memiliki Akses Dokter Quincy 24 Jam Sehari, 365 Hari Setahun</p>
+            <p class="blue--text">Sekarang Giliran Kamu!</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col style="background-color:#F8F8F8;" cols="12" class="d-flex justify-space-around">
+        <v-card flat color="transparent" width="70%">
+          <v-card-text class="text-center body-1 font-weight-ligh">
+            <p>Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu</p>
+            <p class="red--text">Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <!-- Section #7 -->
+    <v-row>
+      <v-col cols="12" class="d-flex justify-space-around">
+        <v-card width="80%" flat>
+          <v-card-title
+            class="orange--text darken-3 text-left text-break"
+          >Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy</v-card-title>
+          <v-card-text class="body-1 font-weight-ligh">
+            <p>Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter dan terapis berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai “Doctor Quincy” – ini adalah dokter-dokter profesional sesuai permintaan pasien. Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy. PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya, melainkan melalui tim profesional dokter ini kepada pasien di seluruh Indonesia. Kapan Dan Dimana Saja Mereka Membutuhkannya.</p>
+            <p>Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka.</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>
