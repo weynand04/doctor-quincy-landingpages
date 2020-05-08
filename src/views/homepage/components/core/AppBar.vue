@@ -1,22 +1,22 @@
 <style lang="scss" scoped>
 .v-application {
   a {
-    color: black !important;
+    color: black;
     margin: auto 10px !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
     text-decoration: none;
   }
-  a:focus,
-  a:hover {
-    font-size: 14px !important;
-    font-weight: bold;
-    border-bottom: 3px solid #f8b218;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f8b218;
+    transition: width 0.3s;
   }
-  a:hover,
-  a:focus {
-    color: #f8b218 !important;
+  a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
   }
 }
 </style>
@@ -30,7 +30,7 @@
       <!-- menu mitra dan konseling -->
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <router-link v-for="n in toolitems" :key="n.title" text :to="n.path">{{n.title}}</router-link>
+        <router-link v-for="n in toolitems" :key="n.title" :to="n.path">{{n.title}}</router-link>
       </v-toolbar-items>
       <v-spacer></v-spacer>
 
