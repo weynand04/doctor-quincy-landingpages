@@ -8,20 +8,25 @@
             class="title1__widu font-weight-bold black--text text-break"
           >Web Solutions Designed for our Doctors</v-card-title>
           <v-card-subtitle class="subtitle__widu font-weight-medium pt-3">Be Our Partner</v-card-subtitle>
-          <v-card-actions class="justify-space-around">
-            <v-btn rounded class="font-weight-bold elevation-0" color="#F8B218">PARTNER</v-btn>
-            <v-btn rounded class="font-weight-bold elevation-0" color="#F8B218">MEMBER</v-btn>
+          <v-card-actions>
+            <v-btn
+              rounded
+              to="/pages/register"
+              class="font-weight-bold elevation-1"
+              color="#F8B218"
+            >PARTNER</v-btn>
+            <v-btn
+              rounded
+              flat
+              to="/pages/register"
+              class="font-weight-bold elevation-1"
+              color="#F8B218"
+            >MEMBER</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
       <v-col cols="12" md="8">
-        <v-img
-          src="@/assets/image/artwork-01.png"
-          style="margin-left: -200px"
-          max-width="1106px"
-          max-height="734px"
-          contain
-        ></v-img>
+        <v-img src="@/assets/image/artwork-01.png" max-width="1106px" max-height="734px" contain></v-img>
       </v-col>
     </v-row>
 
