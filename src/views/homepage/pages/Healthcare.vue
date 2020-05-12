@@ -46,40 +46,37 @@ ul li::before {
 </style>
 <template>
   <v-container fluid>
-    <v-card height="900">
-     <v-card flat class="pl-12 ml-8">
-      <v-card-title class="display-1 font-weight-bold black--text text-break">
-        Home health care
-      </v-card-title>
-      <v-card-actions>
-        <v-row class="justify-space-around">
-          <v-col class="justify-space-around">
+   <v-card flat class="pl-12 ml-8">
+    <v-card-actions>
+      <v-row class="justify-space-around">
+        <v-col class="justify-space-around">
+          <p class="display-1 font-weight-bold black--text darken-3">Home Health Care</p>
+          <p class="text-sm-left">
+            <img src="@/assets/image/gambar lain-02.png" style="float:right;" width="340" height="260"/>
+           berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit ataucedera.
            <p class="text-sm-left">
-             <img src="@/assets/image/gambar lain-02.png" style="float:right;" width="320" height="240"/>
-             berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit ataucedera.
-             <p class="text-sm-left">
-              Perawatan kesehatan di rumah dapat mencakup terapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.
-              <p class="text-sm-left">
-                Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.
-              </p>
-            </v-col>
-          </v-row>
-        </v-card-actions>
-        <div class="box">HOME HEALTH CARE VS HOME CARE</div>
-        <img src="@/assets/image/gambar lain-09.png" style="float:right;" width="450" height="350" class="srigth" />
-        <div><br>
-          <ul type="Disc">
-            <li class="tab">Pekerjaan Rumah Umum</li>
-            <li>Keperawatan Terampil</li>
-            <li class="tab">Membersihkan Rumah</li>
-            <li>Kesehatan Rumah</li>
-            <li class="tab">Pekjaan Rumah Tangga</li>
-            <li>Terapi di Rumah</li>
-            <li class="tab">Mencuci Pakaian</li>
-            <li>Terapis Bersertifikat</li>
-            <li class="tab">Non Medis</li>
-            <li>Bersifat Medis</li>
-          </ul>
+            Perawatan kesehatan di rumah dapat mencakup terapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.
+            <p class="text-sm-left">
+              Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.
+            </p>
+          </v-col>
+        </v-row>
+      </v-card-actions>
+      <img src="@/assets/image/gambar lain-09.png" style="float:right;" width="320" height="300" class="srigth" />
+      <div class="box">HOME HEALTH CARE VS HOME CARE</div>
+      <div><br>
+        <ul type="Disc">
+          <li class="tab">Pekerjaan Rumah Umum</li>
+          <li>Keperawatan Terampil</li>
+          <li class="tab">Membersihkan Rumah</li>
+          <li>Kesehatan Rumah</li>
+          <li class="tab">Pekjaan Rumah Tangga</li>
+          <li>Terapi di Rumah</li>
+          <li class="tab">Mencuci Pakaian</li>
+          <li>Terapis Bersertifikat</li>
+          <li class="tab">Non Medis</li>
+          <li>Bersifat Medis</li>
+        </ul>
 
         <!--
           <ul id="example-1">
@@ -89,48 +86,47 @@ ul li::before {
         </ul>
       -->
     </div>
-  </v-card>
-</v-card>
-<div class="row" style="background-color: rgb(107, 107, 107);">
-  <p class="text-center white--text">
-    Home Health Care ini dirancag khusus untuk pasien yang memiliki masalah meninggalkan rumah atau tidak dapat melangsungkan kegiatan sehari-hari dengan sendiri sebagaimana semestinya dan membutuhkan perawatan medis karena cedera atau penyakir.
-  </p>
-</div>
-<div class="row">
- <!---->
- <div class="row justify-space-around">
-  <div class="pl-12 ml-8">
-    <p class="text-center">
-      Profesional perawatan kesehatan di rumah ini sering kali adalah perawat berlisensi, terapis, atau asisten kesehatan rumah. <br>Sebagian besar dari mereka bekerja untuk klinik kesehatan umum, rumah sakit, atau lembaga kesehatan masyarakat lainnya, mereka terlatih dan bersertifikat.
+  </v-card><br><br><br><br><br>
+  <div class="row" style="background-color: rgb(107, 107, 107);">
+    <p class="text-center white--text">
+      Home Health Care ini dirancang khusus untuk pasien yang memiliki masalah meninggalkan rumah atau tidak dapat melangsungkan kegiatan sehari-hari dengan sendiri sebagaimana semestinya dan membutuhkan perawatan medis karena cedera atau penyakir.
     </p>
   </div>
-  <div class="row pl-12 ml-8">
-    <div class="justify-spcace-around col-sm-12 col-md-4 col align-self-center">
-      <div class="v-responsive v-image">
-        <div class="v-responsive__sizer" style="padding-bottom: 50%;">
+  <div class="row">
+   <!---->
+   <div class="row justify-space-around">
+    <div class="pl-12 ml-8">
+      <p class="text-center">
+        Profesional perawatan kesehatan di rumah ini sering kali adalah perawat berlisensi, terapis, atau asisten kesehatan rumah. <br>Sebagian besar dari mereka bekerja untuk klinik kesehatan umum, rumah sakit, atau lembaga kesehatan masyarakat lainnya, mereka terlatih dan bersertifikat.
+      </p>
+    </div>
+    <div class="row pl-12 ml-8">
+      <div class="justify-spcace-around col-sm-12 col-md-4 col align-self-center">
+        <div class="v-responsive v-image">
+          <div class="v-responsive__sizer" style="padding-bottom: 50%;">
 
+          </div>
+
+          <img src="@/assets/image/gambar lain-03.png" width="600" height="400" class="sleft" />
         </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col align-self-start">
+        <p class="stly">Contoh Layanan Kesehatan<br>Di Rumah Yang Terampil Meliputi:</p>
 
-        <img src="@/assets/image/gambar lain-03.png" width="600" height="400" class="sleft" />
+        <ul id="example-1">
+          <li v-for="x in list" :key="x.text">
+            {{ x.text }}
+          </li>
+        </ul><br>
+        <p class="stly">Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:</p>
+        <ul id="example-1">
+          <li v-for="x in list1" :key="x.text">
+            {{ x.text }}
+          </li>
+        </ul><br>
       </div>
     </div>
-    <div class="col-sm-12 col-md-6 col align-self-start">
-      <p class="stly">Contoh Layanan Kesehatan<br>Di Rumah Yang Terampil Meliputi:</p>
-
-      <ul id="example-1">
-        <li v-for="x in list" :key="x.text">
-          {{ x.text }}
-        </li>
-      </ul><br>
-      <p class="stly">Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:</p>
-      <ul id="example-1">
-        <li v-for="x in list1" :key="x.text">
-          {{ x.text }}
-        </li>
-      </ul><br>
-    </div>
   </div>
-</div>
 </div>
 <!---->
 
@@ -219,7 +215,7 @@ ul li::before {
   gradient="to top right, rgba(147, 158, 229, 0.48), rgba(147, 158, 229, 0.48)"
   >
   <br><br>
- <p align="center" class="stly">Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit <br>Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy</p>
+  <p align="center" class="stly">Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit <br>Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy</p>
   <v-col cols="12" class="d-flex justify-space-around">
     <p class="text__widu text-center col-6 font-weight-bold black--text ">
      Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai "Dokter Profesional Sesuai Permintaan". Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy. PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya. <br><br>Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka.
