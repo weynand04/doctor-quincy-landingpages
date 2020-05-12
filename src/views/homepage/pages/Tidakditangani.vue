@@ -11,6 +11,6 @@
 
 <script>
 export default {
-  name: "Tidakditangani"
+  name: "tidak-di-tangani"
 };
 </script>

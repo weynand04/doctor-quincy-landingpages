@@ -82,7 +82,11 @@ export default {
         title: "Penyakit yang tidak kami tangani",
         link: "/tidak-di-tangani"
       },
-      { title: "Home health care", link: "/health-care" }
+      { title: "Home health care", link: "/health-care" },
+      {
+        title: "Penyedia layanan kesehatan",
+        link: "/pelankes"
+      }
     ]
   })
 };

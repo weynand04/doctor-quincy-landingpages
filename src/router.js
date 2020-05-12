@@ -40,8 +40,8 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Healthcare')
         },
         {
-          name: 'Pelankes',
-          path: 'penyedia-lanyanan-kesehatan',
+          name: 'Penyedialayanankesehatan',
+          path: 'pelankes',
           component: () => import('@/views/homepage/pages/Pelankes')
         }
       ]
