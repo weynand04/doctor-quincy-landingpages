@@ -3,6 +3,8 @@
     <Homepage-Core-AppBar />
 
     <Homepage-Core-View />
+
+    <homepage-gototop />
   </v-app>
 </template>
 
@@ -11,7 +13,8 @@ export default {
   name: "hompageIndex",
   components: {
     HomepageCoreAppBar: () => import("./components/core/AppBar"),
-    HomepageCoreView: () => import("./components/core/View")
+    HomepageCoreView: () => import("./components/core/View"),
+    HomepageGototop: () => import("./components/core/Gotop")
   }
 };
 </script>
