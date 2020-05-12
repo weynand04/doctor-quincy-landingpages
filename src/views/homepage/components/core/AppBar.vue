@@ -68,7 +68,11 @@ export default {
         title: "Penyakit yang tidak kami tangani",
         path: "/tidak-di-tangani"
       },
-      { title: "Home health care", path: "/health-care" }
+      { title: "Home health care", path: "/health-care" },
+      {
+        title: "Penyedia layanan kesehatan",
+        path: "/penyedia-lanyanan-kesehatan"
+      }
     ],
     toolitems: [
       {
