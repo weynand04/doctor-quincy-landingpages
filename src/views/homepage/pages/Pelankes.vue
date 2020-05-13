@@ -14,37 +14,15 @@
             class="display-1 font-weight-bold orange--text darken-3"
           >Dokter Dan Terapis Yang Dapat Kamu & Keluarga Percayai</v-card-title>
         <v-col align-self="start" >
-         <v-card  align="justify">
+        <v-card  align="justify">
           <v-card-text class="body-1 font-weight-bold black--text">
-            <p> 
-            <li>
-                Meningkatkan perawatan kesehatan
-            </li>  
-            </p>
-            <p> 
-              <li>
-                Memperbaiki & memperbarui akses kesehatan yang lebih baik
-              </li>  
-            </p>
-            <p>
-              <li> 
-                Mengurangi biaya & membantu mencegah rawat inap di rumah sakit 
-             </li>
-            </p>
-            <p>
-              <li> 
-                Jaringan penyedia kami adalah yang terbesar di negara ini dan terdiri dari dokter-dokter yang Bersertifikat dalam 
-                Penyakit Dalam, Praktek Keluarga, Dokter Unit Darurat dan Pediatri; serta para profesional kesehatan mental berlisensi 
-                dan terlatih yang menyediakan layanan konseling dan perilaku kesehatan.
-              </li>
-            </p>
-            <p> 
-              <li> 
-                Semua penyedia kami menjalani pemeriksaan latar belakang dengan verifikasi sumber primer melalui Data Dokter 
-                Nasional (DDN) dan Indonesian Medical Association atau “Ikatan Dokter Indonesia” (IDI) untuk lisensi medis, pelatihan 
-                dan pendidikan, sejarah kerja dan sejarah malpraktik.
-              </li>
-            </p>
+            <ul>
+              <li>Meningkatkan perawatan kesehatan</li>  
+              <li>Memperbaiki & memperbarui akses kesehatan yang lebih baik</li>  
+              <li>Mengurangi biaya & membantu mencegah rawat inap di rumah sakit</li>
+              <li>Jaringan penyedia kami adalah yang terbesar di negara ini dan terdiri dari dokter-dokter yang Bersertifikat dalam Penyakit Dalam, Praktek Keluarga, Dokter Unit Darurat dan Pediatri; serta para profesional kesehatan mental berlisensi dan terlatih yang menyediakan layanan konseling dan perilaku kesehatan.</li>
+              <li>Semua penyedia kami menjalani pemeriksaan latar belakang dengan verifikasi sumber primer melalui Data Doktr Nasional (DDN) dan Indonesian Medical Association atau “Ikatan Dokter Indonesia” (IDI) untuk lisensi medis, pelatihan dan pendidikan, sejarah kerja dan sejarah malpraktik.</li>
+            </ul>
             </v-card-text>
            </v-card>
          </v-col>
@@ -118,7 +96,6 @@
                 dokter di setiap spesialisasinya.
             </v-card-text>
           </v-card>
-         
          
         <v-card width="350">
           <v-col>
