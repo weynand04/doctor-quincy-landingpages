@@ -70,16 +70,19 @@
     </v-row>
 
     <!-- section #3 -->
-    <v-row class="justify-space-around">
-      <v-col md="4" sm="12" align-self="center">
-        <v-img src="@/assets/image/gambar lain-09.png" />
-      </v-col>
-      <v-col md="8" sm="12" align-self="start">
+    <v-row>
+      <v-col sm="12">
         <v-card color="transparent" flat>
           <v-card-title
-            class="title__widu font-weight-bold orange--text"
+            class="title__widu font-weight-bold orange--text text-break"
           >Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy</v-card-title>
           <v-card-text class="text__widu font-weight-light">
+            <v-img
+              src="@/assets/image/Image 1.png"
+              max-height="180px"
+              max-width="499px"
+              class="float-left mb-3"
+            />
             <p v-for="n in dt_sec3" :key="n.text">{{n.text}}</p>
           </v-card-text>
         </v-card>
@@ -144,7 +147,7 @@
           contain
         />
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" align-self="center">
         <v-card flat width="450">
           <v-card-text class="text__widu font-weight-ligh">
             <p v-for="n in dt_sec6" :key="n.text">{{n.text}}</p>
