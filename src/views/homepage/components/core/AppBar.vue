@@ -71,7 +71,7 @@ export default {
       { title: "Home health care", path: "/health-care" },
       {
         title: "Penyedia layanan kesehatan",
-        path: "/penyedia-lanyanan-kesehatan"
+        path: "/pelankes"
       }
     ],
     toolitems: [
