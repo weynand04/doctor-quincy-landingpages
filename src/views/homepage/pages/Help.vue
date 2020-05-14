@@ -16,6 +16,36 @@
 <template>
   <v-container fluid>
     <v-row>
+      <v-col cols="12" md="6" align-self="center">
+        <v-card flat class="pl-12 ml-8">
+          <v-card-title
+            class="title1__widu font-weight-bold black--text text-break"
+          >Lorem ipsum dolor sit amet.</v-card-title>
+          <v-card-subtitle
+            class="subtitle__widu font-weight-medium pt-3"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in dignissimos, incidunt at sint magnam ipsam provident aut ullam. Expedita, eum laudantium doloremque quo corrupti mollitia quaerat deserunt adipisci natus!</v-card-subtitle>
+          <v-card-actions>
+            <v-btn
+              rounded
+              to="/pages/register"
+              class="font-weight-bold elevation-1"
+              color="#F8B218"
+            >LOGIN</v-btn>
+            <v-btn
+              rounded
+              flat
+              to="/pages/register"
+              class="font-weight-bold elevation-1"
+              color="#F8B218"
+            >REGISTER</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-img src="@/assets/image/gambar lain-11.png" width="562px" height="506px" contain />
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col cols="12" class="d-flex justify-space-around">
         <v-card v-for="(n, i) in dt_sec5" :key="i" width="350" class="mr-10">
           <v-img :src="n.image" class="mygradient" contain>
