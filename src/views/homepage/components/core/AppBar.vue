@@ -69,12 +69,20 @@ export default {
         path: "/tidak-di-tangani"
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       { title: "Home health care", link: "/health-care" },
       {
         title: "Penyedia layanan kesehatan",
         link: "/pelankes"
 =======
       { title: "Home health care", path: "/health-care" }
+=======
+      { title: "Home health care", path: "/health-care" },
+      {
+        title: "Penyedia layanan kesehatan",
+        path: "/pelankes"
+      }
+>>>>>>> e493eebd218b829a18ea2c08e6aea184f839c284
     ],
     toolitems: [
       {
@@ -88,7 +96,10 @@ export default {
       {
         path: "/help",
         title: "Help"
+<<<<<<< HEAD
 >>>>>>> e1cb5fa1c841dc67ba65b19cbd4988758d54ad72
+=======
+>>>>>>> e493eebd218b829a18ea2c08e6aea184f839c284
       }
     ]
   })
