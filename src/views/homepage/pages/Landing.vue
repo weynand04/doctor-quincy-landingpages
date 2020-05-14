@@ -70,25 +70,34 @@
     </v-row>
 
     <!-- section #3 -->
-    <v-row>
-      <v-col sm="12">
-        <v-card color="transparent" flat>
+    <v-row id="section_3">
+      <v-col sm="12" class="d-flex justify-space-around">
+        <v-card class="col-10" color="transparent" flat>
           <v-card-title
             class="title__widu font-weight-bold orange--text text-break"
           >Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy</v-card-title>
           <v-card-text class="text__widu font-weight-light">
-            <v-img
+            <iframe
+              width="340"
+              height="185"
+              src="https://www.youtube.com/embed/pZHiIGFLN8Y"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="float-left mb-1 mr-4"
+            ></iframe>
+            <!-- <v-img
               src="@/assets/image/Image 1.png"
-              max-height="180px"
-              max-width="499px"
+              max-height="185px"
+              max-width="495px"
               class="float-left mb-3"
-            />
+            />-->
             <p v-for="n in dt_sec3" :key="n.text">{{n.text}}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" align="center">
-        <v-card color="transparent" width="50%" flat>
+      <v-col cols="12" align="center" class="mt-n12">
+        <v-card flat color="transparent" width="50%">
           <v-card-text>
             <p
               class="text__widu font-weight-bold red--text"
@@ -247,6 +256,7 @@ export default {
           "Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka."
       }
     ]
-  })
+  }),
+  props: []
 };
 </script>
