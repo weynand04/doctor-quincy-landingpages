@@ -9,19 +9,8 @@
           >Web Solutions Designed for our Doctors</v-card-title>
           <v-card-subtitle class="subtitle__widu font-weight-medium pt-3">Be Our Partner</v-card-subtitle>
           <v-card-actions>
-            <v-btn
-              rounded
-              to="/pages/register"
-              class="font-weight-bold elevation-1"
-              color="#F8B218"
-            >PARTNER</v-btn>
-            <v-btn
-              rounded
-              flat
-              to="/pages/register"
-              class="font-weight-bold elevation-1"
-              color="#F8B218"
-            >MEMBER</v-btn>
+            <v-btn rounded class="font-weight-bold" color="#F8B218">PARTNER</v-btn>
+            <v-btn rounded class="font-weight-bold" color="#F8B218">MEMBER</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -36,7 +25,6 @@
         <v-card flat color="transparent">
           <v-img
             src="@/assets/image/artwork-02-cp.png"
-            style="margin-left: 80px"
             max-width="649px"
             max-height="461px"
             contain
@@ -70,9 +58,9 @@
     </v-row>
 
     <!-- section #3 -->
-    <v-row id="section_3">
+    <v-row>
       <v-col sm="12" class="d-flex justify-space-around">
-        <v-card class="col-10" color="transparent" flat>
+        <v-card class="col-11" color="transparent" flat>
           <v-card-title
             class="title__widu font-weight-bold orange--text text-break"
           >Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy</v-card-title>
@@ -184,7 +172,7 @@
     <!-- Section #7 -->
     <v-row>
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card width="80%" flat>
+        <v-card width="85%" flat>
           <v-card-title
             class="title__widu orange--text darken-3 text-left text-break"
           >Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy</v-card-title>

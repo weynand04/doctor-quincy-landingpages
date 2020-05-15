@@ -11,19 +11,8 @@
             class="font-weight-medium pt-3"
           >Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</v-card-subtitle>
           <v-card-actions>
-            <v-btn
-              rounded
-              to="/pages/register"
-              class="font-weight-bold elevation-1"
-              color="#F8B218"
-            >LOGIN</v-btn>
-            <v-btn
-              rounded
-              flat
-              to="/pages/register"
-              class="font-weight-bold elevation-1"
-              color="#F8B218"
-            >REGISTER</v-btn>
+            <v-btn rounded class="font-weight-bold" color="#F8B218">LOGIN</v-btn>
+            <v-btn rounded class="font-weight-bold" color="#F8B218">REGISTER</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -44,14 +33,14 @@
         </v-card>
       </v-col>
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card color="transparent" width="90%" class="mt-n9 pt-0">
+        <v-card flat color="transparent" width="90%" class="mt-n9 pt-0">
           <v-row>
             <v-col cols="12" md="4">
-              <v-list dense>
+              <v-list color="transparent" dense>
                 <v-list-item-group>
                   <v-list-item v-for="(i, index) in item.list" :key="index">
                     <v-list-item-icon>
-                      <v-icon>mdi-circle</v-icon>
+                      <v-icon dense color="#F8B218">mdi-circle</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                       <v-list-item-title>{{i.title}}</v-list-item-title>
