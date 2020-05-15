@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container id="Ditangani_page" fluid>
     <!-- section #1 -->
     <v-row>
       <v-col cols="12" md="6" align-self="center">
@@ -8,7 +8,7 @@
             class="title1__widu font-weight-bold black--text text-break"
           >Penyakit Yang Kami Tangani</v-card-title>
           <v-card-subtitle
-            class="font-weight-medium pt-3"
+            class="text__widu font-weight-medium pt-3"
           >Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</v-card-subtitle>
           <v-card-actions>
             <v-btn rounded class="font-weight-bold" color="#F8B218">LOGIN</v-btn>
@@ -25,9 +25,9 @@
     <v-row v-for="item in section_2" :key="item.judul" :style="item.bg">
       <v-col cols="12" class="d-flex justify-space-around">
         <v-card flat color="transparent" width="90%">
-          <v-card-title class="title1__widu font-weight-bold orange--text">{{item.judul}}</v-card-title>
-          <v-card-text>
-            <p>{{item.teks}}</p>
+          <v-card-title class="title__widu font-weight-bold orange--text">{{item.judul}}</v-card-title>
+          <v-card-text class="text__widu font-weight-ligh">
+            <p class="text__widu">{{item.teks}}</p>
           </v-card-text>
           <v-divider></v-divider>
         </v-card>
@@ -40,7 +40,7 @@
                 <v-list-item-group>
                   <v-list-item v-for="(i, index) in item.list" :key="index">
                     <v-list-item-icon>
-                      <v-icon dense color="#F8B218">mdi-circle</v-icon>
+                      <v-icon dense>mdi-circle</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                       <v-list-item-title>{{i.title}}</v-list-item-title>
@@ -50,11 +50,13 @@
               </v-list>
             </v-col>
             <v-col cols="12" md="8" class="mt-3">
-              <p>
+              <p class="text__widu text__widu font-weight-ligh">
                 Ketika salah satu penyakit di sebelah kiri diklik, maka rincian subjek akan muncul
                 <b>DALAM KOTAK INI</b>
               </p>
-              <p class="red--text">Silakan lihat detail masing-masing penyakit di dalam folder data.</p>
+              <p
+                class="text__widu font-weight-bold red--text"
+              >Silakan lihat detail masing-masing penyakit di dalam folder data.</p>
             </v-col>
           </v-row>
         </v-card>

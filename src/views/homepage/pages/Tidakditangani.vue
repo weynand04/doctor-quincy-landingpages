@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container id="tidakditangani_page" fluid>
     <!-- section #1 -->
     <v-row>
       <v-col cols="12" md="6" align-self="center">
@@ -8,7 +8,7 @@
             class="title1__widu font-weight-bold black--text text-break"
           >Kondisi yang tidak Kami Tangani</v-card-title>
           <v-card-subtitle
-            class="font-weight-medium pt-3"
+            class="text__widu font-weight-medium pt-3"
           >Ini adalah kondisi yang saat ini tidak ditangani oleh penyedia kami. Kami menyarankan agar langsung ke rumah sakit terdekat, atau mengunjungi pusat perawatan gawat darurat terdekat, tergantung pada tingkat keparahan masalahnya.</v-card-subtitle>
           <v-card-actions>
             <v-btn rounded class="font-weight-bold" color="#F8B218">LOGIN</v-btn>

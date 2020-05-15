@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid>
+  <v-container id="landing_page" fluid>
     <!-- section #1 -->
-    <v-row class="d-flex mt-5 mb-n12">
-      <v-col cols="12" md="4">
+    <v-row no-gutters>
+      <v-col cols="12" md="4" align-self="center">
         <v-card flat class="pl-12 ml-8">
           <v-card-title
             class="title1__widu font-weight-bold black--text text-break"
@@ -15,23 +15,16 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="8">
-        <v-img src="@/assets/image/artwork-01.png" max-width="1106px" max-height="734px" contain></v-img>
+        <v-img src="@/assets/image/artwork-01.png" contain></v-img>
       </v-col>
     </v-row>
 
     <!-- section #2 -->
-    <v-row>
-      <v-col md="6">
-        <v-card flat color="transparent">
-          <v-img
-            src="@/assets/image/artwork-02-cp.png"
-            max-width="649px"
-            max-height="461px"
-            contain
-          ></v-img>
-        </v-card>
+    <v-row class="mt-12" no-gutters>
+      <v-col cols="12" md="6">
+        <v-img src="@/assets/image/artwork-02-cp.png" height="500" contain></v-img>
       </v-col>
-      <v-col md="6" align-self="center">
+      <v-col cols="12" md="6" align-self="center">
         <v-card flat color="transparent">
           <v-card-title class="title__widu font-weight-bold orange--text darken-3">Apa Itu Dr.Quincy</v-card-title>
           <v-card-subtitle class="subtitle2__widu">The Envolving Benefits Of Telemedicine</v-card-subtitle>
