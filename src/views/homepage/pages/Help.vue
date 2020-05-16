@@ -8,7 +8,7 @@
   width: 100%;
   height: 70px;
   bottom: 0;
-  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/wave.png");
+  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/wave.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
