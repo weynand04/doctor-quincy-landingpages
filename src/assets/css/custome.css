@@ -31,3 +31,38 @@
 .text__widu {
   font-size: 15px !important;
 }
+
+.list__widu .tab {
+  position: absolute;
+  left: 300px;
+}
+
+.list__widu li,
+.list__widu p {
+  font-size: 110%;
+  color: #6b6b6b;
+}
+
+.list__widu .box {
+  width: 500px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #d32f3b;
+  font-size: 125%;
+  color: #fff;
+  text-align: center;
+}
+
+.list__widu ul {
+  list-style: none;
+}
+
+.list__widu ul li::before {
+  content: "\2022";
+  color: #f8b218;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

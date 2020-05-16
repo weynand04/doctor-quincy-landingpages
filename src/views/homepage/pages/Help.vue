@@ -61,7 +61,7 @@
           >Home Health Care</v-card-title>
           <v-card-text>
             <v-img
-              src="@/assets/image/Mask Group 4.png"
+              src="@/assets/gambar-lain-02.png"
               height="328px"
               width="389px"
               class="float-right"
@@ -100,7 +100,7 @@
               </v-col>
             </v-row>
             <v-spacer />
-            <v-row>
+            <v-row class="list__widu">
               <v-col>
                 <ul>
                   <li class="subtitle__widu font-weight-medium">Single-line item</li>
@@ -120,7 +120,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/image/Image 15.png" width="562px" height="506px" contain />
+          <v-img src="@/assets/gambar lain-09.png" width="562px" height="506px" contain />
         </v-col>
       </v-card>
     </v-row>
