@@ -83,7 +83,26 @@ ul li::before {
         </p>
         <v-row class="justify-space-around">
           <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
-            <v-img src="@/assets/image/gambar lain-03.png" aspect-ratio="1.2" width="497px" height="350px" contain/>
+            <!-- 676*536 -->
+            <v-img src="@/assets/image/gambar lain-03.png" aspect-ratio="1.2" width="576" height="436" contain/>
+            <v-card-actions class="d-flex align-content-start">
+              <v-img
+              src="@/assets/image/google-play-badge.svg"
+              position="left"
+              max-height="50"
+              max-width="199"
+              aspect-ratio="1.7"
+              contain
+              ></v-img>
+              <v-img
+              src="@/assets/image/download-on-the-app-store-apple.svg"
+              position="left center"
+              max-height="50"
+              max-width="199"
+              aspect-ratio="1.7"
+              contain
+              ></v-img>
+            </v-card-actions>
             <!-- * 344 -->
           </v-col>
           <v-col md="8" sm="12" align-self="start">
@@ -98,12 +117,21 @@ ul li::before {
               </ul>
               <br />
             </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+            <v-card-title
+            class="title__widu font-weight-bold orange--text text-break"
+            >Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah <br>Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:</v-card-title>
+            <v-card-text class="body-1 font-weight black--text">
+             <ul id="example-1">
+              <li v-for="x in list1" :key="x.text">{{ x.text }}</li>
+            </ul>
+            <br />
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
 
-    </div>
   </div>
+</div>
 </div>
 <!---->
 
@@ -121,7 +149,7 @@ ul li::before {
   <p>Berikut adalah beberapa layanan yang paling umum kami berikan kepada klien kami.</p>
 </div>
 <!--  -->
-<v-row class="justify-space-around">
+<v-row class="justify-space-around" style="background-color:#F8F8F8;">
   <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
     <v-img src="@/assets/image/gambar lain-05.png" aspect-ratio="1.2" contain />
   </v-col>
@@ -129,8 +157,9 @@ ul li::before {
     <v-card flat>
       <v-card-title
       class="title__widu font-weight-bold orange--text text-break"
+      style="background-color:#F8F8F8;"
       >Layanan Terapis Perawatan & Persahabatan</v-card-title>
-      <v-card-text class="body-1 font-weight black--text">
+      <v-card-text class="body-1 font-weight black--text" style="background-color:#F8F8F8;">
        <p>Perawatan di rumah dengan kegiatan sehari-hari dapat menghadirkan kemandirian dan ketenangan pikiran, terutama bagi keluarga yang hidup dengan seorang lansia yang menderita penyakit Alzheimer atau Demensia. Perawatan dibagi dalam 3 shift hingga 24 jam sehari.</p>
        <ul id="example-1">
         <li v-for="x in list3" :key="x.text">{{ x.text }}</li>
@@ -143,25 +172,33 @@ ul li::before {
 
 <!--  -->
 <!--  -->
-<div class="pl-12 ml-10">
-  <img src="@/assets/image/gambar lain-06.png" style="float:right;" width="491" height="429" />
-  <p class="title__widu font-weight-bold orange--text text-break">Layanan Perawatan Kesehatan Rumah Dengan Perawat Welas Asih</p>
-  <p>Perawatan berkelanjutan, penuh kasih sayang untuk individu dengan cedera tulang belakang, cedera otak traumatis, ALS, MS, dan banyak lagi, diberikan setiap 4 jam oleh perawat selama 3 kali sehari.</p>
-  <ul id="example-1">
-    <li v-for="x in list4" :key="x.text">{{ x.text }}</li>
-  </ul>
-  <br />
-  <p class="title__widu font-weight-bold orange--text text-break">Perawatan Kesehatan Rumah Dengan Perhatian Khusus</p>
-  <p>Dokter kami mengunjungi rumah kamu untuk perawatan berkelanjutan dan memberikan perawatan yang disesuaikan dengan resep dokter sebelumnya atau setelah meninggalkan rumah sakit. Penyakit, atau cedera untuk membantu kamu merehabilitasi dan mencapai tingkat kemandirian yang optimal — atau secara proaktif mengelola kondisi kesehatan kronis kamu untuk membantu mencegah rawat inap lagi di rumah sakit.</p>
-</div>
-<!--  -->
 <v-row class="justify-space-around">
+  <div class="pl-12 ml-10">
+    <img src="@/assets/image/gambar lain-06.png" style="float:right;" width="491" height="429" />
+    <p class="title__widu font-weight-bold orange--text text-break">Layanan Perawatan Kesehatan Rumah Dengan Perawat Welas Asih</p>
+    <p>Perawatan berkelanjutan, penuh kasih sayang untuk individu dengan cedera tulang belakang, cedera otak traumatis, ALS, MS, dan banyak lagi, diberikan setiap 4 jam oleh perawat selama 3 kali sehari.</p>
+    <ul id="example-1">
+      <li v-for="x in list4" :key="x.text">{{ x.text }}</li>
+    </ul>
+    <br />
+    <p class="title__widu font-weight-bold orange--text text-break">Perawatan Kesehatan Rumah Dengan Perhatian Khusus</p>
+    <p>Dokter kami mengunjungi rumah kamu untuk perawatan berkelanjutan dan memberikan perawatan yang disesuaikan dengan resep dokter sebelumnya atau setelah meninggalkan rumah sakit. Penyakit, atau cedera untuk membantu kamu merehabilitasi dan mencapai tingkat kemandirian yang optimal — atau secara proaktif mengelola kondisi kesehatan kronis kamu untuk membantu mencegah rawat inap lagi di rumah sakit.</p>
+  </div>
+</v-row>
+<!--  -->
+<v-row class="justify-space-around" style="background-color:#F8F8F8;">
+  <v-col class="pl-12 ml-10">
+    <p class="title__widu font-weight-bold orange--text text-break">Perawatan Kesehatan Rumah Dengan Perhatian Khusus</p>
+    <p>Dokter kami mengunjungi rumah kamu untuk perawatan berkelanjutan dan memberikan perawatan yang disesuaikan dengan resep dokter sebelumnya atau setelah meninggalkan rumah sakit. Penyakit, atau cedera untuk membantu kamu merehabilitasi dan mencapai tingkat kemandirian yang optimal — atau secara proaktif mengelola kondisi kesehatan kronis kamu untuk membantu mencegah rawat inap lagi di rumah sakit.</p>
+  </v-col>
+</v-row>
+<v-row class="justify-space-around" style="background-color:#F8F8F8;">
   <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
     <v-img src="@/assets/image/gambar lain-07.png" aspect-ratio="1.2" contain />
   </v-col>
   <v-col md="8" sm="12" align-self="start">
     <v-card flat>
-      <v-card-text class="body-1 font-weight black--text">
+      <v-card-text class="body-1 font-weight black--text" style="background-color:#F8F8F8;">
         <ul id="example-1">
           <li v-for="x in list5" :key="x.text">{{ x.text }}</li>
         </ul>
