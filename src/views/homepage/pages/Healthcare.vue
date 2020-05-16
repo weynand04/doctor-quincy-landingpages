@@ -8,11 +8,6 @@ p {
   font-size: 110%;
   color: #6b6b6b;
 }
-.stly {
-  font-weight: bold;
-  font-size: 125%;
-  color: #f8b218;
-}
 .box {
   width: 500px;
   height: 60px;
@@ -35,16 +30,6 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-.sleft {
-  margin-left: 50px;
-}
-.srigth {
-  margin-right: 200px;
-}
-.txtxyz {
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
 </style>
 <template>
   <v-container fluid>
@@ -60,75 +45,71 @@ ul li::before {
          <p>berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. <br>Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit atau cedera.</p>
          <p>Perawatan kesehatan di rumah dapat mencakup terapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. <br> Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.</p>
          <p>Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
-       </v-card-text>
-     </v-card>
-   </v-col>
-   <!--  -->
-   <v-row>
-    <v-col cols="12" md="6" align-self="center">
-      <v-card flat class="pl-12 ml-8">
-       <div class="box">HOME HEALTH CARE VS HOME CARE</div>
-       <div>
-        <br />
-        <ul type="Disc">
-          <li class="tab">Pekerjaan Rumah Umum</li>
-          <li>Keperawatan Terampil</li>
-          <li class="tab">Membersihkan Rumah</li>
-          <li>Kesehatan Rumah</li>
-          <li class="tab">Pekjaan Rumah Tangga</li>
-          <li>Terapi di Rumah</li>
-          <li class="tab">Mencuci Pakaian</li>
-          <li>Terapis Bersertifikat</li>
-          <li class="tab">Non Medis</li>
-          <li>Bersifat Medis</li>
-        </ul>
-      </div>
+         <br>
+         <v-img src="@/assets/image/gambar lain-09.png" width="362px" height="306px" contain class="float-right"/><br><br>
+         <div class="box">HOME HEALTH CARE VS HOME CARE</div>
+         <div>
+          <br />
+          <ul type="Disc">
+            <li class="tab">Pekerjaan Rumah Umum</li>
+            <li>Keperawatan Terampil</li>
+            <li class="tab">Membersihkan Rumah</li>
+            <li>Kesehatan Rumah</li>
+            <li class="tab">Pekjaan Rumah Tangga</li>
+            <li>Terapi di Rumah</li>
+            <li class="tab">Mencuci Pakaian</li>
+            <li>Terapis Bersertifikat</li>
+            <li class="tab">Non Medis</li>
+            <li>Bersifat Medis</li>
+          </ul>
+        </div>
+        <br>
+      </v-card-text>
     </v-card>
   </v-col>
-  <v-col cols="12" md="6">
-    <v-img src="@/assets/image/gambar lain-09.png" width="562px" height="506px" contain />
-  </v-col>
-</v-row>
-<div class="row" style="background-color: rgb(107, 107, 107);">
-  <p
-  class="text-center white--text"
-  >Home Health Care ini dirancang khusus untuk pasien yang memiliki masalah meninggalkan rumah atau tidak dapat melangsungkan kegiatan sehari-hari dengan sendiri sebagaimana semestinya dan membutuhkan perawatan medis karena cedera atau penyakir.</p>
-</div>
-<div class="row">
-  <!---->
-  <div class="row justify-space-around">
-    <div class="pl-12 ml-8">
-      <p class="text-center">
-        Profesional perawatan kesehatan di rumah ini sering kali adalah perawat berlisensi, terapis, atau asisten kesehatan rumah.
-        <br />Sebagian besar dari mereka bekerja untuk klinik kesehatan umum, rumah sakit, atau lembaga kesehatan masyarakat lainnya, mereka terlatih dan bersertifikat.
-      </p>
-      <v-row class="justify-space-around">
-        <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
-          <v-img src="@/assets/image/gambar lain-03.png" aspect-ratio="1.2" contain/>
-        </v-col>
-        <v-col md="8" sm="12" align-self="start">
-          <v-card flat>
-            <v-card-title
-            class="title__widu font-weight-bold orange--text text-break"
-            >Contoh Layanan Kesehatan
-            <br />Di Rumah Yang Terampil Meliputi:</v-card-title>
-            <v-card-text class="body-1 font-weight black--text">
-             <ul id="example-1">
-              <li v-for="x in list" :key="x.text">{{ x.text }}</li>
-            </ul>
-            <br />
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-
+  <!--  -->
+  <div class="row" style="background-color: rgb(107, 107, 107);">
+    <p
+    class="text-center white--text"
+    >Home Health Care ini dirancang khusus untuk pasien yang memiliki masalah meninggalkan rumah atau tidak dapat melangsungkan kegiatan sehari-hari dengan sendiri sebagaimana semestinya dan membutuhkan perawatan medis karena cedera atau penyakir.</p>
   </div>
-</div>
+  <div class="row">
+    <!---->
+    <div class="row justify-space-around">
+      <div class="pl-12 ml-8">
+        <p class="text-center">
+          Profesional perawatan kesehatan di rumah ini sering kali adalah perawat berlisensi, terapis, atau asisten kesehatan rumah.
+          <br />Sebagian besar dari mereka bekerja untuk klinik kesehatan umum, rumah sakit, atau lembaga kesehatan masyarakat lainnya, mereka terlatih dan bersertifikat.
+        </p>
+        <v-row class="justify-space-around">
+          <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
+            <v-img src="@/assets/image/gambar lain-03.png" aspect-ratio="1.2" width="497px" height="350px" contain/>
+            <!-- * 344 -->
+          </v-col>
+          <v-col md="8" sm="12" align-self="start">
+            <v-card flat>
+              <v-card-title
+              class="title__widu font-weight-bold orange--text text-break"
+              >Contoh Layanan Kesehatan
+              <br />Di Rumah Yang Terampil Meliputi:</v-card-title>
+              <v-card-text class="body-1 font-weight black--text">
+               <ul id="example-1">
+                <li v-for="x in list" :key="x.text">{{ x.text }}</li>
+              </ul>
+              <br />
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+    </div>
+  </div>
 </div>
 <!---->
 
 <div class="pl-12 ml-10">
-  <img src="@/assets/image/gambar lain-04.png" style="float:right;" width="600" height="450" />
+  <img src="@/assets/image/gambar lain-04.png" style="float:right;" width="591" height="529" />
+  <!-- 491 * 429 -->
   <p class="title__widu font-weight-bold orange--text text-break">Contoh Apa Yang Harus Dilakukan Staf Kesehatan Di Rumah:</p>
   <ul id="example-1">
     <li v-for="x in list2" :key="x.text">{{ x.text }}</li>
@@ -163,7 +144,7 @@ ul li::before {
 <!--  -->
 <!--  -->
 <div class="pl-12 ml-10">
-  <img src="@/assets/image/gambar lain-06.png" style="float:right;" width="500" height="400" />
+  <img src="@/assets/image/gambar lain-06.png" style="float:right;" width="491" height="429" />
   <p class="title__widu font-weight-bold orange--text text-break">Layanan Perawatan Kesehatan Rumah Dengan Perawat Welas Asih</p>
   <p>Perawatan berkelanjutan, penuh kasih sayang untuk individu dengan cedera tulang belakang, cedera otak traumatis, ALS, MS, dan banyak lagi, diberikan setiap 4 jam oleh perawat selama 3 kali sehari.</p>
   <ul id="example-1">
@@ -184,22 +165,27 @@ ul li::before {
         <ul id="example-1">
           <li v-for="x in list5" :key="x.text">{{ x.text }}</li>
         </ul>
-        <br />
       </v-card-text>
     </v-card>
   </v-col>
 </v-row>
-
 <!--  -->
 <!--  -->
-<div class="pl-12 ml-10">
-  <img src="@/assets/image/gambar lain-08.png" style="float:right; margin-right:270px"  width="451" height="450" />
-  <p class="title__widu font-weight-bold orange--text text-break">Layanan Home Health Care Termasuk Berikut ini:</p>
-  <ul id="example-1">
-    <li v-for="x in list6" :key="x.text">{{ x.text }}</li>
-  </ul>
-  <br />
-</div>
+<v-row class="justify-space-around">
+  <v-col md="4" sm="12" align-self="start">
+    <v-card flat>
+      <p class="title__widu font-weight-bold orange--text text-break">Layanan Home Health Care Termasuk Berikut ini</p>
+      <v-card-text class="body-1 font-weight black--text">
+        <ul id="example-1">
+          <li v-for="x in list6" :key="x.text">{{ x.text }}</li>
+        </ul>
+      </v-card-text>
+    </v-card>
+  </v-col>
+  <v-col md="5" sm="12">
+    <v-img src="@/assets/image/gambar lain-08.png" aspect-ratio="1.2" contain />
+  </v-col>
+</v-row>
 <!--  -->
 <!--  -->
 <v-row class="col-12">
