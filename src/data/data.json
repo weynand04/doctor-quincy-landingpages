@@ -316,20 +316,111 @@
     },
     {
         "tidakkamitangani": [{
-            "section_1": [{
-                "judul": "Health Home Care",
-                "image": "@/assets/image/*.jpg",
-                "teks": [{
-                        "p": "berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil."
+                "section_1": [{
+                    "judul": "Kondisi yang tidak Kami Tangani",
+                    "image": "@/assets/gambar lain-11.png",
+                    "teks": "Ini adalah kondisi yang saat ini tidak ditangani oleh penyedia kami. Kami menyarankan agar langsung ke rumah sakit terdekat, atau mengunjungi pusat perawatan gawat darurat terdekat, tergantung pada tingkat keparahan masalahnya."
+                }]
+            },
+            {
+                "section_2": [{
+                        "judul": "Ini adalah kondisi yang saat ini tidak ditangani oleh penyedia kami. Kami menyarankan agar langsung ke rumah sakit terdekat, atau mengunjungi pusat perawatan gawat darurat terdekat, tergantung pada tingkat keparahan masalahnya.",
+                        "image": "@/assets/Mask Group 13.png",
+                        "teks": [{
+                                "list": [{
+                                        "title": "Situasi gawat darurat (pendarahan parah, serangan jantung parah, dll)."
+                                    },
+                                    {
+                                        "title": "Keguguran spontan"
+                                    },
+                                    {
+                                        "title": "Pemikiran bunuh diri"
+                                    },
+                                    {
+                                        "title": "Penyakit aneh yang tidak biasa atau berpotensi untuk menular"
+                                    },
+                                    {
+                                        "title": "Infeksi saluran kemih pada pria"
+                                    },
+                                    {
+                                        "title": "Infeksi saluran kemih pada wanita"
+                                    },
+                                    {
+                                        "title": "Wabah Penyakit Menular"
+                                    },
+                                    {
+                                        "title": "Gigitan binatang berpotensi bahaya (mis. anjing, ular, dll.)"
+                                    }
+                                ]
+                            },
+                            {
+                                "teks": "Baik orang dewasa maupun anak-anak yang menderita demam berdarah menular harus segera dibawa ke rumah sakit terdekat. Anak-anak di bawah 12 tahun yang menderita sakit telinga dapat diobati jika sakitnya disebabkan oleh virus (mis. Pilek, alergi, atau infeksi eksternal). Jika ada kemungkinan besar itu adalah infeksi dalam bakteri yang membutuhkan antibiotic tertentu, diharuskan segera dibawa ke rumah sakit terdekat.",
+                                "list2": [{
+                                        "title": "Anak di bawah usia 3 tahun dengan demam tinggi"
+                                    },
+                                    {
+                                        "title": "Anak di bawah 12 tahun dengan sakit telinga yang parah"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "p": "Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit ataucedera. Perawatan kesehatan di rumah dapat mencakup terapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang."
-                    },
-                    {
-                        "p": "Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera."
+                        "section_3": [{
+                                "teks": "Walaupun dokter kami dapat mengobati bahkan penyakit berat, masih ada beberapa kondisi yang tidak dapat mereka lakukan. Dalam kasus seperti itu, kami dengan hormat menyarankan kamu untuk pergi ke rumah sakit saja."
+                            },
+                            {
+                                "image": "@/assets/image/Image 17.png"
+                            },
+                            {
+                                "list": [{
+                                        "title": "Tidak dapat melakukan bedah di rumah."
+                                    },
+                                    {
+                                        "title": "Tidak bisa melakukan aborsi."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan pil aborsi."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat-obatan yang masuk ke dalam."
+                                    },
+                                    {
+                                        "title": "kategori narkotika."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat rambut rontok tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat relaksan otot tertentu"
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat disfungsi ereksi tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat anti virus tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan medicinal ganja."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat tidur tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat penurun berat badan tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan obat suntik tertentu."
+                                    },
+                                    {
+                                        "title": "Tidak dapat meresepkan kodein atau oksikodon."
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
-            }]
-        }]
+            }
+        ]
     }
 ]
