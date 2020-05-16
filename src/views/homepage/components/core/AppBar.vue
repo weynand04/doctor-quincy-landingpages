@@ -64,29 +64,13 @@ export default {
     Menuitem: [
       { title: "Cara kerja", path: "/carakerja" },
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
-      {
-        title: "Penyakit yang tidak kami tangani",
-        path: "/tidak-di-tangani"
-      },
+      { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
       { title: "Home health care", path: "/health-care" },
-      {
-        title: "Penyedia layanan kesehatan",
-        path: "/pelankes"
-      }
-    ],
-    toolitems: [
-      {
-        path: "/",
-        title: "Home"
-      },
-      {
-        path: "/#",
-        title: "Be our Partner"
-      },
-      {
-        path: "/help",
-        title: "Help"
-      }
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" }],
+      toolitems: [
+      { path: "/", title: "Home" },
+      { path: "/#", title: "Be our Partner" },
+      { path: "/help", title: "Help" }
     ]
   })
 };
