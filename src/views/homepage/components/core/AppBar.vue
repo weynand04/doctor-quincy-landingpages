@@ -18,6 +18,12 @@
     width: 100%;
     transition: width 0.3s;
   }
+  a:focus::after {
+    width: 100%;
+  }
+  a:focus {
+    color: #f8b218;
+  }
 }
 </style>
   <template>
@@ -66,11 +72,12 @@ export default {
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
       { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
       { title: "Home health care", path: "/health-care" },
-      { title: "Penyedia layanan kesehatan", path: "/pelankes" }],
-      toolitems: [
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" }
+    ],
+    toolitems: [
       { path: "/", title: "Home" },
       { path: "/#", title: "Be our Partner" },
-      { path: "/help", title: "Help" }
+      { path: "help", title: "Help" }
     ]
   })
 };
