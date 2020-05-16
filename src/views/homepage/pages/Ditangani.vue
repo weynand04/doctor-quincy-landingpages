@@ -11,8 +11,8 @@
             class="text__widu font-weight-medium pt-3"
           >Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</v-card-subtitle>
           <v-card-actions>
-            <v-btn rounded class="font-weight-bold" color="#F8B218">LOGIN</v-btn>
-            <v-btn rounded class="font-weight-bold" color="#F8B218">REGISTER</v-btn>
+            <base-material-button>LOGIN</base-material-button>
+            <base-material-button>REGISTER</base-material-button>
           </v-card-actions>
         </v-card>
       </v-col>

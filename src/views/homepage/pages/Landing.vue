@@ -9,8 +9,8 @@
           >Web Solutions Designed for our Doctors</v-card-title>
           <v-card-subtitle class="subtitle__widu font-weight-medium pt-3">Be Our Partner</v-card-subtitle>
           <v-card-actions>
-            <v-btn rounded class="font-weight-bold" color="#F8B218">PARTNER</v-btn>
-            <v-btn rounded class="font-weight-bold" color="#F8B218">MEMBER</v-btn>
+            <base-material-button>PARTNER</base-material-button>
+            <base-material-button>MEMBER</base-material-button>
           </v-card-actions>
         </v-card>
       </v-col>

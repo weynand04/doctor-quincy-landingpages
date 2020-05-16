@@ -25,8 +25,8 @@
             class="text__widu font-weight-medium pt-3"
           >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in dignissimos, incidunt at sint magnam ipsam provident aut ullam. Expedita, eum laudantium doloremque quo corrupti mollitia quaerat deserunt adipisci natus!</v-card-subtitle>
           <v-card-actions>
-            <v-btn rounded color="#F8B218">LOGIN</v-btn>
-            <v-btn rounded color="#F8B218">REGISTER</v-btn>
+            <base-material-button>LOGIN</base-material-button>
+            <base-material-button>REGISTER</base-material-button>
           </v-card-actions>
         </v-card>
       </v-col>
