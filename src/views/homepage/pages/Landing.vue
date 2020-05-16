@@ -210,25 +210,6 @@ export default {
           "Mengatasi faktor sosial yang paling mendesak berkontribusi pada kesehatan masyarakat. Di Doctor Quincy, misi kami memanggil kami untuk menjadi agen perubahan radikal dalam hal kesehatan. Kami akan menjadi sumber cinta penyembuhan dan mercusuar harapan … untuk negara, dan untuk setiap komunitas yang kami layani, dan untuk setiap orang yang kami temui - terutama mereka yang paling rentan dalam masyarakat kami karena kondisi sosial. Untuk melakukan ini, kami membuat poros penting dari perawatan kesehatan, untuk mendukung kondisi masyarakat demi kesehatan dan kesejahteraan yang optimal. Untuk menjalani komitmen kami untuk menjadi mitra dalam bidang kesehatan, kami harus melakukan sesuatu yang berbeda. Layanan kesehatan tradisional pada umumnya hanya berfokus pada rumah sakit dan klinik yang secara geografis berlabuh dengan semua titik sentuh perawatan pasien di sekitar rumah sakit. Tetapi fokus kami lebih pada mendukung orang-orang sakit dengan serangkaian perawatan kesehatan, program, intervensi, dan layanan berbasis masyarakat. Kami bermitra dengan dokter-dokter lokal di seluruh negeri, memungkinkan kami untuk memasang jaring yang lebih luas dan lebih dalam. Meningkatkan kesehatan masyarakat kita adalah hal mendasar dan komitmen yang mengakar kuat pada warisan dan tujuan kami. Misi kami memanggil kami untuk tabah dalam melayani semua dengan perhatian yang sama. Keyakinan inti ini mendorong program yang kami bangun, investasi yang kami buat, dan strategi yang kami terapkan."
       }
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    onboarding: 0
-  }),
-
-  methods: {
-    next() {
-      this.onboarding =
-        this.onboarding + 1 === this.length ? 0 : this.onboarding + 1;
-    },
-    prev() {
-      this.onboarding =
-        this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1;
-    }
-  }
-  
-=======
-=======
->>>>>>> e493eebd218b829a18ea2c08e6aea184f839c284
     dt_sec5: [
       {
         title:
@@ -267,9 +248,5 @@ export default {
       }
     ]
   })
-<<<<<<< HEAD
->>>>>>> e1cb5fa1c841dc67ba65b19cbd4988758d54ad72
-=======
->>>>>>> e493eebd218b829a18ea2c08e6aea184f839c284
 };
 </script>
