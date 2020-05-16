@@ -5,6 +5,8 @@
     <Homepage-Core-View />
 
     <homepage-gototop />
+
+    <Homepage-Core-Footer />
   </v-app>
 </template>
 
@@ -14,7 +16,8 @@ export default {
   components: {
     HomepageCoreAppBar: () => import("./components/core/AppBar"),
     HomepageCoreView: () => import("./components/core/View"),
-    HomepageGototop: () => import("./components/core/Gotop")
+    HomepageGototop: () => import("./components/core/Gotop"),
+    HomepageCoreFooter: () => import("./components/core/Footer")
   }
 };
 </script>
