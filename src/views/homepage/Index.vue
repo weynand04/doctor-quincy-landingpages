@@ -4,9 +4,9 @@
 
     <Homepage-Core-View />
 
-    <homepage-gototop />
-
     <Homepage-Core-Footer />
+
+    <homepage-gototop />
   </v-app>
 </template>
 

@@ -1,21 +1,36 @@
 <template>
   <div id="settings-wrapper">
-    <v-card
-      class="py-2 px-4"
-      color="rgba(248, 178, 24, 0.39)"
+    <v-btn
+      v-scroll="onScroll"
+      v-show="fab"
+      fab
       dark
-      link
-      min-width="100"
-      style="position: fixed; top: 80%; right: -35px; border-radius: 8px;"
+      fixed
+      bottom
+      right
+      color="primary"
+      @click="toTop"
     >
-      <v-btn icon square title="Go to top" @click="$vuetify.goTo(0)">
-        <v-icon x-large>mdi-chevron-up</v-icon>
-      </v-btn>
-    </v-card>
+      <v-icon>mdi-chevron-up</v-icon>
+    </v-btn>
   </div>
 </template>
 <script>
 export default {
-  name: "HomepageGototop"
+  name: "HomepageGototop",
+  data: () => ({
+    fab: false
+  }),
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    }
+  }
 };
 </script>
