@@ -50,10 +50,15 @@
         text-align: center;
     }
 
+    ul li {
+        padding: 0px 0 0px 0px;
+        text-indent: -1em;
+    }
+
     li {
         position: relative;
-        padding-left: 20px;
-        margin-top: 2px;
+        padding-left: 2px;
+        padding-bottom: 5px;
     }
 
     ul {
@@ -61,16 +66,11 @@
     }
 
     li::before {
-        content: "";
+        content: "\2299";
         color: #f8b218;
-        width: 9px;
-        height: 9px;
-        position: absolute;
-        background-image: url('C:/xampp/htdocs/doctorquisy-fe/src/assets/dot.png');
-        background-size: cover;
-        background-position: center;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -0em;
     }
 }

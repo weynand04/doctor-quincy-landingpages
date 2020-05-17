@@ -37,12 +37,6 @@
   left: 300px;
 }
 
-.list__widu li,
-.list__widu p {
-  font-size: 110%;
-  color: #6b6b6b;
-}
-
 .list__widu .box {
   width: 500px;
   height: 60px;
@@ -54,15 +48,26 @@
   text-align: center;
 }
 
+.list__widu ul li {
+  padding: 0px 0 0px 0px;
+  text-indent: -1em;
+}
+
+.list__widu li {
+  position: relative;
+  padding-left: 2px;
+  padding-bottom: 5px;
+}
+
 .list__widu ul {
   list-style: none;
 }
 
-.list__widu ul li::before {
-  content: "\2022";
+.list__widu li::before {
+  content: "\2299";
   color: #f8b218;
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -0em;
 }
