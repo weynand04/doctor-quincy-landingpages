@@ -1,11 +1,8 @@
 <template>
   <v-btn
-    :outlined="test"
-    @mouseover="test = true"
-    @mouseleave="test = false"
+    :outlined="btnOutline"
     rounded
-    depressed
-    class="elevation-1 font-weight-bold"
+    class="elevation-1 font-weight-bold text-center"
     color="primary"
   >
     <slot />
@@ -18,9 +15,9 @@ export default {
     test: false
   }),
   props: {
-    text: {
-      type: String,
-      default: ""
+    btnOutline: {
+      type: Boolean,
+      default: false
     }
   }
 };
