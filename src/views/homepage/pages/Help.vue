@@ -1,18 +1,4 @@
-<style scoped>
-.mygradient {
-  position: relative;
-}
-.mygradient::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/wave.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-</style>
+
 <template>
   <v-container id="help" fluid>
     <v-row>
@@ -40,13 +26,7 @@
         <v-card flat>
           <v-row align="center">
             <v-col cols="12" class="d-flex justify-space-around">
-              <v-card v-for="(n, i) in dt_sec5" :key="i" width="350" class="ma-5">
-                <v-img :src="n.image" class="mygradient" contain>
-                  <div class="fill-height mygradient"></div>
-                </v-img>
-                <v-card-title class="orange--text darken-3 text-left text-break">{{n.title}}</v-card-title>
-                <v-card-text class="font-weight-light">{{n.text}}</v-card-text>
-              </v-card>
+              <CardWidu v-for="(n, i) in dt_sec5" :key="i" v-bind:dataCard="n" />
             </v-col>
           </v-row>
         </v-card>
@@ -128,6 +108,7 @@
 </template>
 
 <script>
+import CardWidu from "../components/CardWidu";
 export default {
   name: "Help",
   data: () => ({
@@ -152,6 +133,9 @@ export default {
         image: require("@/assets/Image 19.png")
       }
     ]
-  })
+  }),
+  components: {
+    CardWidu
+  }
 };
 </script>

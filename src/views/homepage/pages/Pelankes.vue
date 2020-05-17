@@ -1,27 +1,4 @@
 <style type="text/css" scoped>
-.box {
-  width: 350px;
-  height: 60px;
-  padding: 15px;
-  border-radius: 0px;
-  background-color: #2a2926;
-  box-shadow: 0cm 15px 20px rgba(0, 0, 0, 0.2);
-  font-size: 125%;
-  color: #fff;
-  text-align: center;
-}
-
-.boxhead {
-  width: 1850px;
-  height: 60px;
-  padding: 15px;
-  border-radius: 0px;
-  background-color: rgba(17, 10, 10, 0.897);
-  box-shadow: 0cm 15px 20px rgba(0, 0, 0, 0.2);
-  font-size: 125%;
-  color: #fff;
-  text-align: right;
-}
 </style>
 <template>
   <v-container fluid>
@@ -75,55 +52,15 @@
           class="display-1 font-weight-text orange--text darken-3"
         >Dokter Kami Yang Ramah Dan Walas Asih</p>
       </v-col>
-      <v-col class="d-flex justify-space-around">
-        <v-card width="350">
-          <v-col>
-            <v-img src="@/assets/image/laman.png" aspect-ratio="1.5" />
-          </v-col>
-          <v-card-title
-            class="box font-weight-bold orange--text darken-3 text-left text-break"
-          >Berpengalaman</v-card-title>
-          <v-card-text class="body-1 font-weight-light">
-            Pengalaman sangat penting bagi kami.
-            Penyedia kami memiliki pengalaman yang
-            sudah bertahun-tahun. Karena perawatan
-            kesehatan yang berkualitas mulai dengan
-            dokter yang berkualitas.
-          </v-card-text>
-        </v-card>
-
-        <v-card width="350">
-          <v-col>
-            <v-img src="@/assets/image/lisensi.png" aspect-ratio="1.5" />
-          </v-col>
-          <v-card-title
-            class="box font-weight-bold orange--text darken-3 text-left text-break"
-          >Berlisensi dan Bersertifikat</v-card-title>
-          <v-card-text class="body-1 font-weight-light">
-            Penyedia kami bersertifikat IDI, mereka
-            adalah praktisi berlisensi Negara dan
-            telah memenuhi persyaratan. Dokter
-            kami terus mengukur kompetensi praktek
-            dokter di setiap spesialisasinya.
-          </v-card-text>
-        </v-card>
-
-        <v-card width="350">
-          <v-col>
-            <v-img src="@/assets/image/keamana.png" aspect-ratio="1.5" />
-          </v-col>
-          <v-card-title
-            class="box font-weight-bold orange--text darken-3 text-left text-break"
-          >Perlindungan & Keamanan</v-card-title>
-          <v-card-text class="body-1 font-weight-light">
-            Informasi pribadi dan riwayat kesehatan
-            kamu dilindungi dengan aman. Semua
-            pertemuan diarsipkan secara digital dengan
-            tingkat keamanan tertinggi dan hanya dapat
-            diakses oleh kamu dan dokter-nya.
-          </v-card-text>
-        </v-card>
-      </v-col>
+      <v-row>
+        <v-col align-self="center" class="d-flex justify-space-around">
+          <v-row align="center">
+            <v-col cols="12" class="d-flex justify-space-around">
+              <CardWidu v-for="(n, i) in dt_sec5" :key="i" v-bind:dataCard="n" />
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-row>
 
     <v-row class="justify-space-around">
@@ -172,7 +109,33 @@
 </template>
 
 <script>
+import CardWidu from "../components/CardWidu";
 export default {
-  name: "pelankes"
+  name: "pelankes",
+  data: () => ({
+    dt_sec5: [
+      {
+        title: "Berpengalaman",
+        text:
+          "Pengalaman sangat penting bagi kami. Penyedia kami memiliki pengalaman yang sudah bertahun-tahun. Karena perawatan kesehatan yang berkualitas mulai dengan dokter yang berkualitas.",
+        image: require("@/assets/image/laman.png")
+      },
+      {
+        title: "Berlisensi dan Bersertifikat",
+        text:
+          "Penyedia kami bersertifikat IDI, mereka adalah praktisi berlisensi Negara dan telah memenuhi persyaratan. Dokter kami terus mengukur kompetensi praktek dokter di setiap spesialisasinya.",
+        image: require("@/assets/image/lisensi.png")
+      },
+      {
+        title: "Perlindungan & Keamanan",
+        text:
+          "Informasi pribadi dan riwayat kesehatan kamu dilindungi dengan aman. Semua pertemuan diarsipkan secara digital dengan tingkat keamanan tertinggi dan hanya dapat diakses oleh kamu dan dokter-nya.",
+        image: require("@/assets/image/keamana.png")
+      }
+    ]
+  }),
+  components: {
+    CardWidu
+  }
 };
 </script>
