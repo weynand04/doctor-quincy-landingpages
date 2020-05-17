@@ -59,9 +59,9 @@
             <v-col cols="12">
               <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
             </v-col>
-            <v-col cols="12" md="6" class="list__widu">
-              <ul>
-                <li v-for="list in item.list" :key="list.title">{{list.title}}</li>
+            <v-col cols="12" md="6" class="text__widu list__widu">
+              <ul v-for="list in item.list" :key="list.title">
+                <li>{{list.title}}</li>
               </ul>
             </v-col>
             <v-col cols="12" md="6">
