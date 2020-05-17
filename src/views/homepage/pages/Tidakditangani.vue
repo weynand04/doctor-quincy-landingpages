@@ -10,8 +10,8 @@
             >{{item.judul}}</v-card-title>
             <v-card-subtitle class="text__widu font-weight-medium pt-3">{{item.teks}}</v-card-subtitle>
             <v-card-actions>
-              <base-material-button>LOGIN</base-material-button>
-              <base-material-button>REGISTER</base-material-button>
+              <v-btn rounded class="elevation-0" color="primary">Login</v-btn>
+              <v-btn rounded outlined color="primary">Partner</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
