@@ -39,12 +39,6 @@
         left: 300px;
     }
 
-    li,
-    p {
-        font-size: 110%;
-        color: #6b6b6b;
-    }
-
     .box {
         width: 500px;
         height: 60px;
@@ -56,16 +50,27 @@
         text-align: center;
     }
 
+    li {
+        position: relative;
+        padding-left: 20px;
+        margin-top: 2px;
+    }
+
     ul {
         list-style: none;
     }
 
-    ul li::before {
-        content: "\2022";
+    li::before {
+        content: "";
         color: #f8b218;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        background-image: url('C:/xampp/htdocs/doctorquisy-fe/src/assets/dot.png');
+        background-size: cover;
+        background-position: center;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
