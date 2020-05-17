@@ -5,6 +5,11 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  scrollBehavior: (to, from, savedPosition) => ({
+    y: 0,
+    x: 0
+
+  }),
   base: process.env.BASE_URL,
   routes: [{
       path: '/',
