@@ -133,6 +133,16 @@
               </ul>
               <br />
             </v-card-text>
+            <v-card-title class="title__widu font-weight-bold orange--text text-break">
+              Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah
+              <br />Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:
+            </v-card-title>
+            <v-card-text class="body-1 font-weight black--text">
+              <ul id="example-1">
+                <li v-for="x in list1" :key="x.text">{{ x.text }}</li>
+              </ul>
+              <br />
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
