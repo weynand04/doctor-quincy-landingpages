@@ -10,8 +10,8 @@
             >{{item.judul}}</v-card-title>
             <v-card-subtitle class="subtitle__widu font-weight-medium pt-3">{{item.teks}}</v-card-subtitle>
             <v-card-actions>
-              <base-material-button>PARTNER</base-material-button>
-              <base-material-button>MEMBER</base-material-button>
+              <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
+              <v-btn rounded outlined color="primary">Partner</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -108,7 +108,11 @@
       </v-row>
 
       <!-- Content #4 -->
-      <v-row v-for="item in section.contentEmpat" :key="item.teks" class="d-flex justify-center">
+      <v-row
+        v-for="(item, index) in section.contentEmpat"
+        :key="index"
+        class="d-flex justify-center"
+      >
         <v-col cols="12" md="6">
           <v-img
             :src="item.image"
