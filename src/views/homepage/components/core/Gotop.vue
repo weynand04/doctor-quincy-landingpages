@@ -8,10 +8,12 @@
       fixed
       bottom
       right
+      small
       color="primary"
+      class="elevation-2"
       @click="toTop"
     >
-      <v-icon>mdi-chevron-up</v-icon>
+      <v-icon large>mdi-chevron-up</v-icon>
     </v-btn>
   </div>
 </template>

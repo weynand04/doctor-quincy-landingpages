@@ -10,9 +10,11 @@
     content: "";
     display: block;
     width: 0;
-    height: 2px;
+    height: 3px;
     background: #f8b218;
     transition: width 0.3s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   a:hover::after {
     width: 100%;
