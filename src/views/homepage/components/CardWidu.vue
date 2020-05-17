@@ -1,9 +1,9 @@
 <template>
-  <v-card width="350" class="ma-5 elevation-1" id="rounded-card">
+  <v-card width="320" class="ma-3 elevation-1" id="rounded-card">
     <v-img :src="dataCard.image">
       <div class="fill-height mygradient"></div>
     </v-img>
-    <v-card-title class="orange--text darken-3 text-left text-break">{{dataCard.title}}</v-card-title>
+    <v-card-title class="title justify-center text-center text-break">{{dataCard.title}}</v-card-title>
     <v-card-text class="font-weight-light">{{dataCard.text}}</v-card-text>
   </v-card>
 </template>
