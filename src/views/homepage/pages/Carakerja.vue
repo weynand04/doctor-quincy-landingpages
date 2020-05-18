@@ -48,7 +48,7 @@
       </v-col>
       <v-card width="350">
         <v-col>
-          <v-img src="@/assets/image/laman.png" aspect-ratio="1.5" />
+          <v-img src="@/assets/image/Image 19.png" aspect-ratio="1.5" />
         </v-col>
         <v-card-title
           class="box font-weight-bold orange--text darken-3 text-left text-break"
@@ -60,7 +60,7 @@
 
       <v-card width="350">
         <v-col>
-          <v-img src="@/assets/image/lisensi.png" aspect-ratio="1.5" />
+          <v-img src="@/assets/image/Mask Group 9.png" aspect-ratio="1.5" />
         </v-col>
         <v-card-title
           class="box font-weight-bold orange--text darken-3 text-left text-break"
@@ -72,7 +72,7 @@
 
       <v-card width="350">
         <v-col>
-          <v-img src="@/assets/image/keamana.png" aspect-ratio="1.5" />
+          <v-img src="@/assets/image/Mask Group 6.png" aspect-ratio="1.5" />
         </v-col>
         <v-card-title
           class="box font-weight-bold orange--text darken-3 text-left text-break"

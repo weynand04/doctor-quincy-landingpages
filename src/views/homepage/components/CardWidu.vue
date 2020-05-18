@@ -23,7 +23,7 @@ export default {
   width: 100%;
   height: 70px;
   bottom: 0;
-  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/wave1.svg");
+  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/image/wave.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }

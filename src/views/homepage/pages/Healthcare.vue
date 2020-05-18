@@ -10,7 +10,7 @@
           >Home Health Care</v-card-title>
           <v-card-text class="text__widu black--text text-break">
             <v-img
-              src="@/assets/image/gambar lain-02.png"
+              src="@/assets/image/svg/gambar lain-02.svg"
               width="320px"
               height="240px"
               class="float-right mb-3"
@@ -26,7 +26,7 @@
             <p>Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
             <br />
             <v-img
-              src="@/assets/image/gambar lain-09.png"
+              src="@/assets/image/svg/gambar lain-09.svg"
               width="362px"
               height="306px"
               contain
@@ -71,7 +71,7 @@
             <v-row class="justify-space-around">
               <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
                 <v-img
-                  src="@/assets/image/gambar lain-03.png"
+                  src="@/assets/image/svg/gambar lain-03.svg"
                   aspect-ratio="1.2"
                   width="497px"
                   height="350px"
@@ -100,7 +100,12 @@
       <!---->
 
       <div class="pl-12 ml-10">
-        <img src="@/assets/image/gambar lain-04.png" style="float:right;" width="591" height="529" />
+        <img
+          src="@/assets/image/svg/gambar lain-04.svg"
+          style="float:right;"
+          width="591"
+          height="529"
+        />
         <!-- 491 * 429 -->
         <p
           class="title__widu font-weight-bold orange--text text-break"
@@ -119,7 +124,7 @@
       <!--  -->
       <v-row class="justify-space-around">
         <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
-          <v-img src="@/assets/image/gambar lain-05.png" aspect-ratio="1.2" contain />
+          <v-img src="@/assets/image/svg/gambar lain-05.svg" aspect-ratio="1.2" contain />
         </v-col>
         <v-col md="8" sm="12" align-self="start">
           <v-card flat>
@@ -150,7 +155,12 @@
       <!--  -->
       <!--  -->
       <div class="pl-12 ml-10">
-        <img src="@/assets/image/gambar lain-06.png" style="float:right;" width="491" height="429" />
+        <img
+          src="@/assets/image/svg/gambar lain-06.svg"
+          style="float:right;"
+          width="491"
+          height="429"
+        />
         <p
           class="title__widu font-weight-bold orange--text text-break"
         >Layanan Perawatan Kesehatan Rumah Dengan Perawat Welas Asih</p>
@@ -167,7 +177,7 @@
       <!--  -->
       <v-row class="justify-space-around">
         <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around">
-          <v-img src="@/assets/image/gambar lain-07.png" aspect-ratio="1.2" contain />
+          <v-img src="@/assets/image/svg/gambar lain-07.svg" aspect-ratio="1.2" contain />
         </v-col>
         <v-col md="8" sm="12" align-self="start">
           <v-card flat>
@@ -195,7 +205,7 @@
           </v-card>
         </v-col>
         <v-col md="5" sm="12">
-          <v-img src="@/assets/image/gambar lain-08.png" aspect-ratio="1.2" contain />
+          <v-img src="@/assets/image/svg/gambar lain-08.svg" aspect-ratio="1.2" contain />
         </v-col>
       </v-row>
       <!--  -->

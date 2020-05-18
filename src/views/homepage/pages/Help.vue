@@ -17,7 +17,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-img src="@/assets/image/gambar lain-11.png" width="562px" height="506px" contain />
+        <v-img src="@/assets/image/svg/gambar lain-11.svg" width="562px" height="506px" contain />
       </v-col>
     </v-row>
 
@@ -41,7 +41,7 @@
           >Home Health Care</v-card-title>
           <v-card-text>
             <v-img
-              src="@/assets/gambar-lain-02.png"
+              src="@/assets/image/svg/gambar lain-02.svg"
               height="328px"
               width="389px"
               class="float-right"
@@ -100,7 +100,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/gambar lain-09.png" width="562px" height="506px" contain />
+          <v-img src="@/assets/image/svg/gambar lain-09.svg" width="562px" height="506px" contain />
         </v-col>
       </v-card>
     </v-row>
@@ -118,19 +118,19 @@ export default {
           "Perawatan Kesehatan Yang Berkualitas Dimulai Dengan Dokter Yang Berkualitas",
         text:
           "Kami menjamin kesehatan kamu dari A hingga Z dan Dokter Quincy disini untuk mendukung kesejahteraan kamu seiring waktu. Dari dokter hingga psikolog, kami membantu mendukung perjalanan kesehatan kamu. ",
-        image: require("@/assets/Mask Group 4.png")
+        image: require("@/assets/image/Mask Group 4.png")
       },
       {
         title: "Biaya Terjangkau Dan Transparan",
         text:
           "Layanan Doctor Quincy tersedia secara nasional dan internasional, dengan atau tanpa asuransi. Gratis untuk bergabung, dan biaya dokter kunjungan kamu selalu ditampilkan di muka sehingga kamu tahu berapa biayanya, tanpa tagihan kejutan nanti.",
-        image: require("@/assets/Image 18.png")
+        image: require("@/assets/image/Image 18.png")
       },
       {
         title: "Biaya Terjangkau Dan Transparan",
         text:
           "Layanan Doctor Quincy tersedia secara nasional dan internasional, dengan atau tanpa asuransi. Gratis untuk bergabung, dan biaya dokter kunjungan kamu selalu ditampilkan di muka sehingga kamu tahu berapa biayanya, tanpa tagihan kejutan nanti. ",
-        image: require("@/assets/Image 19.png")
+        image: require("@/assets/image/Image 19.png")
       }
     ]
   }),

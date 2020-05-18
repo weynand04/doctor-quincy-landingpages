@@ -97,7 +97,7 @@ export default {
         banner: [
           {
             judul: "Penyedia Layanan Kesehatan",
-            image: require("@/assets/image/pelkes.png"),
+            image: require("@/assets/image/Group 2569.png"),
             teks: [
               {
                 list: "Meningkatkan perawatan kesehatan"
@@ -141,19 +141,19 @@ export default {
                 title: "Berpengalaman",
                 text:
                   "Pengalaman sangat penting bagi kami. Penyedia kami memiliki pengalaman yang sudah bertahun-tahun. Karena perawatan kesehatan yang berkualitas mulai dengan dokter yang berkualitas.",
-                image: require("@/assets/image/laman.png")
+                image: require("@/assets/image/Image 19.png")
               },
               {
                 title: "Berlisensi dan Bersertifikat",
                 text:
                   "Penyedia kami bersertifikat IDI, mereka adalah praktisi berlisensi Negara dan telah memenuhi persyaratan. Dokter kami terus mengukur kompetensi praktek dokter di setiap spesialisasinya.",
-                image: require("@/assets/image/lisensi.png")
+                image: require("@/assets/image/Mask Group 9.png")
               },
               {
                 title: "Perlindungan & Keamanan",
                 text:
                   "Informasi pribadi dan riwayat kesehatan kamu dilindungi dengan aman. Semua pertemuan diarsipkan secara digital dengan tingkat keamanan tertinggi dan hanya dapat diakses oleh kamu dan dokter-nya.",
-                image: require("@/assets/image/keamana.png")
+                image: require("@/assets/image/Mask Group 6.png")
               }
             ]
           }

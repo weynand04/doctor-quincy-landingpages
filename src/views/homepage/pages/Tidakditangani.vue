@@ -85,7 +85,7 @@ export default {
             judul: "Kondisi yang tidak Kami Tangani",
             teks:
               "Ini adalah kondisi yang saat ini tidak ditangani oleh penyedia kami. Kami menyarankan agar langsung ke rumah sakit terdekat, atau mengunjungi pusat perawatan gawat darurat terdekat, tergantung pada tingkat keparahan masalahnya.",
-            image: require("@/assets/gambar lain-11.png")
+            image: require("@/assets/image/svg/gambar lain-11.svg")
           }
         ]
       },
@@ -94,7 +94,7 @@ export default {
           {
             judul:
               "Ini adalah kondisi yang saat ini tidak ditangani oleh penyedia kami. Kami menyarankan agar langsung ke rumah sakit terdekat, atau mengunjungi pusat perawatan gawat darurat terdekat, tergantung pada tingkat keparahan masalahnya.",
-            image: require("@/assets/Mask Group 13.png"),
+            image: require("@/assets/image/Mask Group 13.png"),
             list: [
               {
                 title:
@@ -187,7 +187,7 @@ export default {
                 title: "Tidak dapat meresepkan kodein atau oksikodon."
               }
             ],
-            image: require("@/assets/Image 17.png")
+            image: require("@/assets/image/Image 17.png")
           }
         ]
       }

@@ -114,13 +114,7 @@
         class="d-flex justify-center"
       >
         <v-col cols="12" md="6">
-          <v-img
-            :src="item.image"
-            style="margin-left: 85px"
-            max-height="601"
-            max-width="566"
-            contain
-          />
+          <v-img :src="item.image" max-height="601" max-width="566" contain />
         </v-col>
         <v-col cols="12" md="6" align-self="center">
           <v-card flat width="450">
@@ -165,7 +159,7 @@ export default {
           {
             judul: "Web Solutions Designed for our Doctors",
             teks: "Be Our Patner",
-            image: require("@/assets/image/artwork-01.png")
+            image: require("@/assets/image/svg/artwork-01.svg")
           }
         ]
       },
