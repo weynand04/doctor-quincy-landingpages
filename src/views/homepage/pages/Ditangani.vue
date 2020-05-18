@@ -17,7 +17,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-img src="@/assets/image/Group 1031.png" width="562px" height="506px" contain />
+        <v-img src="@/assets/image/Group 1031.png" width="562px" height="506px" cont ain />
       </v-col>
     </v-row>
 
@@ -33,30 +33,15 @@
         </v-card>
       </v-col>
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card flat color="transparent" width="90%" class="mt-n9 pt-0">
+        <v-card flat color="transparent" width="90%">
           <v-row>
-            <v-col cols="12" md="4">
-              <v-list color="transparent" dense>
-                <v-list-item-group>
-                  <v-list-item v-for="(i, index) in item.list" :key="index">
-                    <v-list-item-icon>
-                      <v-icon dense>mdi-circle</v-icon>
-                    </v-list-item-icon>
-                    <v-list-item-content>
-                      <v-list-item-title>{{i.title}}</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-list-item-group>
-              </v-list>
-            </v-col>
-            <v-col cols="12" md="8" class="mt-3">
-              <p class="text__widu text__widu font-weight-ligh">
-                Ketika salah satu penyakit di sebelah kiri diklik, maka rincian subjek akan muncul
-                <b>DALAM KOTAK INI</b>
-              </p>
-              <p
-                class="text__widu font-weight-bold red--text"
-              >Silakan lihat detail masing-masing penyakit di dalam folder data.</p>
+            <v-col cols="12">
+              <v-expansion-panels focusable>
+                <v-expansion-panel v-for="(i, index) in item.list" :key="index">
+                  <v-expansion-panel-header class="pt-0 pl-4 pr-4 pt-0">{{i.title}}</v-expansion-panel-header>
+                  <v-expansion-panel-content class="pt-0 pl-4 pr-4 pt-0">{{i.desc}}</v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
             </v-col>
           </v-row>
         </v-card>
@@ -77,16 +62,24 @@ export default {
           "Ketika kamu atau anggota keluarga sakit dan perlu menemui dokter, tim dokter kami siap siaga setiap saat. Tersedia 24/7, tim penyedia dokter kami dapat membantu kamu bahkan dengan resep obat, jika diperlukan.",
         list: [
           {
-            title: "Perawatan Medis"
+            title: "Perawatan Medis",
+            desc:
+              "Ketika kamu atau anggota keluarga sakit dan perlu menemui dokter, tim dokter kami siap siaga setiap saat. Tersedia 24/7, tim penyedia dokter kami dapat membantu kamu bahkan dengan resep obat, jika diperlukan."
           },
           {
-            title: "Masalah kulit"
+            title: "Masalah kulit",
+            desc:
+              "Ketika kamu atau anggota keluarga sakit dan perlu menemui dokter, tim dokter kami siap siaga setiap saat. Tersedia 24/7, tim penyedia dokter kami dapat membantu kamu bahkan dengan resep obat, jika diperlukan."
           },
           {
-            title: "Kesehatan Wanita"
+            title: "Kesehatan Wanita",
+            desc:
+              "Ketika kamu atau anggota keluarga sakit dan perlu menemui dokter, tim dokter kami siap siaga setiap saat. Tersedia 24/7, tim penyedia dokter kami dapat membantu kamu bahkan dengan resep obat, jika diperlukan."
           },
           {
-            title: "Kesehatan Pria"
+            title: "Kesehatan Pria",
+            desc:
+              "Ketika kamu atau anggota keluarga sakit dan perlu menemui dokter, tim dokter kami siap siaga setiap saat. Tersedia 24/7, tim penyedia dokter kami dapat membantu kamu bahkan dengan resep obat, jika diperlukan."
           }
         ]
       },
