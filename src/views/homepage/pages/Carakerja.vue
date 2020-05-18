@@ -46,40 +46,12 @@
         <p class="display-1 font-weight-text orange--text darken-3">Daftar Sekarang</p>
         <p>Kamu tidak bisa membuat rencana saat kamu jatuh sakit, akan tetapi kamu dapat memiliki Dokter Quincy setiap saat, dan mendapatkan layanan kesehatan yang kamu butuhkan di manapun saja kamu berada.</p>
       </v-col>
-      <v-card width="350">
-        <v-col>
-          <v-img src="@/assets/image/Image 19.png" aspect-ratio="1.5" />
-        </v-col>
-        <v-card-title
-          class="box font-weight-bold orange--text darken-3 text-left text-break"
-        >Langkah 1</v-card-title>
-        <v-card-text
-          class="body-1 font-weight-light"
-        >Menyiapkan akun aman kamu hanya membutuhkan waktu sekitar 15 menit. Kemudian, kamu sudah siap untuk dikunjungi oleh dokter berdasarkan pada permintaan kamu. Jangan lupa mengunduh aplikasi gratis kami dan selalu siap di mana saja kapan saja.</v-card-text>
-      </v-card>
-
-      <v-card width="350">
-        <v-col>
-          <v-img src="@/assets/image/Mask Group 9.png" aspect-ratio="1.5" />
-        </v-col>
-        <v-card-title
-          class="box font-weight-bold orange--text darken-3 text-left text-break"
-        >Langkah 2</v-card-title>
-        <v-card-text
-          class="body-1 font-weight-light"
-        >Telusuri melalui jaringan dokter- dokter berkualifikasi kami dan pilih yang tepat untuk kamu. Kemudian buat permintaan dan tunggu dokter akan segera mengunjungi kamu atau boleh buat jadwal atau janji dengan dokter-nya untuk waktu yang sesuai buat kamu</v-card-text>
-      </v-card>
-
-      <v-card width="350">
-        <v-col>
-          <v-img src="@/assets/image/Mask Group 6.png" aspect-ratio="1.5" />
-        </v-col>
-        <v-card-title
-          class="box font-weight-bold orange--text darken-3 text-left text-break"
-        >Langkah 3</v-card-title>
-        <v-card-text
-          class="body-1 font-weight-light"
-        >Bicaralah dengan dokter-nya tentang masalah kesehatan kamu. Dokter akan memeriksa kamu untuk cari tahu apa gejala atau penyakitnya. dokter akan merekomendasikan perawatan dan bahkan dapat memberikan resep obat ke apotek terdekat jika kamu memerlukannya</v-card-text>
+      <v-card flat>
+        <v-row align="center">
+          <v-col cols="12" class="d-flex justify-space-around">
+            <CardWidu v-for="(n, i) in langka_kerja" :key="i" v-bind:dataCard="n" />
+          </v-col>
+        </v-row>
       </v-card>
     </v-row>
     <br />
@@ -93,6 +65,7 @@
         <p>Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</p>
       </v-col>
     </v-row>
+
     <v-row class="justify-space-around">
       <v-col md="3" sm="12" align-self="rigth" class="justify-spcace-around">
         <v-img
@@ -204,7 +177,89 @@
 </template>
 
 <script>
+import CardWidu from "../components/CardWidu";
+
 export default {
-  name: "Carakerja"
+  name: "Carakerja",
+  data: () => ({
+    langka_kerja: [
+      {
+        image: require("@/assets/image/Image 19.png"),
+        title: "Langkah 1",
+        text:
+          "Menyiapkan akun aman kamu hanya membutuhkan waktu sekitar 15 menit. Kemudian, kamu sudah siap untuk dikunjungi oleh dokter berdasarkan pada permintaan kamu. Jangan lupa mengunduh aplikasi gratis kami dan selalu siap di mana saja kapan saja."
+      },
+      {
+        image: require("@/assets/image/Mask Group 9.png"),
+        title: "Langkah 2",
+        text:
+          "Telusuri melalui jaringan dokter- dokter berkualifikasi kami dan pilih yang tepat untuk kamu. Kemudian buat permintaan dan tunggu dokter akan segera mengunjungi kamu atau boleh buat jadwal atau janji dengan dokter-nya untuk waktu yang sesuai buat kamu"
+      },
+      {
+        image: require("@/assets/image/Mask Group 6.png"),
+        title: "Langkah 3",
+        text:
+          "Bicaralah dengan dokter-nya tentang masalah kesehatan kamu. Dokter akan memeriksa kamu untuk cari tahu apa gejala atau penyakitnya. dokter akan merekomendasikan perawatan dan bahkan dapat memberikan resep obat ke apotek terdekat jika kamu memerlukannya"
+      }
+    ],
+    list_bantuan: [
+      {
+        title: "Medis",
+        data: [
+          "Pilek",
+          "Alergi",
+          "Sembelit",
+          "Diare",
+          "Demam",
+          "Asma",
+          "Gigi",
+          "Sakit Kepala",
+          "Muntah",
+          "Mata Merah Mudah",
+          "Sakit Tenggorokan",
+          "DLL"
+        ]
+      },
+      {
+        title: "Perikalu & Jiwa",
+        data: [
+          "Kecanduan",
+          "Gangguan bipolar",
+          "Depresi",
+          "Stres",
+          "Gangguan Jiwa",
+          "Trauma & PTSD",
+          "Gangguan Makan",
+          "Hubungan",
+          "Gangguan panik",
+          "Duka dan Kehilangan",
+          "Dukungan LGBTQ",
+          "Kegelisahan",
+          "DLL"
+        ]
+      },
+      {
+        title: "Dermatologi",
+        data: [
+          "Jerawat",
+          "Ruam",
+          "Bintik-Bintik",
+          "Eksim",
+          "Kutil",
+          "Rosacea",
+          "Psorias",
+          "Folikel Rambut",
+          "Gigitan Serangga",
+          "Luka Dingin",
+          "Luka Kulit",
+          "Seluitis",
+          "DLL"
+        ]
+      }
+    ]
+  }),
+  components: {
+    CardWidu
+  }
 };
 </script>
