@@ -80,7 +80,7 @@ export default {
     ],
     toolitems: [
       { path: "/", title: "Home" },
-      { path: "/#", title: "Be our Partner" },
+      { path: "pages/register", title: "Be our Partner" },
       { path: "help", title: "Help" }
     ]
   }),
