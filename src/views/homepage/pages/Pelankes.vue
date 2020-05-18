@@ -88,6 +88,7 @@
 
 <script>
 import CardWidu from "../components/CardWidu";
+
 export default {
   name: "pelankes",
   data: () => ({
