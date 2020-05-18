@@ -33,17 +33,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card flat color="transparent" width="90%">
-          <v-row>
-            <v-col cols="12">
-              <v-expansion-panels focusable>
-                <v-expansion-panel v-for="(i, index) in item.list" :key="index">
-                  <v-expansion-panel-header class="pt-0 pl-4 pr-4 pt-0">{{i.title}}</v-expansion-panel-header>
-                  <v-expansion-panel-content class="pt-0 pl-4 pr-4 pt-0">{{i.desc}}</v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
+        <v-card flat color="transparent" class="col-11 mt-n6">
+          <v-expansion-panels hover inset>
+            <v-expansion-panel v-for="(i, index) in item.list" :key="index">
+              <v-expansion-panel-header class="pt-0 pl-5 font-weight-bold">{{i.title}}</v-expansion-panel-header>
+              <v-expansion-panel-content class="pt-0 pa-5">{{i.desc}}</v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </v-card>
       </v-col>
     </v-row>
@@ -90,16 +86,24 @@ export default {
           "Tim kami yang beraneka ragam dari psikolog berlisensi dan psikiater bersertifikat memberikan dukungan emosional yang kamu butuhkan dari privasi dan kemudahan rumah. Dari terapi bicara hingga manajemen pengobatan, tim kami ada disini, siap untuk mendukung kesehatan mental kamu sepenuhnya.",
         list: [
           {
-            title: "Perawatan Medis"
+            title: "Perawatan Medis",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Masalah kulit"
+            title: "Masalah kulit",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kesehatan Wanita"
+            title: "Kesehatan Wanita",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kesehatan Pria"
+            title: "Kesehatan Pria",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           }
         ]
       },
@@ -110,22 +114,34 @@ export default {
           "Tim layanan kesehatan kami yang penuh perhatian ada disini untuk mendukung kesehatan kamu dan rutinitas perawatan-diri sehari-hari. Dari makan sehat hingga pemeriksaan laboratorium preventif, Doctor Quincy menyatukan penyedia tepercaya dengan solusi yang benar-benar bekerja di dunia nyata.",
         list: [
           {
-            title: "Kujungan kesehatan"
+            title: "Kujungan kesehatan",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kesehatan Keluarga "
+            title: "Kesehatan Keluarga ",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kebugaran Wanita"
+            title: "Kebugaran Wanita",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kebugaran Pria"
+            title: "Kebugaran Pria",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Diet & Nutrisi"
+            title: "Diet & Nutrisi",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Manajemen Obat-obatan"
+            title: "Manajemen Obat-obatan",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           }
         ]
       },
@@ -136,22 +152,34 @@ export default {
           "Pendekatan kami adalah merawat dan memberi kamu dan keluarga sistem perawatan kesehatan yang fleksibel s aat dibutuhkan. Ketika kamu perlu mengelola kondisi kesehatan yang berkelanjutan atau kronis, Dokter Quincy membuatnya mudah hanya dengan satu sentuhan tombol.",
         list: [
           {
-            title: "Asma"
+            title: "Asma",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Kolesterol Tinggi"
+            title: "Kolesterol Tinggi",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Tekanan Darah Tinggi"
+            title: "Tekanan Darah Tinggi",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Manajemen Berat Badan"
+            title: "Manajemen Berat Badan",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Diabetes"
+            title: "Diabetes",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           },
           {
-            title: "Masalah Tiroid"
+            title: "Masalah Tiroid",
+            desc:
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reiciendis quis, veritatis vitae fuga voluptatem itaque iure suscipit architecto commodi id aspernatur eius minima. Facere natus consectetur eveniet commodi harum!"
           }
         ]
       }
