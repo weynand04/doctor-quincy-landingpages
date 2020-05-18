@@ -1,7 +1,8 @@
 <style lang="scss" scoped>
 .v-application {
-  a.router-link-active {
+  a.router-link-active::after {
     color: #f8b218;
+    width: 100%;
   }
   a {
     color: black;
@@ -26,13 +27,10 @@
   a:focus::after {
     width: 100%;
   }
-  a:focus {
-    color: #f8b218;
-  }
 }
 </style>
   <template>
-  <v-app-bar app elevate-on-scroll color="#FFFF">
+  <v-app-bar app elevate-on-scroll color="#FFFF" class="elevation-1">
     <v-toolbar flat dense>
       <!-- logo FIX -->
       <div class="ml-12 pl-12">
