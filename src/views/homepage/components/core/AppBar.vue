@@ -1,5 +1,8 @@
 <style lang="scss" scoped>
 .v-application {
+  a.router-link-active {
+    color: #f8b218;
+  }
   a {
     color: black;
     margin: auto 10px !important;
@@ -33,15 +36,16 @@
     <v-toolbar flat dense>
       <!-- logo FIX -->
       <div class="ml-12 pl-12">
-        <v-toolbar-title class="logo__title">Dr. Quincy</v-toolbar-title>
+        <v-toolbar-title>
+          <v-img src="@/assets/image/logo.svg" height="50" contain></v-img>
+        </v-toolbar-title>
       </div>
       <!-- menu mitra dan konseling -->
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <router-link v-for="n in toolitems" :key="n.title" :to="n.path">{{n.title}}</router-link>
+        <router-link v-for="n in toolitems" :key="n.title" :to="n.path" exact>{{n.title}}</router-link>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-
       <!-- menu expand FIX -->
       <v-toolbar-items>
         <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
@@ -81,6 +85,11 @@ export default {
       { path: "/#", title: "Be our Partner" },
       { path: "help", title: "Help" }
     ]
-  })
+  }),
+  methods: {
+    curLoc: function() {
+      return window.location.href;
+    }
+  }
 };
 </script>
