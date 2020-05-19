@@ -3,7 +3,6 @@
   <div>
     <v-banner
       style="width: 100%; height: 50px; background-color: #f8b218; position: -webkit-sticky; position: sticky; top: 56px; z-index: 1;"
-      class="d-sm-none d-md-flex text-center mt-0 font-weight-bold"
     >Selamat datang di sumber daya 24 / 7 untuk perawatan kesehatan yang mudah dan nyaman</v-banner>
     <v-container fluid>
       <!-- 1 -->

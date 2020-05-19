@@ -1,5 +1,8 @@
 <style lang="scss" scoped>
 .v-application {
+  a.router-link-active {
+    color: #f8b218;
+  }
   a.router-link-active::after {
     color: #f8b218;
     width: 100%;
@@ -20,9 +23,8 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  a:hover::after {
-    width: 100%;
-    transition: width 0.3s;
+  a:hover {
+    color: #f8b218;
   }
   a:focus::after {
     width: 100%;
@@ -80,7 +82,7 @@ export default {
     ],
     toolitems: [
       { path: "/", title: "Home" },
-      { path: "/#", title: "Be our Partner" },
+      { path: "PagesOnDev", title: "Be our Partner" },
       { path: "help", title: "Help" }
     ]
   }),
