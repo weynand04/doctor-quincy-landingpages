@@ -25,9 +25,9 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Help')
         },
         {
-          name: '403',
-          path: 'PagesOnDev',
-          component: () => import('@/views/homepage/pages/403')
+          name: 'PagesOnDev',
+          path: 'pagesondev',
+          component: () => import('@/views/homepage/pages/Pagesondev')
         },
         {
           name: 'Carakerja',
