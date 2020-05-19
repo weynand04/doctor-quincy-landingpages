@@ -31,12 +31,12 @@
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.14.1",
     "sass": "^1.17.4",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^8.0.2",
     "vue-cli-plugin-vuetify": "^0.6.3",
     "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.2.2",
     "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "eslintConfig": {
     "root": true,

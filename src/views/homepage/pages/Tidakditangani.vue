@@ -4,7 +4,7 @@
       <!-- section #1 -->
       <v-row v-for="item in section.banner" :key="item.teks">
         <v-col cols="12" md="6" align-self="center">
-          <v-card flat class="ml-12 pl-8">
+          <v-container class="ml-12 pl-8">
             <v-card-title
               class="title1__widu font-weight-bold black--text text-break"
             >{{item.judul}}</v-card-title>
@@ -13,7 +13,7 @@
               <v-btn rounded class="elevation-0" color="primary">Login</v-btn>
               <v-btn rounded outlined color="primary">Partner</v-btn>
             </v-card-actions>
-          </v-card>
+          </v-container>
         </v-col>
         <v-col cols="12" md="6">
           <v-img :src="item.image" width="562px" height="506px" contain />
@@ -27,7 +27,7 @@
         justify="center"
         style="background: #FCFCFC"
       >
-        <v-card color="transparent" flat width="85%">
+        <v-container color="transparent" width="85%">
           <v-row>
             <v-col cols="12">
               <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
@@ -49,12 +49,12 @@
               </ul>
             </v-col>
           </v-row>
-        </v-card>
+        </v-container>
       </v-row>
 
       <!-- section #3 -->
       <v-row v-for="item in section.contentdua" :key="item.judul" justify="center">
-        <v-card flat width="85%">
+        <v-container width="85%">
           <v-row>
             <v-col cols="12">
               <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
@@ -68,7 +68,7 @@
               <v-img :src="item.image" contain />
             </v-col>
           </v-row>
-        </v-card>
+        </v-container>
       </v-row>
     </div>
   </v-container>

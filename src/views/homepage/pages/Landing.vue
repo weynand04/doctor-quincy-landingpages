@@ -4,7 +4,7 @@
       <!-- Banner -->
       <v-row v-for="item in section.banner" :key="item.judul">
         <v-col cols="12" md="4" class="d-flex">
-          <v-card flat class="pl-12 ml-8 align-self-start">
+          <v-container class="pl-12 ml-8 align-self-start">
             <v-card-title
               class="title1__widu font-weight-bold black--text text-break"
             >{{item.judul}}</v-card-title>
@@ -13,7 +13,7 @@
               <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
               <v-btn rounded outlined color="primary">Partner</v-btn>
             </v-card-actions>
-          </v-card>
+          </v-container>
         </v-col>
         <v-col cols="12" md="8" class="d-flex right">
           <v-img :src="item.image" width="600" height="600" position="right center" />
@@ -26,8 +26,9 @@
           <v-img :src="item.image" height="400" contain></v-img>
         </v-col>
         <v-col cols="12" md="6" align-self="center">
-          <v-card flat color="transparent">
+          <v-container>
             <v-card-title class="title__widu font-weight-bold orange--text darken-3">{{item.judul}}</v-card-title>
+            <v-spacer></v-spacer>
             <v-card-subtitle class="subtitle2__widu">{{item.teks}}</v-card-subtitle>
             <v-card-actions class="d-flex align-content-start">
               <v-img
@@ -47,14 +48,14 @@
                 contain
               ></v-img>
             </v-card-actions>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
 
       <!-- Content #2 -->
       <v-row v-for="item in section.contentDua" :key="item.judul">
         <v-col sm="12" class="d-flex justify-space-around mb-n12">
-          <v-card class="col-11" color="transparent" flat>
+          <v-container class="col-11" color="transparent">
             <v-card-title
               class="title__widu font-weight-bold orange--text text-break"
             >{{item.judul}}</v-card-title>
@@ -69,7 +70,7 @@
                 <p>{{p.paragraf}}</p>
               </div>
             </v-card-text>
-          </v-card>
+          </v-container>
         </v-col>
         <v-col
           cols="12"
@@ -117,11 +118,11 @@
           <v-img :src="item.image" max-height="601" max-width="566" contain />
         </v-col>
         <v-col cols="12" md="6" align-self="center">
-          <v-card flat width="450">
+          <v-container width="450">
             <v-card-text>
               <p v-for="p in item.teks" :key="p.paragraf" :class="p.class">{{p.paragraf}}</p>
             </v-card-text>
-          </v-card>
+          </v-container>
         </v-col>
         <v-col cols="12" style="background-color:#F8F8F8;" align="center" class="ma-4">
           <p v-for="stiker in item.stikers" :key="stiker.teks" :class="stiker.class">{{stiker.teks}}</p>
@@ -131,7 +132,7 @@
       <!-- Content #5 -->
       <v-row v-for="item in section.contentLima" :key="item.judul">
         <v-col cols="12" class="d-flex justify-space-around">
-          <v-card width="85%" flat>
+          <v-container width="85%">
             <v-card-title
               class="title__widu orange--text darken-3 text-left text-break"
             >{{item.judul}}</v-card-title>
@@ -142,7 +143,7 @@
                 :key="p.paragraf"
               >{{p.paragraf}}</p>
             </v-card-text>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
     </div>
