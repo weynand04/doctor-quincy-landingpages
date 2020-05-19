@@ -17,8 +17,3 @@ export default {
 };
 </script>
 
-<style lang="sass">
-.error-page
-h1
-    font-size: 12rem
-</style>
