@@ -20,9 +20,8 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  a:hover::after {
-    width: 100%;
-    transition: width 0.3s;
+  a:hover {
+    color: #f8b218;
   }
   a:focus::after {
     width: 100%;
@@ -80,7 +79,7 @@ export default {
     ],
     toolitems: [
       { path: "/", title: "Home" },
-      { path: "pages/register", title: "Be our Partner" },
+      { path: "pagesondev", title: "Be our Partner" },
       { path: "help", title: "Help" }
     ]
   }),
