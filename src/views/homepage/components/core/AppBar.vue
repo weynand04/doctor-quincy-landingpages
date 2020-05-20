@@ -32,38 +32,34 @@
 }
 </style>
   <template>
-  <v-app-bar app elevate-on-scroll color="#FFFF" class="elevation-1">
-    <v-toolbar flat dense>
+  <v-app-bar app elevate-on-scroll class="elevation-1" color="#FFF">
+    <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <div class="ml-12 pl-12">
+      <v-col md="4">
         <v-toolbar-title>
           <v-img src="@/assets/image/logo.svg" height="50" contain></v-img>
         </v-toolbar-title>
-      </div>
-      <!-- menu mitra dan konseling -->
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
+      </v-col>
+      <v-col md="4" class="hidden-md-and-down d-md-flex justify-center">
         <router-link v-for="n in toolitems" :key="n.title" :to="n.path" exact>{{n.title}}</router-link>
-      </v-toolbar-items>
-      <v-spacer></v-spacer>
-      <!-- menu expand FIX -->
-      <v-toolbar-items>
+      </v-col>
+      <v-col md="4" class="d-flex justify-end">
         <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" @click="expand = !expand" icon>
-              <v-icon x-large>{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
+              <v-icon color="black">{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
             </v-btn>
           </template>
           <v-list>
-            <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index">
+            <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index" :class="Menuitem.cls">
               <v-list-item-title>
                 <router-link :to="Menuitem.path">{{Menuitem.title}}</router-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
-      </v-toolbar-items>
-    </v-toolbar>
+      </v-col>
+    </v-row>
   </v-app-bar>
 </template>
 
@@ -78,7 +74,13 @@ export default {
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
       { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
       { title: "Home health care", path: "/health-care" },
-      { title: "Penyedia layanan kesehatan", path: "/pelankes" }
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" },
+      {
+        title: "Be our Partner",
+        path: "/*",
+        cls: "hidden-md-and-up"
+      },
+      { title: "Help", path: "/*", cls: "hidden-md-and-up" }
     ],
     toolitems: [
       { path: "/", title: "Home" },
