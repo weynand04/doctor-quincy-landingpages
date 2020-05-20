@@ -35,15 +35,16 @@
   <v-app-bar app elevate-on-scroll class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col md="4">
-        <v-toolbar-title>
-          <v-img src="@/assets/image/logo.svg" height="50" contain></v-img>
+      <v-col cols="4">
+        <v-toolbar-title class="d-flex justify-center">
+          <v-img src="@/assets/image/logo.svg" max-height="50" contain></v-img>
         </v-toolbar-title>
       </v-col>
-      <v-col md="4" class="hidden-md-and-down d-md-flex justify-center">
+      <v-col cols="4" class="hidden-md-and-down d-md-flex justify-center">
         <router-link v-for="n in toolitems" :key="n.title" :to="n.path" exact>{{n.title}}</router-link>
       </v-col>
-      <v-col md="4" class="d-flex justify-end">
+      <v-spacer />
+      <v-col cols="4" class="d-flex justify-end">
         <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" @click="expand = !expand" icon>

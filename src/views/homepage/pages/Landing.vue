@@ -1,28 +1,28 @@
 <template>
-  <v-container id="landing_page" fluid>
+  <div id="landing_page">
     <div v-for="(section, index) in landingpage" :key="index">
       <!-- Banner -->
       <v-container v-for="item in section.banner" :key="item.judul">
-        <v-row class="mb-n5">
+        <v-row no-gutters>
           <v-img
             :src="item.image"
             aspect-ratio="1.9"
             max-height="100%"
             max-width="100%"
-            contain
             position="right center"
-            class="mb-n3"
+            contain
+            class="mb-0"
           >
-            <v-col cols="12" md="6" class="d-flex justify-space-around">
-              <div>
+            <v-col cols="12" class="d-flex justify-space-between">
+              <div class="col-12 col-md-4 col-sm-6">
                 <v-card-title
-                  class="ml-12 display-2 font-weight-bold black--text text-break"
+                  class="display-2 font-weight-bold black--text text-break"
                 >{{item.judul}}</v-card-title>
                 <div>
                   <v-card-subtitle
-                    class="ml-12 mb-5 mt-n7 headline font-weight-medium grey--text text--darken-1"
+                    class="mb-5 mt-n5 headline font-weight-medium grey--text text--darken-1"
                   >{{item.teks}}</v-card-subtitle>
-                  <v-card-actions class="ml-12">
+                  <v-card-actions>
                     <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
                     <v-btn rounded outlined color="primary">Partner</v-btn>
                   </v-card-actions>
@@ -51,7 +51,7 @@
               contain
             ></v-img>
           </v-col>
-          <v-col cols="6" md="6" align-self="center">
+          <v-col style="z-index: 1" cols="6" md="6" align-self="center">
             <div class="flex-row align-content-center">
               <v-card-title
                 class="title font-weight-bold orange--text darken-3 text-break"
@@ -85,35 +85,32 @@
       </v-container>
 
       <!-- Content #2 -->
-      <!-- <v-row v-for="item in section.contentDua" :key="item.judul">
-        <v-col sm="12" class="d-flex justify-space-around mb-n12">
-          <v-container class="col-11" color="transparent">
-            <v-card-title
-              class="title__widu font-weight-bold orange--text text-break"
-            >{{item.judul}}</v-card-title>
-            <v-card-text class="text__widu font-weight-light">
-              <v-img
-                :src="item.image"
-                max-height="185px"
-                max-width="495px"
-                class="float-left mb-3"
-              />
-              <div v-for="p in item.teks" :key="p.paragraf">
-                <p>{{p.paragraf}}</p>
-              </div>
-            </v-card-text>
-          </v-container>
-        </v-col>
-        <v-col
-          cols="12"
-          align="center"
-          v-for="stiker in item.stikers"
-          :key="stiker.tag"
-          :style="stiker.style"
-        >
-          <p :class="stiker.class">{{stiker.tag}}</p>
-        </v-col>
-      </v-row>-->
+      <v-container v-for="item in section.contentDua" :key="item.judul">
+        <v-row>
+          <v-col cols="12" class="d-flex justify-space-around mb-n12">
+            <v-container>
+              <v-card-title
+                class="title__widu font-weight-bold orange--text text-break"
+              >{{item.judul}}</v-card-title>
+              <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
+              <p
+                v-for="p in item.teks"
+                :key="p.paragraf"
+                class="font-weight-medium subtitle-1"
+              >{{p.paragraf}}</p>
+            </v-container>
+          </v-col>
+          <v-col
+            cols="12"
+            align="center"
+            v-for="stiker in item.stikers"
+            :key="stiker.tag"
+            :style="stiker.style"
+          >
+            <p :class="stiker.class">{{stiker.tag}}</p>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <!-- Content #3 -->
       <!-- <v-row v-for="item in section.contentTiga" :key="item.image">
@@ -179,7 +176,7 @@
         </v-col>
       </v-row>-->
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -232,12 +229,8 @@ export default {
               {
                 tag:
                   "Dokter Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
-                class: "text__widu font-weight-bold red--text col-4 ma-n5",
-                style: ""
-              },
-              {
-                tag: "Klik disini untuk detail lebih lanjut",
-                class: "text__widu font-weight-bold blue--text mb-10",
+                class:
+                  "text__widu font-weight-bold red--text col-12 col-sm-6  ",
                 style: ""
               },
               {
