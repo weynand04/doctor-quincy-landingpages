@@ -3,7 +3,7 @@
     <!-- section #1 -->
     <v-row>
       <v-col cols="12" md="6" align-self="center">
-        <v-card flat class="pl-12 ml-8">
+        <v-container class="pl-12 ml-8">
           <v-card-title
             class="title1__widu font-weight-bold black--text text-break"
           >Penyakit Yang Kami Tangani</v-card-title>
@@ -14,7 +14,7 @@
             <v-btn rounded color="primary" class="elevation-0">Login</v-btn>
             <v-btn rounded outlined color="primary">Register</v-btn>
           </v-card-actions>
-        </v-card>
+        </v-container>
       </v-col>
       <v-col cols="12" md="6">
         <v-img src="@/assets/image/Group 1031.png" width="562px" height="506px" cont ain />
@@ -24,23 +24,23 @@
     <!-- section #2  -->
     <v-row v-for="item in section_2" :key="item.judul" :style="item.bg">
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card flat color="transparent" width="90%">
+        <v-container color="transparent" width="90%">
           <v-card-title class="title__widu font-weight-bold orange--text">{{item.judul}}</v-card-title>
           <v-card-text class="text__widu font-weight-ligh">
             <p class="text__widu">{{item.teks}}</p>
           </v-card-text>
           <v-divider></v-divider>
-        </v-card>
+        </v-container>
       </v-col>
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-card flat color="transparent" class="col-11 mt-n6">
-          <v-expansion-panels hover inset>
+        <v-container color="transparent" class="col-11 mt-n6">
+          <v-expansion-panels hover>
             <v-expansion-panel v-for="(i, index) in item.list" :key="index">
               <v-expansion-panel-header class="pt-0 pl-5 font-weight-bold">{{i.title}}</v-expansion-panel-header>
               <v-expansion-panel-content class="pt-0 pa-5">{{i.desc}}</v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
-        </v-card>
+        </v-container>
       </v-col>
     </v-row>
   </v-container>

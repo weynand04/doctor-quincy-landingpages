@@ -7,7 +7,7 @@
           <v-img :src="item.image" width="600" height="600" contain />
         </v-col>
         <v-col cols="12" md="6">
-          <v-card flat>
+          <v-container>
             <v-card-title
               class="title1__widu font-weight-bold black--text text-break"
             >{{item.judul}}</v-card-title>
@@ -16,16 +16,16 @@
                 <li v-for="(li, index) in item.teks" :key="index">{{li.list}}</li>
               </ul>
             </div>
-          </v-card>
+          </v-container>
         </v-col>
         <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
-          <v-card flat width="88%" color="transparent">
+          <v-container width="88%" color="transparent">
             <p
               v-for="(s, index) in item.stiker"
               :key="index"
               class="body-1 font-weight-medium ma-5"
             >{{s.paragraf}}</p>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
 
@@ -36,7 +36,7 @@
         style="background-color:#F2F2F2;"
         justify="space-around"
       >
-        <v-card flat color="transparent" width="88%">
+        <v-container color="transparent" width="88%">
           <v-col cols="12">
             <v-card-title
               class="title__widu font-weight-bold text orange--text darken-3 ma-n4"
@@ -45,19 +45,19 @@
           <v-col cols="12" class="d-flex justify-space-around">
             <CardWidu v-for="(card, index) in item.cards" :key="index" v-bind:dataCard="card" />
           </v-col>
-        </v-card>
+        </v-container>
       </v-row>
 
       <!-- contentDua -->
       <v-row>
         <v-col cols="12" class="d-flex justify-center">
-          <v-card flat width="88%" color="transparent" class="ma-n2">
+          <v-container width="88%" color="transparent" class="ma-n2">
             <p
               v-for="(item, index) in section.contentDua"
               :key="index"
               class="body-1 font-weight-medium"
             >{{item.paragraf}}</p>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
 

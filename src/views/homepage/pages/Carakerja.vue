@@ -21,30 +21,32 @@
           >
             <v-row class="ml-10 pl-10">
               <v-col cols="12" md="4">
-                <v-card flat color="transparent">
+                <v-container color="transparent">
                   <v-card-title
                     class="title1__widu font-weight-bold black--text text-break"
                   >Daftar Sekarang</v-card-title>
+                  <v-spacer />
                   <v-card-subtitle
                     class="text__widu font-weight-medium pt-1"
                   >Bergabunglah dengan jutaan orang yang telahterdaftar sebagai anggota kami untuk akses ke kunjungan dokter langsung dengan menggunakan smartphone, tablet atau laptop atau komputer mereka.</v-card-subtitle>
                   <v-card-actions>
                     <v-btn rounded color="primary" class="elevation-0">Register</v-btn>
                   </v-card-actions>
-                </v-card>
+                </v-container>
               </v-col>
               <v-col cols="12" md="4">
-                <v-card flat color="transparent">
+                <v-container color="transparent">
                   <v-card-title
                     class="title1__widu font-weight-bold black--text text-break"
                   >Login Sekarang</v-card-title>
+                  <v-spacer />
                   <v-card-subtitle
                     class="text__widu font-weight-medium pt-1"
                   >Jika kamu sudah menjadi anggota maka kamu tahu pasti bahwa seorang dokter siap untuk mengunjungi kamu dalam hitungan menit setelah permintaan dan mendapatkan resep obat ke apotek jika diperlukan secara medis.</v-card-subtitle>
                   <v-card-actions>
                     <v-btn rounded outlined color="primary">Member</v-btn>
                   </v-card-actions>
-                </v-card>
+                </v-container>
               </v-col>
             </v-row>
           </v-img>
@@ -75,7 +77,7 @@
           <p>Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</p>
         </v-col>
         <v-col cols="10" class="d-flex my-0 py-0 elevation-2">
-          <v-card flat class="col-4">
+          <v-container class="col-4">
             <v-img
               class="ml-n12 pl-n12"
               src="@/assets/image/Mask Group 11.png"
@@ -84,9 +86,9 @@
               height="350px"
               contain
             />
-          </v-card>
-          <v-card flat class="col-8 d-flex">
-            <v-card flat>
+          </v-container>
+          <v-container class="col-8 d-flex">
+            <v-container>
               <v-card-text class="list__widu body-1 font-weight black--text">
                 <p class="font-weight-bold black--text">Medis</p>
                 <ul>
@@ -105,8 +107,8 @@
                   <!-- Pilek Alergi Sembelit Batuk Diare Demam Asma Gigi Sakit kepala Muntah Mata Merah Muda Sakit tenggorokan Dll -->
                 </ul>
               </v-card-text>
-            </v-card>
-            <v-card flat>
+            </v-container>
+            <v-container>
               <v-card-text class="list__widu body-1 font-weight black--text">
                 <p class="font-weight-bold black--text">Perikalu & Jiwa</p>
                 <ul>
@@ -125,8 +127,8 @@
                   <li>DLL</li>
                 </ul>
               </v-card-text>
-            </v-card>
-            <v-card flat>
+            </v-container>
+            <v-container>
               <v-card-text class="list__widu body-1 font-weight black--text">
                 <p class="font-weight-bold black--text">Dermatologi</p>
                 <ul type="Disc">
@@ -146,8 +148,8 @@
                   <!-- Jerawat Ruam Bintik-bintik Eksim Kutil Rosacea Psorias Folikel rambut Gigitan serangga Luka dingin Luka kulit Selulitis DLL -->
                 </ul>
               </v-card-text>
-            </v-card>
-          </v-card>
+            </v-container>
+          </v-container>
         </v-col>
       </v-row>
 
@@ -155,7 +157,7 @@
       <v-row class="mt-1" no-gutters>
         <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around"></v-col>
         <v-col cols="12" md="6">
-          <v-card flat color="transparent">
+          <v-container color="transparent">
             <v-card-actions class="text-xs-center">
               <v-img
                 src="@/assets/image/google-play-badge.svg"
@@ -174,7 +176,7 @@
                 contain
               ></v-img>
             </v-card-actions>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
     </v-container>

@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters>
         <v-col cols="12">
-          <v-card color="transparent" flat>
+          <v-container color="transparent">
             <v-card-title
               class="title1__widu font-weight-bold black--text text-break"
             >Home Health Care</v-card-title>
@@ -24,16 +24,16 @@
                 class="text__widu font-weight-regular text-break"
               >Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
             </v-card-text>
-          </v-card>
+          </v-container>
         </v-col>
       </v-row>
     </v-container>
 
     <v-container>
       <v-row justify="center">
-        <v-card color="transparent" flat class="d-flex justify-space-around">
+        <v-container color="transparent" class="d-flex justify-space-around">
           <v-col cols="12" md="6" class="d-flex justify-space-around">
-            <v-card class="d-inline justify-space-around col-12">
+            <v-container class="d-inline justify-space-around col-12">
               <v-row style="background: red" class="elevation-2">
                 <v-col>
                   <v-card-title
@@ -71,7 +71,7 @@
                   </ul>
                 </v-col>
               </v-row>
-            </v-card>
+            </v-container>
           </v-col>
           <v-col cols="12" md="6">
             <v-img
@@ -81,7 +81,7 @@
               contain
             />
           </v-col>
-        </v-card>
+        </v-container>
       </v-row>
     </v-container>
 
@@ -104,17 +104,17 @@
       <v-row class="d-flex justify-space-around">
         <v-col cols="12" md="6" class="justify-center">
           <v-img src="@/assets/image/svg/gambar lain-03.svg" height="500" contain />
-          <v-card flat color="transparent" class="d-flex justify-center ma-0 my-0">
+          <v-container color="transparent" class="d-flex justify-center ma-0 my-0">
             <v-img src="@/assets/image/google-play-badge.svg" max-width="100" contain class="ma-2" />
             <v-img
               src="@/assets/image/download-on-the-app-store-apple.svg"
               max-width="100"
               contain
             />
-          </v-card>
+          </v-container>
         </v-col>
         <v-col cols="12" md="6">
-          <v-card flat>
+          <v-container>
             <v-card-title
               class="title__widu font-weight-bold orange--text text-break"
             >Contoh Layanan Kesehatan Di Rumah Yang Terampil Meliputi:</v-card-title>
@@ -124,7 +124,7 @@
               </ul>
               <br />
             </v-card-text>
-          </v-card>
+          </v-container>
           <v-card-title
             class="title__widu font-weight-bold orange--text text-break"
           >Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:</v-card-title>
