@@ -84,8 +84,8 @@ export default {
     ],
     toolitems: [
       { path: "/", title: "Home" },
-      { path: "pagesondev", title: "Be our Partner" },
-      { path: "help", title: "Help" }
+      { path: "/*", title: "Be our Partner" },
+      { path: "/*", title: "Help" }
     ]
   }),
   methods: {

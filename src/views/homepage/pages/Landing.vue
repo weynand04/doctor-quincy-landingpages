@@ -2,26 +2,38 @@
   <v-container id="landing_page" fluid>
     <div v-for="(section, index) in landingpage" :key="index">
       <!-- Banner -->
-      <v-row v-for="item in section.banner" :key="item.judul">
-        <v-col cols="12" md="4" class="d-flex">
-          <v-container class="pl-12 ml-8 align-self-start">
-            <v-card-title
-              class="title1__widu font-weight-bold black--text text-break"
-            >{{item.judul}}</v-card-title>
-            <v-card-subtitle class="subtitle__widu font-weight-medium pt-3">{{item.teks}}</v-card-subtitle>
-            <v-card-actions>
-              <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
-              <v-btn rounded outlined color="primary">Partner</v-btn>
-            </v-card-actions>
-          </v-container>
-        </v-col>
-        <v-col cols="12" md="8" class="d-flex right">
-          <v-img :src="item.image" width="600" height="600" position="right center" />
-        </v-col>
-      </v-row>
+      <v-container>
+        <v-row v-for="item in section.banner" :key="item.judul">
+          <v-img
+            :src="item.image"
+            aspect-ratio="1.9"
+            max-height="100%"
+            max-width="100%"
+            contain
+            position="right center"
+          >
+            <v-col cols="12" md="4" class="d-flex justify-space-around">
+              <div>
+                <div>
+                  <v-card-title
+                    class="ml-12 display-2 font-weight-bold black--text text-break"
+                  >{{item.judul}}</v-card-title>
+                </div>
+                <div>
+                  <v-card-subtitle class="ml-12 display-1 font-weight-medium">{{item.teks}}</v-card-subtitle>
+                  <v-card-actions class="ml-12">
+                    <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
+                    <v-btn rounded outlined color="primary">Partner</v-btn>
+                  </v-card-actions>
+                </div>
+              </div>
+            </v-col>
+          </v-img>
+        </v-row>
+      </v-container>
 
       <!-- Content #1 -->
-      <v-row v-for="item in section.contentSatu" :key="item.judul" style="background: #FCFCFC;">
+      <!-- <v-row v-for="item in section.contentSatu" :key="item.judul" style="background: #FCFCFC;">
         <v-col cols="12" md="6">
           <v-img :src="item.image" height="400" contain></v-img>
         </v-col>
@@ -50,10 +62,10 @@
             </v-card-actions>
           </v-container>
         </v-col>
-      </v-row>
+      </v-row>-->
 
       <!-- Content #2 -->
-      <v-row v-for="item in section.contentDua" :key="item.judul">
+      <!-- <v-row v-for="item in section.contentDua" :key="item.judul">
         <v-col sm="12" class="d-flex justify-space-around mb-n12">
           <v-container class="col-11" color="transparent">
             <v-card-title
@@ -81,10 +93,10 @@
         >
           <p :class="stiker.class">{{stiker.tag}}</p>
         </v-col>
-      </v-row>
+      </v-row>-->
 
       <!-- Content #3 -->
-      <v-row v-for="item in section.contentTiga" :key="item.image">
+      <!-- <v-row v-for="item in section.contentTiga" :key="item.image">
         <v-img
           :src="item.image"
           aspect-ratio="2.4"
@@ -106,10 +118,10 @@
             </v-card>
           </v-col>
         </v-img>
-      </v-row>
+      </v-row>-->
 
       <!-- Content #4 -->
-      <v-row
+      <!-- <v-row
         v-for="(item, index) in section.contentEmpat"
         :key="index"
         class="d-flex justify-center"
@@ -127,10 +139,10 @@
         <v-col cols="12" style="background-color:#F8F8F8;" align="center" class="ma-4">
           <p v-for="stiker in item.stikers" :key="stiker.teks" :class="stiker.class">{{stiker.teks}}</p>
         </v-col>
-      </v-row>
+      </v-row>-->
 
       <!-- Content #5 -->
-      <v-row v-for="item in section.contentLima" :key="item.judul">
+      <!-- <v-row v-for="item in section.contentLima" :key="item.judul">
         <v-col cols="12" class="d-flex justify-space-around">
           <v-container width="85%">
             <v-card-title
@@ -145,7 +157,7 @@
             </v-card-text>
           </v-container>
         </v-col>
-      </v-row>
+      </v-row>-->
     </div>
   </v-container>
 </template>
