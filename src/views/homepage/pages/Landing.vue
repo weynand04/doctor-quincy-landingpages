@@ -2,8 +2,8 @@
   <v-container id="landing_page" fluid>
     <div v-for="(section, index) in landingpage" :key="index">
       <!-- Banner -->
-      <v-container>
-        <v-row v-for="item in section.banner" :key="item.judul">
+      <v-container v-for="item in section.banner" :key="item.judul">
+        <v-row class="mb-n5">
           <v-img
             :src="item.image"
             aspect-ratio="1.9"
@@ -11,16 +11,15 @@
             max-width="100%"
             contain
             position="right center"
+            class="mb-n3"
           >
             <v-col cols="12" md="4" class="d-flex justify-space-around">
               <div>
+                <v-card-title
+                  class="ml-12 display-2 font-weight-bold black--text text-break"
+                >{{item.judul}}</v-card-title>
                 <div>
-                  <v-card-title
-                    class="ml-12 display-2 font-weight-bold black--text text-break"
-                  >{{item.judul}}</v-card-title>
-                </div>
-                <div>
-                  <v-card-subtitle class="ml-12 display-1 font-weight-medium">{{item.teks}}</v-card-subtitle>
+                  <v-card-subtitle class="ml-12 headline font-weight-medium ma-0">{{item.teks}}</v-card-subtitle>
                   <v-card-actions class="ml-12">
                     <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
                     <v-btn rounded outlined color="primary">Partner</v-btn>
@@ -33,36 +32,55 @@
       </v-container>
 
       <!-- Content #1 -->
-      <!-- <v-row v-for="item in section.contentSatu" :key="item.judul" style="background: #FCFCFC;">
-        <v-col cols="12" md="6">
-          <v-img :src="item.image" height="400" contain></v-img>
-        </v-col>
-        <v-col cols="12" md="6" align-self="center">
-          <v-container>
-            <v-card-title class="title__widu font-weight-bold orange--text darken-3">{{item.judul}}</v-card-title>
-            <v-spacer></v-spacer>
-            <v-card-subtitle class="subtitle2__widu">{{item.teks}}</v-card-subtitle>
-            <v-card-actions class="d-flex align-content-start">
-              <v-img
-                src="@/assets/image/google-play-badge.svg"
-                position="left"
-                max-height="50"
-                max-width="199"
-                aspect-ratio="1.7"
-                contain
-              ></v-img>
-              <v-img
-                src="@/assets/image/download-on-the-app-store-apple.svg"
-                position="left center"
-                max-height="50"
-                max-width="199"
-                aspect-ratio="1.7"
-                contain
-              ></v-img>
-            </v-card-actions>
-          </v-container>
-        </v-col>
-      </v-row>-->
+      <v-container
+        v-for="item in section.contentSatu"
+        :key="item.judul"
+        style="background: #FCFCFC;"
+        fluid
+      >
+        <v-row>
+          <v-col cols="6" md="6">
+            <v-img
+              :src="item.image"
+              min-height="400"
+              min-width="400"
+              max-height="600"
+              max-width="600"
+              contain
+            ></v-img>
+          </v-col>
+          <v-col cols="6" md="6" align-self="center">
+            <div class="flex-row align-content-center">
+              <v-card-title
+                class="title font-weight-bold orange--text darken-3 text-break"
+              >{{item.judul}}</v-card-title>
+              <v-card-subtitle class="subtitle-1 font-weight-medium">{{item.teks}}</v-card-subtitle>
+              <v-row class="flex-row d-flex">
+                <v-col cols="12" md="4" class="d-flex justify-center">
+                  <v-img
+                    src="@/assets/image/google-play-badge.svg"
+                    min-height="50"
+                    min-width="50"
+                    max-height="150"
+                    max-width="150"
+                    contain
+                  ></v-img>
+                </v-col>
+                <v-col cols="12" md="4" class="d-flex justify-center">
+                  <v-img
+                    src="@/assets/image/download-on-the-app-store-apple.svg"
+                    min-height="50"
+                    min-width="50"
+                    max-height="150"
+                    max-width="150"
+                    contain
+                  ></v-img>
+                </v-col>
+              </v-row>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <!-- Content #2 -->
       <!-- <v-row v-for="item in section.contentDua" :key="item.judul">
