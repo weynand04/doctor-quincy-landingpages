@@ -13,13 +13,15 @@
             position="right center"
             class="mb-n3"
           >
-            <v-col cols="12" md="4" class="d-flex justify-space-around">
+            <v-col cols="12" md="6" class="d-flex justify-space-around">
               <div>
                 <v-card-title
                   class="ml-12 display-2 font-weight-bold black--text text-break"
                 >{{item.judul}}</v-card-title>
                 <div>
-                  <v-card-subtitle class="ml-12 headline font-weight-medium ma-0">{{item.teks}}</v-card-subtitle>
+                  <v-card-subtitle
+                    class="ml-12 mb-5 mt-n7 headline font-weight-medium grey--text text--darken-1"
+                  >{{item.teks}}</v-card-subtitle>
                   <v-card-actions class="ml-12">
                     <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
                     <v-btn rounded outlined color="primary">Partner</v-btn>
