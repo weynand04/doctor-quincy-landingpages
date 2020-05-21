@@ -20,19 +20,26 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Landing')
         },
         {
+          name: 'BeourPartners',
+          path: '/bepartners',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
           name: 'Help',
           path: 'help',
           component: () => import('@/views/homepage/pages/Help')
         },
-        {
-          name: 'PagesOnDev',
-          path: 'pagesondev',
-          component: () => import('@/views/homepage/pages/Pagesondev')
-        },
+
+        // menu drawer
         {
           name: 'Carakerja',
           path: 'carakerja',
           component: () => import('@/views/homepage/pages/Carakerja')
+        },
+        {
+          name: 'Homehealtcare',
+          path: 'health-care',
+          component: () => import('@/views/homepage/pages/Healthcare')
         },
         {
           name: 'Ditangani',
@@ -45,14 +52,39 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Tidakditangani')
         },
         {
-          name: 'Homehealtcare',
-          path: 'health-care',
-          component: () => import('@/views/homepage/pages/Healthcare')
-        },
-        {
-          name: 'Penyedialayanankesehatan',
+          name: 'Pelankes',
           path: 'pelankes',
           component: () => import('@/views/homepage/pages/Pelankes')
+        },
+        {
+          name: 'Jadipenyedia',
+          path: 'beprovider',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Mitradaninvestor',
+          path: 'ourpartners',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Medaidanberita',
+          path: 'blog',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Lowongankerja',
+          path: 'carrer',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Eventkesehatan',
+          path: 'event',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Awesome promo',
+          path: 'promo',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
         }
       ]
     },

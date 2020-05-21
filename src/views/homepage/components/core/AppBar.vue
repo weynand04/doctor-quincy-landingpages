@@ -32,19 +32,19 @@
 }
 </style>
   <template>
-  <v-app-bar app elevate-on-scroll class="elevation-1" color="#FFF">
+  <v-app-bar app elevate-on-scroll height="50" class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col cols="4">
+      <v-col cols="4" align-self="center">
         <v-toolbar-title class="d-flex justify-center">
-          <v-img src="@/assets/image/logo.svg" max-height="50" contain></v-img>
+          <v-img src="@/assets/image/logo.svg" max-height="35" contain></v-img>
         </v-toolbar-title>
       </v-col>
       <v-col cols="4" class="hidden-md-and-down d-md-flex justify-center">
         <router-link v-for="n in toolitems" :key="n.title" :to="n.path" exact>{{n.title}}</router-link>
       </v-col>
       <v-spacer />
-      <v-col cols="4" class="d-flex justify-end">
+      <v-col cols="4" align-self="center" class="d-flex justify-end">
         <v-menu offset-x offset-y left transition="slide-y-transition" v-model="expand">
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" @click="expand = !expand" icon>
@@ -71,22 +71,33 @@ export default {
   data: () => ({
     expand: false,
     Menuitem: [
-      { title: "Cara kerja", path: "/carakerja" },
-      { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
-      { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
-      { title: "Home health care", path: "/health-care" },
-      { title: "Penyedia layanan kesehatan", path: "/pelankes" },
       {
-        title: "Be our Partner",
-        path: "/*",
+        title: "Home",
+        path: "/",
         cls: "hidden-md-and-up"
       },
-      { title: "Help", path: "/*", cls: "hidden-md-and-up" }
+      {
+        title: "Be our Partner",
+        path: "bepartners",
+        cls: "hidden-md-and-up"
+      },
+      { title: "Help", path: "/*", cls: "hidden-md-and-up" },
+      { title: "Cara kerja", path: "/carakerja" },
+      { title: "Home health care", path: "/health-care" },
+      { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
+      { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" },
+      { title: "Menjadi penyedia", path: "/beprovider" },
+      { title: "Mitra & Investor", path: "/ourpartners" },
+      { title: "Media dan Berita", path: "/blog" },
+      { title: "Lowongan kerja", path: "/carrer" },
+      { title: "Event kesehatan", path: "/event" },
+      { title: "Awesome promo", path: "/promo" }
     ],
     toolitems: [
       { path: "/", title: "Home" },
-      { path: "/*", title: "Be our Partner" },
-      { path: "/*", title: "Help" }
+      { path: "/bepartners", title: "Be our Partner" },
+      { path: "/help", title: "Help" }
     ]
   }),
   methods: {
