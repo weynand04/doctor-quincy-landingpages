@@ -1,11 +1,13 @@
 <template>
-  <v-card width="320" class="ma-3 elevation-1" id="rounded-card">
-    <v-img :src="dataCard.image">
-      <div class="fill-height mygradient"></div>
-    </v-img>
-    <v-card-title class="title justify-center text-center text-break">{{dataCard.title}}</v-card-title>
-    <v-card-text class="font-weight-light">{{dataCard.text}}</v-card-text>
-  </v-card>
+  <v-col cols="12" md="4" class="d-flex justify-space-around">
+    <v-card class="ma-3 elevation-1" id="rounded-card">
+      <v-img :src="dataCard.image">
+        <div class="fill-height mygradient"></div>
+      </v-img>
+      <v-card-title class="title justify-center text-center text-break">{{dataCard.title}}</v-card-title>
+      <v-card-text class="font-weight-light">{{dataCard.text}}</v-card-text>
+    </v-card>
+  </v-col>
 </template>
 <script>
 export default {
