@@ -87,7 +87,7 @@
 </template>
 
 <script>
-import CardWidu from "../components/CardWidu";
+import CardWidu from "../components/base/CardWidu";
 
 export default {
   name: "pelankes",

@@ -16,7 +16,7 @@
             <v-col cols="12" class="d-flex justify-space-between">
               <div class="col-12 col-md-4 col-sm-6">
                 <v-card-title
-                  class="display-2 font-weight-bold black--text text-break"
+                  class="title1__widu font-weight-bold black--text text-break"
                 >{{item.judul}}</v-card-title>
                 <div>
                   <v-card-subtitle
@@ -54,9 +54,9 @@
           <v-col style="z-index: 1" cols="6" md="6" align-self="center">
             <div class="flex-row align-content-center">
               <v-card-title
-                class="title font-weight-bold orange--text darken-3 text-break"
+                class="title__widu font-weight-bold primary--text darken-3 text-break"
               >{{item.judul}}</v-card-title>
-              <v-card-subtitle class="subtitle-1 font-weight-medium">{{item.teks}}</v-card-subtitle>
+              <v-card-subtitle class="text__widu font-weight-medium">{{item.teks}}</v-card-subtitle>
               <v-row class="flex-row d-flex">
                 <v-col cols="12" md="4" class="d-flex justify-center">
                   <v-img
@@ -89,12 +89,14 @@
         <v-row>
           <v-col cols="12">
             <v-container>
-              <v-card-title class="title font-weight-bold orange--text text-break">{{item.judul}}</v-card-title>
+              <v-card-title
+                class="title__widu font-weight-bold primary--text text-break"
+              >{{item.judul}}</v-card-title>
               <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
               <p
                 v-for="p in item.teks"
                 :key="p.paragraf"
-                class="subtitle-1 font-weight-light"
+                class="text__widu font-weight-medium ma-6"
               >{{p.paragraf}}</p>
             </v-container>
           </v-col>
@@ -111,38 +113,39 @@
       </v-container>
 
       <!-- Content #3 -->
-      <v-container fluid v-for="item in section.contentTiga" :key="item.image">
+      <div v-for="item in section.contentTiga" :key="item.image">
         <v-img
           :src="item.image"
           aspect-ratio="2.4"
           position="top center"
           gradient="to top right, rgba(248, 178, 24, 0.7), rgba(248, 178, 24, 0.7)"
         >
-          <v-row justify="center">
-            <v-col
-              v-for="card in item.cards"
-              :key="card.judul"
-              cols="12"
-              md="4"
-              class="d-flex justify-space-around"
-            >
-              <v-card width="350">
-                <v-card-title
-                  class="title orange--text darken-3 text-left text-break"
-                >{{card.judul}}</v-card-title>
-                <v-card-text>
-                  <p
-                    class="subtitle-2 font-weight-light"
-                    v-for="p in card.teks"
-                    :key="p.paragraf"
-                  >{{p.paragraf}}</p>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
+          <v-container fluid>
+            <v-row justify="center">
+              <v-col
+                v-for="card in item.cards"
+                :key="card.judul"
+                cols="12"
+                md="4"
+                class="d-flex justify-space-around"
+              >
+                <v-card width="350">
+                  <v-card-title
+                    class="title__widu font-weight-bold primary--text darken-3 text-break"
+                  >{{card.judul}}</v-card-title>
+                  <v-card-text>
+                    <p
+                      class="text__widu font-weight-light"
+                      v-for="p in card.teks"
+                      :key="p.paragraf"
+                    >{{p.paragraf}}</p>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-img>
-      </v-container>
-
+      </div>
       <!-- Content #4 -->
       <v-container v-for="(item, index) in section.contentEmpat" :key="index">
         <v-row class="d-flex justify-center">
@@ -168,10 +171,12 @@
       <v-container v-for="item in section.contentLima" :key="item.judul">
         <v-row>
           <v-col cols="12">
-            <v-card-title class="title orange--text darken-3 text-left text-break">{{item.judul}}</v-card-title>
+            <v-card-title
+              class="title__widu col-12 col-md-9 primary--text font-weight-bold darken-3 text-left text-break"
+            >{{item.judul}}</v-card-title>
             <v-card-text>
               <p
-                class="subtitle-2 font-weight-ligh"
+                class="text__widu font-weight-medium"
                 v-for="p in item.teks"
                 :key="p.paragraf"
               >{{p.paragraf}}</p>
@@ -233,20 +238,22 @@ export default {
               {
                 tag:
                   "Dokter Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
-                class: "font-weight-bold red--text col-12 col-sm-6  ",
+                class:
+                  "text__widu font-weight-bold red--text col-12 col-sm-6  ",
                 style: ""
               },
               {
                 tag:
                   "Bukankah Sudah Saatnya Kamu Benar-Benar Mulai Memikirkan Kembali Cara Kamu Menerima Perawatan Kesehatan?",
-                class: "font-weight-bold col-12 col-md-5",
+                class: "text__widu font-weight-bold col-12 col-md-5 ma-0 pa-0",
                 style: "background-color:#F8F8F8;"
               },
               {
                 tag:
-                  "Pendekatan kami terhadap perawatan kesehatan adalah membuatnya mudah dan bebas repot untuk semua orang,meruntuhkan penghalang birokrasi dengan mendukung kesehatan kamu dimanapun kamu berada. Dokter dan psikolog berlisensi kami tersedia 24 jam setiap hari.",
-                class: "white--text font-weight-medium col-12 col-md-8",
-                style: "background-color:#6B6B6B"
+                  "Pendekatan kami terhadap perawatan kesehatan adalah membuatnya mudah dan bebas repot untuk semua orang, meruntuhkan penghalang birokrasi dengan mendukung kesehatan kamu dimanapun kamu berada. Dokter dan psikolog berlisensi kami tersedia 24 jam setiap hari.",
+                class:
+                  "body-2 white--text font-weight-medium col-12 col-md-8 ma-0 pa-0",
+                style: "background-color:#6B6B6B;"
               }
             ]
           }
@@ -290,38 +297,38 @@ export default {
             image: require("@/assets/image/gambar lain-01.png"),
             teks: [
               {
-                class: "subtitle-2 font-weight-medium",
+                class: "text__widu font-weight-medium",
                 paragraf:
                   "Dokter Quincy memberikan layanan langsung kepada konsumen, puluhan juta orang Indonesia akan menikmati kunjungan kesehatan medis termasuk layanan kesehatan jiwa, perawatan pencegahan, perawatan kronis, perawatan darurat, dan kesehatan perilaku. "
               },
               {
-                class: "subtitle-2 font-weight-medium",
+                class: "text__widu font-weight-medium",
                 paragraf:
                   "Misi Doctor Quincy adalah meningkatkan kesehatan masyarakat melalui perawatan dan inovasi yang penuh kasih. Untuk mengakses Doctor Quincy, kamu dapat mengunduh aplikasi kami secara gratis di (iTunes atau Google Play)."
               },
               {
-                class: "subtitle-2 font-weight-medium",
+                class: "text__widu font-weight-medium",
                 paragraf:
                   "Dokter Quincy secara langsung sedang mengubah kehidupan lebih dari 100 juta jiwa orang dengan akses melalui layanan kesehatan berkualitas tanpa harus meninggalkan rumah mereka."
               },
               {
-                class: "subtitle-2 font-weight-bold blue--text",
+                class: "text__widu font-weight-bold blue--text",
                 paragraf:
                   "Kendalikan Kesehatan Kamu Hari Ini Juga! Bergabunglah Dengan Jutaan Orang Yang Memiliki Akses Dokter Quincy 24 Jam Sehari, 365 Hari Setahun"
               },
               {
-                class: "subtitle-2 font-weight-medium red--text",
+                class: "text__widu font-weight-medium red--text",
                 paragraf: "Sekarang Giliran Kamu!"
               }
             ],
             stikers: [
               {
-                class: "col-6 subtitle-2 font-weight-bold ",
+                class: "col-12 col-md-8 text__widu font-weight-medium ",
                 teks:
                   "Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
               },
               {
-                class: "subtitle-2 red--text font-weight-bold",
+                class: "body-2 font-weight-regular red--text",
                 teks:
                   "Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
               }

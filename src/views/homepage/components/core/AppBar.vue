@@ -35,11 +35,12 @@
   <v-app-bar app elevate-on-scroll height="50" class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col cols="4" align-self="center">
-        <v-toolbar-title class="d-flex justify-center">
-          <v-img src="@/assets/image/logo.svg" max-height="35" contain></v-img>
+      <v-col cols="4" class="d-flex justify-left pl-md-12" align-self="center">
+        <v-toolbar-title>
+          <v-img src="@/assets/image/logo.svg" contain max-height="35" max-width="180"></v-img>
         </v-toolbar-title>
       </v-col>
+
       <v-col cols="4" class="hidden-md-and-down d-md-flex justify-center">
         <router-link v-for="n in toolitems" :key="n.title" :to="n.path" exact>{{n.title}}</router-link>
       </v-col>
