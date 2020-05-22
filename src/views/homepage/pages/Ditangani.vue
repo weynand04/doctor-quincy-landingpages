@@ -1,54 +1,65 @@
 <template>
-  <v-container id="Ditangani_page" fluid>
+  <div id="Ditangani_page" fluid>
     <!-- section #1 -->
-    <v-row>
-      <v-col cols="12" md="6" align-self="center">
-        <v-container class="pl-12 ml-8">
-          <v-card-title
-            class="title1__widu font-weight-bold black--text text-break"
-          >Penyakit Yang Kami Tangani</v-card-title>
-          <v-card-subtitle
-            class="text__widu font-weight-medium pt-3"
-          >Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</v-card-subtitle>
-          <v-card-actions>
-            <v-btn rounded color="primary" class="elevation-0">Login</v-btn>
-            <v-btn rounded outlined color="primary">Register</v-btn>
-          </v-card-actions>
-        </v-container>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-img src="@/assets/image/Group 1031.png" width="562px" height="506px" cont ain />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row class="pl-md-8">
+        <v-img
+          src="@/assets/image/Group 1031.png"
+          aspect-ratio="2.4"
+          max-height="100%"
+          max-width="100%"
+          position="center right 20%"
+          contain
+        >
+          <v-col cols="12" md="6" class="d-flex fill-height">
+            <div class="col-12 col-md-10 align-self-center">
+              <v-card-title
+                class="title__widu font-weight-bold black--text text-break"
+              >Penyakit Yang Kami Tangani</v-card-title>
+              <v-card-subtitle
+                class="body-1 font-weight-medium pt-3"
+              >Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</v-card-subtitle>
+              <v-card-actions>
+                <v-btn rounded color="primary" class="elevation-0">Login</v-btn>
+                <v-btn rounded outlined color="primary">Register</v-btn>
+              </v-card-actions>
+            </div>
+          </v-col>
+        </v-img>
+      </v-row>
+    </v-container>
 
     <!-- section #2  -->
-    <v-row v-for="item in section_2" :key="item.judul" :style="item.bg">
-      <v-col cols="12" class="d-flex justify-space-around">
-        <v-container color="transparent" width="90%">
-          <v-card-title class="title__widu font-weight-bold orange--text">{{item.judul}}</v-card-title>
-          <v-card-text class="text__widu font-weight-ligh">
-            <p class="text__widu">{{item.teks}}</p>
-          </v-card-text>
-          <v-divider></v-divider>
-        </v-container>
-      </v-col>
-      <v-col cols="12" class="d-flex justify-space-around">
-        <v-container color="transparent" class="col-11 mt-n6">
-          <v-expansion-panels hover>
-            <v-expansion-panel v-for="(i, index) in item.list" :key="index">
-              <v-expansion-panel-header class="pt-0 pl-5 font-weight-bold">{{i.title}}</v-expansion-panel-header>
-              <v-expansion-panel-content class="pt-0 pa-5">{{i.desc}}</v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
-        </v-container>
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-container fluid>
+      <v-row class="pl-md-12" v-for="item in section_2" :key="item.judul" :style="item.bg">
+        <v-col cols="12" class="d-flex justify-space-around">
+          <div color="transparent" width="90%">
+            <v-card-title class="title__widu font-weight-bold orange--text">{{item.judul}}</v-card-title>
+            <v-card-text class="text__widu font-weight-ligh">
+              <p class="text__widu">{{item.teks}}</p>
+            </v-card-text>
+            <v-divider></v-divider>
+          </div>
+        </v-col>
+        <v-col cols="12" class="d-flex justify-space-around">
+          <div color="transparent" class="col-11 mt-n6">
+            <v-expansion-panels hover>
+              <v-expansion-panel v-for="(i, index) in item.list" :key="index">
+                <v-expansion-panel-header class="pt-0 pl-5 font-weight-bold">{{i.title}}</v-expansion-panel-header>
+                <v-expansion-panel-content class="pt-0 pa-5">{{i.desc}}</v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Ditangani",
+  components: {},
   data: () => ({
     section_2: [
       {
