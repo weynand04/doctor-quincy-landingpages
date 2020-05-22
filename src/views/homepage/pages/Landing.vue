@@ -44,40 +44,37 @@
           <v-col cols="6" md="6">
             <v-img
               :src="item.image"
-              min-height="400"
-              min-width="400"
-              max-height="600"
-              max-width="600"
+              min-height="200"
+              min-width="300"
+              max-height="400"
+              max-width="400"
               contain
+              class="float-md-right"
             ></v-img>
           </v-col>
           <v-col style="z-index: 1" cols="6" md="6" align-self="center">
             <div class="flex-row align-content-center">
-              <v-card-title
+              <h1
                 class="title__widu font-weight-bold primary--text darken-3 text-break"
-              >{{item.judul}}</v-card-title>
-              <v-card-subtitle class="text__widu font-weight-medium">{{item.teks}}</v-card-subtitle>
-              <v-row class="flex-row d-flex">
-                <v-col cols="12" md="4" class="d-flex justify-center">
-                  <v-img
-                    src="@/assets/image/google-play-badge.svg"
-                    min-height="50"
-                    min-width="50"
-                    max-height="150"
-                    max-width="150"
-                    contain
-                  ></v-img>
-                </v-col>
-                <v-col cols="12" md="4" class="d-flex justify-center">
-                  <v-img
-                    src="@/assets/image/download-on-the-app-store-apple.svg"
-                    min-height="50"
-                    min-width="50"
-                    max-height="150"
-                    max-width="150"
-                    contain
-                  ></v-img>
-                </v-col>
+              >{{item.judul}}</h1>
+              <p class="text__widu font-weight-medium">{{item.teks}}</p>
+              <v-row no-gutters class="d-flex justify-start">
+                <v-img
+                  src="@/assets/image/google-play-badge.svg"
+                  min-height="50"
+                  min-width="50"
+                  max-height="150"
+                  max-width="150"
+                  contain
+                ></v-img>
+                <v-img
+                  src="@/assets/image/download-on-the-app-store-apple.svg"
+                  min-height="50"
+                  min-width="50"
+                  max-height="150"
+                  max-width="150"
+                  contain
+                ></v-img>
               </v-row>
             </div>
           </v-col>
@@ -86,31 +83,25 @@
 
       <!-- Content #2 -->
       <v-container fluid v-for="item in section.contentDua" :key="item.judul">
-        <v-row>
+        <v-row class="pl-md-12">
           <v-col cols="12">
-            <v-container>
-              <v-card-title
-                class="title__widu font-weight-bold primary--text text-break"
-              >{{item.judul}}</v-card-title>
-              <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
-              <p
-                v-for="p in item.teks"
-                :key="p.paragraf"
-                class="text__widu font-weight-medium ma-6"
-              >{{p.paragraf}}</p>
-            </v-container>
-          </v-col>
-          <v-col
-            cols="12"
-            align="center"
-            v-for="stiker in item.stikers"
-            :key="stiker.tag"
-            :style="stiker.style"
-          >
-            <p :class="stiker.class">{{stiker.tag}}</p>
+            <h1 class="title__widu font-weight-bold primary--text text-break">{{item.judul}}</h1>
+            <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
+            <p
+              v-for="p in item.teks"
+              :key="p.paragraf"
+              class="text__widu font-weight-medium py-1"
+            >{{p.paragraf}}</p>
           </v-col>
         </v-row>
       </v-container>
+
+      <!-- Stiker - Stiker -->
+      <v-row v-for="item in section.stikers" :key="item.tag">
+        <v-col cols="12" align="center" :style="item.style">
+          <p :class="item.class">{{item.tag}}</p>
+        </v-col>
+      </v-row>
 
       <!-- Content #3 -->
       <div v-for="item in section.contentTiga" :key="item.image">
@@ -146,34 +137,40 @@
           </v-container>
         </v-img>
       </div>
+
       <!-- Content #4 -->
       <v-container v-for="(item, index) in section.contentEmpat" :key="index">
         <v-row class="d-flex justify-center">
           <v-col cols="12" md="6" class="d-flex justify-center">
-            <v-img :src="item.image" max-height="601" max-width="566" contain />
+            <v-img :src="item.image" max-height="550" max-width="450" contain />
           </v-col>
           <v-col cols="12" md="6" align-self="center">
             <div>
               <p v-for="p in item.teks" :key="p.paragraf" :class="p.class">{{p.paragraf}}</p>
             </div>
           </v-col>
-          <v-col cols="12" style="background-color:#F8F8F8;" align="center" class="ma-4">
-            <p
-              v-for="stiker in item.stikers"
-              :key="stiker.teks"
-              :class="stiker.class"
-            >{{stiker.teks}}</p>
-          </v-col>
         </v-row>
       </v-container>
 
+      <!-- stiker -->
+      <v-row
+        no-gutters
+        style="background: #F8F8F8"
+        v-for="item in section.stikerss"
+        :key="item.tag"
+      >
+        <v-col cols="12" align="center">
+          <p :class="item.class">{{item.teks}}</p>
+        </v-col>
+      </v-row>
+
       <!-- Content #5 -->
-      <v-container v-for="item in section.contentLima" :key="item.judul">
-        <v-row>
+      <v-container fluid v-for="item in section.contentLima" :key="item.judul">
+        <v-row class="pl-md-12">
           <v-col cols="12">
-            <v-card-title
-              class="title__widu col-12 col-md-9 primary--text font-weight-bold darken-3 text-left text-break"
-            >{{item.judul}}</v-card-title>
+            <h1
+              class="title__widu col-12 col-md-10 primary--text font-weight-bold text-break"
+            >{{item.judul}}</h1>
             <v-card-text>
               <p
                 class="text__widu font-weight-medium"
@@ -233,29 +230,31 @@ export default {
                 paragraf:
                   "Mengatasi faktor sosial yang paling mendesak berkontribusi pada kesehatan masyarakat. Di Doctor Quincy, misi kami memanggil kami untuk menjadi agen perubahan radikal dalam hal kesehatan. Kami akan menjadi sumber cinta penyembuhan dan mercusuar harapan … untuk negara, dan untuk setiap komunitas yang kami layani, dan untuk setiap orang yang kami temui - terutama mereka yang paling rentan dalam masyarakat kami karena kondisi sosial. Untuk melakukan ini, kami membuat poros penting dari perawatan kesehatan, untuk mendukung kondisi masyarakat demi kesehatan dan kesejahteraan yang optimal. Untuk menjalani komitmen kami untuk menjadi mitra dalam bidang kesehatan, kami harus melakukan sesuatu yang berbeda. Layanan kesehatan tradisional pada umumnya hanya berfokus pada rumah sakit dan klinik yang secara geografis berlabuh dengan semua titik sentuh perawatan pasien di sekitar rumah sakit. Tetapi fokus kami lebih pada mendukung orang-orang sakit dengan serangkaian perawatan kesehatan, program, intervensi, dan layanan berbasis masyarakat. Kami bermitra dengan dokter-dokter lokal di seluruh negeri, memungkinkan kami untuk memasang jaring yang lebih luas dan lebih dalam. Meningkatkan kesehatan masyarakat kita adalah hal mendasar dan komitmen yang mengakar kuat pada warisan dan tujuan kami. Misi kami memanggil kami untuk tabah dalam melayani semua dengan perhatian yang sama. Keyakinan inti ini mendorong program yang kami bangun, investasi yang kami buat, dan strategi yang kami terapkan."
               }
-            ],
-            stikers: [
-              {
-                tag:
-                  "Dokter Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
-                class:
-                  "text__widu font-weight-bold red--text col-12 col-sm-6  ",
-                style: ""
-              },
-              {
-                tag:
-                  "Bukankah Sudah Saatnya Kamu Benar-Benar Mulai Memikirkan Kembali Cara Kamu Menerima Perawatan Kesehatan?",
-                class: "text__widu font-weight-bold col-12 col-md-5 ma-0 pa-0",
-                style: "background-color:#F8F8F8;"
-              },
-              {
-                tag:
-                  "Pendekatan kami terhadap perawatan kesehatan adalah membuatnya mudah dan bebas repot untuk semua orang, meruntuhkan penghalang birokrasi dengan mendukung kesehatan kamu dimanapun kamu berada. Dokter dan psikolog berlisensi kami tersedia 24 jam setiap hari.",
-                class:
-                  "body-2 white--text font-weight-medium col-12 col-md-8 ma-0 pa-0",
-                style: "background-color:#6B6B6B;"
-              }
             ]
+          }
+        ]
+      },
+      {
+        stikers: [
+          {
+            tag:
+              "Dokter Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
+            class: "text__widu font-weight-bold red--text col-12 col-sm-6  ",
+            style: "mx-2"
+          },
+          {
+            tag:
+              "Bukankah Sudah Saatnya Kamu Benar-Benar Mulai Memikirkan Kembali Cara Kamu Menerima Perawatan Kesehatan?",
+            class:
+              "text__widu font-weight-bold col-12 col-md-5 ma-0 pa-0 mx-auto",
+            style: "background-color:#F8F8F8;"
+          },
+          {
+            tag:
+              "Pendekatan kami terhadap perawatan kesehatan adalah membuatnya mudah dan bebas repot untuk semua orang, meruntuhkan penghalang birokrasi dengan mendukung kesehatan kamu dimanapun kamu berada. Dokter dan psikolog berlisensi kami tersedia 24 jam setiap hari.",
+            class:
+              "body-2 white--text font-weight-medium col-12 col-md-8 ma-0 pa-0 mx-auto",
+            style: "background-color:#6B6B6B;"
           }
         ]
       },
@@ -320,19 +319,20 @@ export default {
                 class: "text__widu font-weight-medium red--text",
                 paragraf: "Sekarang Giliran Kamu!"
               }
-            ],
-            stikers: [
-              {
-                class: "col-12 col-md-8 text__widu font-weight-medium ",
-                teks:
-                  "Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
-              },
-              {
-                class: "body-2 font-weight-regular red--text",
-                teks:
-                  "Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
-              }
             ]
+          }
+        ]
+      },
+      {
+        stikerss: [
+          {
+            class: "col-12 col-md-8 text__widu font-weight-medium ",
+            teks:
+              "Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
+          },
+          {
+            class: "body-2 font-weight-regular red--text",
+            teks: "Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
           }
         ]
       },
