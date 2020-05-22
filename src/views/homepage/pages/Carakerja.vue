@@ -1,95 +1,100 @@
-
+<style lang="scss" scoped>
+.bannerWidu {
+  width: 100%;
+  height: 50px;
+  background-color: #f8b218;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+}
+</style>
 <template>
   <div>
-    <v-banner
-      style="width: 100%; height: 50px; background-color: #f8b218; position: -webkit-sticky; position: sticky; top: 56px; z-index: 1;"
-      class="d-sm-none d-md-flex text-center mt-0 font-weight-bold"
-    >
-      <v-container
-        class="ml-12 pl-9"
-      >Selamat datang di sumber daya 24 / 7 untuk perawatan kesehatan yang mudah dan nyaman</v-container>
+    <v-banner class="bannerWidu hidden-sm-and-down d-md-flex text-center mt-0 font-weight-bold">
+      <v-container fluid>
+        <div
+          class="pl-md-8"
+        >Selamat datang di sumber daya 24 / 7 untuk perawatan kesehatan yang mudah dan nyaman</div>
+      </v-container>
     </v-banner>
+
     <v-container fluid>
       <!-- 1 -->
-      <v-row>
-        <v-col cols="12">
-          <v-img
-            src="@/assets/image/Mask Group 5.png"
-            max-height="500"
-            contain
-            position="right bottom"
-          >
-            <v-row class="ml-10 pl-10">
-              <v-col cols="12" md="4">
-                <v-container color="transparent">
-                  <v-card-title
-                    class="title1__widu font-weight-bold black--text text-break"
-                  >Daftar Sekarang</v-card-title>
-                  <v-spacer />
-                  <v-card-subtitle
-                    class="text__widu font-weight-medium pt-1"
-                  >Bergabunglah dengan jutaan orang yang telahterdaftar sebagai anggota kami untuk akses ke kunjungan dokter langsung dengan menggunakan smartphone, tablet atau laptop atau komputer mereka.</v-card-subtitle>
-                  <v-card-actions>
-                    <v-btn rounded color="primary" class="elevation-0">Register</v-btn>
-                  </v-card-actions>
-                </v-container>
-              </v-col>
-              <v-col cols="12" md="4">
-                <v-container color="transparent">
-                  <v-card-title
-                    class="title1__widu font-weight-bold black--text text-break"
-                  >Login Sekarang</v-card-title>
-                  <v-spacer />
-                  <v-card-subtitle
-                    class="text__widu font-weight-medium pt-1"
-                  >Jika kamu sudah menjadi anggota maka kamu tahu pasti bahwa seorang dokter siap untuk mengunjungi kamu dalam hitungan menit setelah permintaan dan mendapatkan resep obat ke apotek jika diperlukan secara medis.</v-card-subtitle>
-                  <v-card-actions>
-                    <v-btn rounded outlined color="primary">Member</v-btn>
-                  </v-card-actions>
-                </v-container>
-              </v-col>
-            </v-row>
-          </v-img>
-        </v-col>
+      <v-row class="pl-md-12">
+        <v-img
+          src="@/assets/image/Mask Group 5.png"
+          max-height="500"
+          contain
+          position="right center"
+        >
+          <v-row class="d-flex align-content-center fill-height">
+            <v-col cols="12" md="4">
+              <div>
+                <v-card-title
+                  class="title1__widu font-weight-bold black--text text-break"
+                >Daftar Sekarang</v-card-title>
+                <v-spacer />
+                <v-card-subtitle
+                  class="text__widu font-weight-medium pt-1"
+                >Bergabunglah dengan jutaan orang yang telahterdaftar sebagai anggota kami untuk akses ke kunjungan dokter langsung dengan menggunakan smartphone, tablet atau laptop atau komputer mereka.</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn rounded color="primary" class="elevation-0">Register</v-btn>
+                </v-card-actions>
+              </div>
+            </v-col>
+            <v-col cols="12" md="4">
+              <div>
+                <v-card-title
+                  class="title1__widu font-weight-bold black--text text-break"
+                >Login Sekarang</v-card-title>
+                <v-spacer />
+                <v-card-subtitle
+                  class="text__widu font-weight-medium pt-1"
+                >Jika kamu sudah menjadi anggota maka kamu tahu pasti bahwa seorang dokter siap untuk mengunjungi kamu dalam hitungan menit setelah permintaan dan mendapatkan resep obat ke apotek jika diperlukan secara medis.</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn rounded outlined color="primary">Member</v-btn>
+                </v-card-actions>
+              </div>
+            </v-col>
+          </v-row>
+        </v-img>
       </v-row>
 
       <!-- 2 -->
-      <v-row class="justify-space-around">
-        <v-col cols="10">
-          <p class="display-1 font-weight-text orange--text darken-3">Daftar Sekarang</p>
-          <p>Kamu tidak bisa membuat rencana saat kamu jatuh sakit, akan tetapi kamu dapat memiliki Dokter Quincy setiap saat, dan mendapatkan layanan kesehatan yang kamu butuhkan di manapun saja kamu berada.</p>
-        </v-col>
-        <v-col cols="10">
+      <v-container fluid>
+        <v-row class="pl-md-8">
+          <v-col cols="12">
+            <p class="title__widu font-weight-text orange--text darken-3">Daftar Sekarang</p>
+            <p>Kamu tidak bisa membuat rencana saat kamu jatuh sakit, akan tetapi kamu dapat memiliki Dokter Quincy setiap saat, dan mendapatkan layanan kesehatan yang kamu butuhkan di manapun saja kamu berada.</p>
+          </v-col>
           <v-row>
-            <v-col cols="12" class="d-flex justify-space-around">
-              <CardWidu v-for="(n, i) in langka_kerja" :key="i" v-bind:dataCard="n" />
-            </v-col>
+            <CardWidu v-for="(n, i) in langka_kerja" :key="i" v-bind:dataCard="n" />
           </v-row>
-        </v-col>
-      </v-row>
+        </v-row>
+      </v-container>
 
       <!-- 3 -->
-      <v-row no-gutters class="justify-space-around">
-        <v-col cols="10">
-          <p
-            class="display-1 font-weight-text orange--text darken-3"
-          >Para Dokter-Dokter Kami Di Sini Siap Untuk Membantu</p>
-          <p>Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</p>
-        </v-col>
-        <v-col cols="10" class="d-flex my-0 py-0 elevation-2">
-          <v-container class="col-4">
-            <v-img
-              class="ml-n12 pl-n12"
-              src="@/assets/image/Mask Group 11.png"
-              aspect-ratio="1.2"
-              width="497px"
-              height="350px"
-              contain
-            />
-          </v-container>
-          <v-container class="col-8 d-flex">
-            <v-container>
-              <v-card-text class="list__widu body-1 font-weight black--text">
+      <v-container fluid>
+        <v-row no-gutters>
+          <v-col cols="12" class="mb-4">
+            <h1 class="orange--text">Para Dokter-Dokter Kami Di Sini Siap Untuk Membantu</h1>
+            <p>Kami berkomitmen untuk menawarkan kepada kamu dan keluarga kunjungan dokter terbaik. Daftarkan sekarang dan izinkan dokter-dokter kami membantu dengan lebih dari 200 penyakit baik yang ringan maupun yang berat, mulai dari pilek dan infeksi sinus hingga alergi dan banyak lagi.</p>
+          </v-col>
+          <v-col class="mt-8">
+            <v-row class="d-flex justify-center">
+              <v-col cols="12" md="4">
+                <v-img
+                  src="@/assets/image/Mask Group 11.png"
+                  aspect-ratio="1.2"
+                  width="497px"
+                  max-height="350px"
+                  contain
+                  class="ml-md-n8 mt-n8"
+                  position="center center"
+                />
+              </v-col>
+              <v-col cols="4" md="2">
                 <p class="font-weight-bold black--text">Medis</p>
                 <ul>
                   <li>Pilek</li>
@@ -104,12 +109,27 @@
                   <li>Mata Merah Mudah</li>
                   <li>Sakit Tenggorokan</li>
                   <li>DLL</li>
-                  <!-- Pilek Alergi Sembelit Batuk Diare Demam Asma Gigi Sakit kepala Muntah Mata Merah Muda Sakit tenggorokan Dll -->
                 </ul>
-              </v-card-text>
-            </v-container>
-            <v-container>
-              <v-card-text class="list__widu body-1 font-weight black--text">
+              </v-col>
+              <v-col cols="4" md="2">
+                <p class="font-weight-bold black--text">Dermatologi</p>
+                <ul type="Disc">
+                  <li>Jerawat</li>
+                  <li>Ruam</li>
+                  <li>Bintik-Bintik</li>
+                  <li>Eksim</li>
+                  <li>Kutil</li>
+                  <li>Rosacea</li>
+                  <li>Psorias</li>
+                  <li>Folikel Rambut</li>
+                  <li>Gigitan Serangga</li>
+                  <li>Luka Dingin</li>
+                  <li>Luka Kulit</li>
+                  <li>Seluitis</li>
+                  <li>DLL</li>
+                </ul>
+              </v-col>
+              <v-col cols="4" md="2">
                 <p class="font-weight-bold black--text">Perikalu & Jiwa</p>
                 <ul>
                   <li>Kecanduan</li>
@@ -126,38 +146,17 @@
                   <li>Kegelisahan</li>
                   <li>DLL</li>
                 </ul>
-              </v-card-text>
-            </v-container>
-            <v-container>
-              <v-card-text class="list__widu body-1 font-weight black--text">
-                <p class="font-weight-bold black--text">Dermatologi</p>
-                <ul type="Disc">
-                  <li>Jerawat</li>
-                  <li>Ruam</li>
-                  <li>Bintik-Bintik</li>
-                  <li>Eksim</li>
-                  <li>Kutil</li>
-                  <li>Rosacea</li>
-                  <li>Psorias</li>
-                  <li>Folikel Rambut</li>
-                  <li>Gigitan Serangga</li>
-                  <li>Luka Dingin</li>
-                  <li>Luka Kulit</li>
-                  <li>Seluitis</li>
-                  <li>DLL</li>
-                  <!-- Jerawat Ruam Bintik-bintik Eksim Kutil Rosacea Psorias Folikel rambut Gigitan serangga Luka dingin Luka kulit Selulitis DLL -->
-                </ul>
-              </v-card-text>
-            </v-container>
-          </v-container>
-        </v-col>
-      </v-row>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <!-- 4 -->
       <v-row class="mt-1" no-gutters>
         <v-col md="4" sm="12" class="justify-spcace-around"></v-col>
         <v-col cols="12" md="6">
-          <v-container color="transparent">
+          <div>
             <v-card-actions class="text-xs-center">
               <v-img
                 src="@/assets/image/google-play-badge.svg"
@@ -176,7 +175,7 @@
                 contain
               ></v-img>
             </v-card-actions>
-          </v-container>
+          </div>
         </v-col>
       </v-row>
     </v-container>
