@@ -1,89 +1,97 @@
 <template>
-  <v-container id="pelankes_page" fluid>
+  <div id="pelankes_page">
     <div v-for="(section, index) in pelankes" :key="index">
       <!-- banner -->
-      <v-row v-for="item in section.banner" :key="item.judul">
-        <v-col cols="12" md="6">
-          <v-img :src="item.image" width="600" height="600" contain />
-        </v-col>
-        <v-col cols="12" md="6">
-          <v-container>
-            <v-card-title
-              class="title1__widu font-weight-bold black--text text-break"
-            >{{item.judul}}</v-card-title>
-            <div class="list__widu">
-              <ul class="headline font-weight-medium">
-                <li v-for="(li, index) in item.teks" :key="index">{{li.list}}</li>
-              </ul>
-            </div>
-          </v-container>
-        </v-col>
-        <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
-          <v-container width="88%" color="transparent">
-            <p
-              v-for="(s, index) in item.stiker"
-              :key="index"
-              class="body-1 font-weight-medium ma-5"
-            >{{s.paragraf}}</p>
-          </v-container>
-        </v-col>
-      </v-row>
+      <v-container v-for="item in section.banner" :key="item.judul">
+        <v-row>
+          <v-col cols="12">
+            <v-img
+              :src="item.image"
+              aspect-ratio="2.4"
+              max-height="100%"
+              max-width="100%"
+              position="left center"
+              contain
+            >
+              <div class="col-md-5 float-md-right">
+                <v-card-title
+                  class="title1__widu font-weight-bold black--text text-break"
+                >{{item.judul}}</v-card-title>
+                <div class="list__widu">
+                  <ul class="text__widu font-weight-medium">
+                    <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>
+                  </ul>
+                </div>
+              </div>
+            </v-img>
+          </v-col>
+          <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
+            <v-container width="88%" color="transparent">
+              <p
+                v-for="(s, index) in item.stiker"
+                :key="index"
+                class="body-1 font-weight-medium ma-5"
+              >{{s.paragraf}}</p>
+            </v-container>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <!-- contentSatu -->
-      <v-row
+      <v-container
         v-for="item in section.contentSatu"
         :key="item.judul"
         style="background-color:#F2F2F2;"
-        justify="space-around"
+        fluid
       >
-        <v-container color="transparent" width="88%">
+        <v-row class="pl-md-12">
           <v-col cols="12">
             <v-card-title
               class="title__widu font-weight-bold text orange--text darken-3 ma-n4"
             >{{item.judul}}</v-card-title>
+            <v-row>
+              <CardWidu v-for="(card, index) in item.cards" :key="index" v-bind:dataCard="card" />
+            </v-row>
           </v-col>
-          <v-col cols="12" class="d-flex justify-space-around">
-            <CardWidu v-for="(card, index) in item.cards" :key="index" v-bind:dataCard="card" />
-          </v-col>
-        </v-container>
-      </v-row>
+        </v-row>
+      </v-container>
 
       <!-- contentDua -->
-      <v-row>
-        <v-col cols="12" class="d-flex justify-center">
-          <v-container width="88%" color="transparent" class="ma-n2">
-            <p
-              v-for="(item, index) in section.contentDua"
-              :key="index"
-              class="body-1 font-weight-medium"
-            >{{item.paragraf}}</p>
-          </v-container>
-        </v-col>
-      </v-row>
+      <v-container>
+        <v-row class="pl-md-12 pl-4">
+          <p
+            v-for="(item, index) in section.contentDua"
+            :key="index"
+            class="body-1 font-weight-medium"
+          >{{item.paragraf}}</p>
+        </v-row>
+      </v-container>
 
       <!-- contentTiga -->
       <v-row v-for="item in section.contentTiga" :key="item.judul">
         <v-img
           :src="item.image"
-          aspect-ratio="1"
-          height="400"
+          aspect-ratio="1.9"
+          max-height="400"
           position="top center"
           gradient="to top right, rgb(244, 230, 204, 0.9), rgba(255, 217, 133, 0.9)"
         >
-          <v-row justify="space-around">
-            <v-col cols="12" md="7">
-              <v-card-title
-                class="text-center text-break title font-weight-bold primary--text"
-              >{{item.judul}}</v-card-title>
-            </v-col>
-            <v-col cols="12" md="10">
-              <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
-            </v-col>
-          </v-row>
+          <v-container fluid>
+            <v-row class="pl-md-12 ml-md-1">
+              <v-col cols="12">
+                <v-card-title
+                  class="title font-weight-bold primary--text text-break col-md-10"
+                >{{item.judul}}</v-card-title>
+                <v-card-text>
+                  <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
+                </v-card-text>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-img>
       </v-row>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
