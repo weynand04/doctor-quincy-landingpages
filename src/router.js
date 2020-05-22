@@ -27,7 +27,7 @@ export default new Router({
         {
           name: 'Help',
           path: 'help',
-          component: () => import('@/views/homepage/pages/Help')
+          component: () => import('@/views/homepage/pages/UnderConstruct')
         },
 
         // menu drawer
