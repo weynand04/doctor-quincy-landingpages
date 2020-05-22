@@ -1,8 +1,8 @@
 <template>
   <v-container fluid id="tidakditangani_page">
-    <div v-for="section in sections" :key="section.banner">
+    <div v-for="(section, index) in sections" :key="index">
       <!-- section #1 -->
-      <v-row v-for="item in section.banner" :key="item.teks">
+      <v-row v-for="(item, index) in section.banner" :key="index">
         <v-col cols="12" md="6" align-self="center">
           <v-container class="ml-12 pl-8">
             <v-card-title
@@ -22,8 +22,8 @@
 
       <!-- section #2 -->
       <v-row
-        v-for="item in section.contentsatu"
-        :key="item.judul"
+        v-for="(item, index) in section.contentsatu"
+        :key="index"
         justify="center"
         style="background: #FCFCFC"
       >
@@ -36,14 +36,14 @@
               <v-img :src="item.image" contain />
             </v-col>
             <v-col cols="12" md="6" class="list__widu">
-              <ul v-for="list in item.list" :key="list.title">
+              <ul v-for="(list, index) in item.list" :key="index">
                 <li>{{list.title}}</li>
               </ul>
             </v-col>
             <v-col cols="12">
               <p class="text__widu font-weight-medium pt-3">{{item.teks}}</p>
             </v-col>
-            <v-col cols="6" v-for="list in item.lists" :key="list.title" class="list__widu">
+            <v-col cols="6" v-for="(list, index) in item.lists" :key="index" class="list__widu">
               <ul>
                 <li>{{list.title}}</li>
               </ul>
@@ -53,14 +53,14 @@
       </v-row>
 
       <!-- section #3 -->
-      <v-row v-for="item in section.contentdua" :key="item.judul" justify="center">
+      <v-row v-for="(item, index) in section.contentdua" :key="index" justify="center">
         <v-container width="85%">
           <v-row>
             <v-col cols="12">
               <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
             </v-col>
             <v-col cols="12" md="6" class="text__widu list__widu">
-              <ul v-for="list in item.list" :key="list.title">
+              <ul v-for="(list, index) in item.list" :key="index">
                 <li>{{list.title}}</li>
               </ul>
             </v-col>

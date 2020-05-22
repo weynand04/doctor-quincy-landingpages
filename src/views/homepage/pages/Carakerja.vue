@@ -155,7 +155,7 @@
 
       <!-- 4 -->
       <v-row class="mt-1" no-gutters>
-        <v-col md="4" sm="12" align-self="rigth" class="justify-spcace-around"></v-col>
+        <v-col md="4" sm="12" class="justify-spcace-around"></v-col>
         <v-col cols="12" md="6">
           <v-container color="transparent">
             <v-card-actions class="text-xs-center">
