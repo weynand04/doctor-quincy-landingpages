@@ -73,11 +73,6 @@ export default {
     expand: false,
     Menuitem: [
       {
-        title: "Home",
-        path: "/",
-        cls: "hidden-md-and-up"
-      },
-      {
         title: "Be our Partner",
         path: "bepartners",
         cls: "hidden-md-and-up"

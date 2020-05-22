@@ -1,17 +1,17 @@
 <template>
   <v-footer id="Footer" padless>
     <!-- Disclaimer -->
-    <v-row style="background-color: grey;" class="mb-1">
+    <v-row no-gutters style="background-color: grey;" class="mb-1">
       <v-col cols="12" class="d-flex justify-space-around">
-        <v-breadcrumbs :items="claimitems" divider="|" class="mb-0 pb-0 mt-0 pt-0"></v-breadcrumbs>
+        <v-breadcrumbs :items="claimitems" divider="|" class="my-0 py-0"></v-breadcrumbs>
       </v-col>
     </v-row>
 
     <!-- app contact dan link penting -->
     <v-row no-gutters style="background: #6B6B6B" class="col-12">
       <!-- Get our application -->
-      <v-col md="6" sm="12">
-        <v-subheader class="ml-5 display-2 font-weight-bold white--text">GET APP</v-subheader>
+      <v-col cols="12" md="6" sm="12">
+        <h1 class="pl-md-12 display-2 font-weight-bold white--text">GET APP</h1>
         <v-card-text class="d-flex">
           <v-img
             src="@/assets/image/google-play-badge.svg"
