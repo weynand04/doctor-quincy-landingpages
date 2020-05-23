@@ -276,10 +276,11 @@
         <v-col cols="12" md="6">
           <v-img
             src="@/assets/image/svg/gambar lain-07.svg"
-            min-height="400"
-            min-width="400"
+            min-height="200"
+            min-width="200"
             max-height="800"
             max-width="800"
+            aspect-ratio="1.9"
             contain
           />
         </v-col>
