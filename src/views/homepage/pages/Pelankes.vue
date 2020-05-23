@@ -68,28 +68,18 @@
       </v-container>
 
       <!-- contentTiga -->
-      <v-row v-for="item in section.contentTiga" :key="item.judul">
-        <v-img
-          :src="item.image"
-          aspect-ratio="1.9"
-          max-height="400"
-          position="top center"
-          gradient="to top right, rgb(244, 230, 204, 0.9), rgba(255, 217, 133, 0.9)"
-        >
-          <v-container fluid>
-            <v-row class="pl-md-12 ml-md-1">
-              <v-col cols="12">
-                <v-card-title
-                  class="title font-weight-bold primary--text text-break col-md-10"
-                >{{item.judul}}</v-card-title>
-                <v-card-text>
-                  <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
-                </v-card-text>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-img>
-      </v-row>
+      <v-container fluid v-for="item in section.contentTiga" :key="item.judul">
+        <v-row class="pl-md-12">
+          <v-col cols="12">
+            <v-card-title
+              class="title font-weight-bold primary--text text-break col-md-10"
+            >{{item.judul}}</v-card-title>
+            <v-card-text>
+              <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
+            </v-card-text>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
