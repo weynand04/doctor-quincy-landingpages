@@ -1,15 +1,7 @@
 <template>
   <div class="display-1 font-weight-light col-12 text-left pa-0 text-break">
-    <h5 class="font-weight-bold primary--text">
-      {{ subjudul }}
-      <template v-if="text">
-        <span class="subtitle-1" v-text="text" />
-      </template>
-    </h5>
-
-    <div class="pt-2">
-      <slot />
-    </div>
+    <h5 v-if="judul !== ''" class="font-weight-bold black--text">{{ judul }}</h5>
+    <h5 v-else class="font-weight-bold primary--text">{{ subjudul }}</h5>
   </div>
 </template>
 
@@ -22,7 +14,7 @@ export default {
       type: String,
       default: ""
     },
-    text: {
+    judul: {
       type: String,
       default: ""
     }

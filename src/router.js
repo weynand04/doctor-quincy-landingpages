@@ -22,12 +22,12 @@ export default new Router({
         {
           name: 'BeourPartners',
           path: '/bepartners',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Investor')
         },
         {
           name: 'Help',
           path: 'help',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Help')
         },
 
         // menu drawer
@@ -57,10 +57,35 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Pelankes')
         },
         {
-          name: 'Partner1',
-          path: 'Partner-1',
+          name: 'Jadipenyedia',
+          path: 'beprovider',
+          component: () => import('@/views/homepage/pages/Beprovider')
+        },
+        {
+          name: 'Mitradaninvestor',
+          path: 'ourpartners',
           component: () => import('@/views/homepage/pages/Partner1')
         },
+        {
+          name: 'Medaidanberita',
+          path: 'blog',
+          component: () => import('@/views/homepage/pages/Blog')
+        },
+        {
+          name: 'Lowongankerja',
+          path: 'carrer',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        },
+        {
+          name: 'Eventkesehatan',
+          path: 'event',
+          component: () => import('@/views/homepage/pages/Eventkesehatan')
+        },
+        {
+          name: 'Awesome promo',
+          path: 'promo',
+          component: () => import('@/views/homepage/pages/UnderConstruct')
+        }
       ]
     },
     {

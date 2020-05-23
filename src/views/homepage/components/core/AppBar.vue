@@ -82,9 +82,13 @@ export default {
       { title: "Home health care", path: "/health-care" },
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
       { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
-      { title: "Home health care", path: "/health-care" },
       { title: "Penyedia layanan kesehatan", path: "/pelankes" },
-      { title: "Mitra & Investor", path: "/partner-1" }
+      { title: "Menjadi penyedia", path: "/beprovider" },
+      { title: "Mitra & Investor", path: "/ourpartners" },
+      { title: "Media dan Berita", path: "/blog" },
+      { title: "Lowongan kerja", path: "/carrer" },
+      { title: "Event kesehatan", path: "/event" },
+      { title: "Awesome promo", path: "/promo" }
     ],
     toolitems: [
       { path: "/", title: "Home" },
