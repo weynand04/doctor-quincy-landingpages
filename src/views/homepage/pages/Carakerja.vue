@@ -10,7 +10,7 @@
 }
 </style>
 <template>
-  <div>
+  <div id="carakerjaPage">
     <v-banner class="bannerWidu hidden-sm-and-down d-md-flex text-center mt-0 font-weight-bold">
       <v-container fluid>
         <div

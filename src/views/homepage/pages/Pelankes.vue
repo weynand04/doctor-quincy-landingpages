@@ -1,5 +1,5 @@
 <template>
-  <div id="pelankes_page">
+  <div id="pelankesPage">
     <div v-for="(section, index) in pelankes" :key="index">
       <!-- banner -->
       <v-container v-for="item in section.banner" :key="item.judul">

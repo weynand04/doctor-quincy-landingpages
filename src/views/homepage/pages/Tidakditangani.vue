@@ -1,5 +1,5 @@
 <template>
-  <div id="tidakditangani_page">
+  <div id="tidakditanganiPage">
     <div v-for="(section, index) in sections" :key="index">
       <!-- section #1 -->
       <v-container v-for="(item, index) in section.banner" :key="index">

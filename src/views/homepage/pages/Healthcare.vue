@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="healthcarePage">
     <!-- banner -->
     <v-container fluid>
       <v-row class="pl-md-12">

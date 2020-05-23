@@ -1,5 +1,5 @@
 <template>
-  <div id="Ditangani_page" fluid>
+  <div id="ditanganiPage">
     <!-- section #1 -->
     <v-container fluid>
       <v-row class="pl-md-8">
