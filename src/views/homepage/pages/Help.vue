@@ -7,8 +7,7 @@
 </template>
 
 <script>
-import ContainerWidu from "../components/base/ContainerWidu";
-import Subjudul from "../components/base/Judul";
+import CardWidu from "../components/CardWidu";
 
 export default {
   name: "Help",

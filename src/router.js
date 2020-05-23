@@ -57,35 +57,10 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Pelankes')
         },
         {
-          name: 'Jadipenyedia',
-          path: 'beprovider',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          name: 'Partner1',
+          path: 'Partner-1',
+          component: () => import('@/views/homepage/pages/Partner1')
         },
-        {
-          name: 'Mitradaninvestor',
-          path: 'ourpartners',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
-        },
-        {
-          name: 'Medaidanberita',
-          path: 'blog',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
-        },
-        {
-          name: 'Lowongankerja',
-          path: 'carrer',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
-        },
-        {
-          name: 'Eventkesehatan',
-          path: 'event',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
-        },
-        {
-          name: 'Awesome promo',
-          path: 'promo',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
-        }
       ]
     },
     {
