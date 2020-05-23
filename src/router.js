@@ -48,7 +48,12 @@ export default new Router({
           name: 'Penyedialayanankesehatan',
           path: 'pelankes',
           component: () => import('@/views/homepage/pages/Pelankes')
-        }
+        },
+         {
+          name: 'Partner1',
+          path: 'Partner-1',
+          component: () => import('@/views/homepage/pages/Partner1')
+        },
       ]
     },
     {

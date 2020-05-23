@@ -78,7 +78,8 @@ export default {
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
       { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
       { title: "Home health care", path: "/health-care" },
-      { title: "Penyedia layanan kesehatan", path: "/pelankes" }
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" },
+      { title: "Mitra & Investor", path: "/partner-1" }
     ],
     toolitems: [
       { path: "/", title: "Home" },
