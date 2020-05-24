@@ -47,7 +47,7 @@
         <v-row class="pl-md-12">
           <v-col cols="12">
             <v-card-title
-              class="title__widu font-weight-bold text orange--text darken-3 ma-n4"
+              class="title__widu font-weight-bold text orange--text darken-3 ma-n4 text-break"
             >{{item.judul}}</v-card-title>
             <v-row>
               <CardWidu v-for="(card, index) in item.cards" :key="index" v-bind:dataCard="card" />
@@ -67,9 +67,9 @@
         </v-row>
       </v-container>
 
-      <!-- contentTiga -->
-      <v-container fluid v-for="item in section.contentTiga" :key="item.judul">
-        <v-row class="pl-md-12">
+      <!-- banner bottom -->
+      <ContainerWidu v-for="item in section.contentTiga" :key="item.judul" class="bg-img">
+        <v-row>
           <v-col cols="12">
             <v-card-title
               class="title font-weight-bold primary--text text-break col-md-10"
@@ -79,12 +79,13 @@
             </v-card-text>
           </v-col>
         </v-row>
-      </v-container>
+      </ContainerWidu>
     </div>
   </div>
 </template>
 
 <script>
+import ContainerWidu from "../components/base/ContainerWidu";
 import CardWidu from "../components/base/CardWidu";
 
 export default {
@@ -198,7 +199,8 @@ export default {
     ]
   }),
   components: {
-    CardWidu
+    CardWidu,
+    ContainerWidu
   }
 };
 </script>
