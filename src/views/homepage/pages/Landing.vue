@@ -82,7 +82,7 @@
       </v-container>
 
       <!-- Content #2 -->
-      <v-container fluid v-for="item in section.contentDua" :key="item.judul">
+        <v-container fluid v-for="item in section.contentDua" :key="item.judul">
         <v-row class="pl-md-12">
           <v-col cols="12">
             <h1 class="title__widu font-weight-bold primary--text text-break">{{item.judul}}</h1>

@@ -79,7 +79,7 @@ export default new Router({
         {
           name: 'Eventkesehatan',
           path: 'event',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Eventkesehatan')
         },
         {
           name: 'Awesome promo',
