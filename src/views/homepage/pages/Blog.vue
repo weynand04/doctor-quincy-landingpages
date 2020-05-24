@@ -6,9 +6,9 @@
         <v-row no-gutters class="pl-sm-6 pl-md-2 pl-lg-3">
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
-            <p>{{item.teks}}</p>
-            <v-btn rounded color="primary" class="elevation-0">Login</v-btn>
-            <v-btn rounded outlined color="primary">Register</v-btn>
+            <p class="body-1 font-weight-medium">{{item.teks}}</p>
+            <v-btn rounded max-width="100" height="40" color="primary">Login</v-btn>
+            <v-btn rounded outlined max-width="100" height="40" color="primary">Register</v-btn>
           </v-col>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6">
             <v-img
@@ -24,7 +24,11 @@
       </ContainerWidu>
 
       <!-- content bottom -->
-      <ContainerWidu v-for="(item, incont) in section.ContentSatu" :key="incont">
+      <ContainerWidu
+        v-for="(item, incont) in section.ContentSatu"
+        :key="incont"
+        style="background: #FCFCFC"
+      >
         <v-row>
           <v-col>
             <Subjudul :subjudul="item.subjudul" class="mb-2" />
@@ -37,10 +41,10 @@
               class="float-none float-sm-left float-md-left float-xl-left float-lg-left mr-2"
             ></v-img>
             <template v-for="(data, indat) in item.teks">
-              <p :key="indat" class="font-weight-medium">{{data.p}}</p>
+              <p :key="indat" class="body-1 font-weight-medium">{{data.p}}</p>
             </template>
           </v-col>
-          <v-pagination :length="3" disabled></v-pagination>
+          <v-pagination :length="5" disabled></v-pagination>
         </v-row>
       </ContainerWidu>
     </div>
@@ -96,17 +100,3 @@ export default {
   })
 };
 </script>
-
-<style lang="scss">
-.bg-img {
-  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/image/Image 14.png"),
-    linear-gradient(
-      top right,
-      rgba(230, 172, 47, 0.178),
-      rgba(216, 160, 40, 0.301)
-    );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 20%;
-}
-</style>

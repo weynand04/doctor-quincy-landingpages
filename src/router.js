@@ -59,7 +59,7 @@ export default new Router({
         {
           name: 'Jadipenyedia',
           path: 'beprovider',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Beprovider')
         },
         {
           name: 'Mitradaninvestor',

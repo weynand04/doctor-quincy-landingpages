@@ -117,11 +117,7 @@ export default {
 <style lang="scss">
 .bg-img {
   background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/image/Image 14.png"),
-    linear-gradient(
-      top right,
-      rgba(230, 172, 47, 0.178),
-      rgba(216, 160, 40, 0.301)
-    );
+    linear-gradient(rgba(230, 172, 47, 0.178), rgba(216, 160, 40, 0.301));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 20%;
