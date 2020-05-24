@@ -11,7 +11,14 @@
             <v-btn rounded outlined max-width="100" height="40" color="primary">Register</v-btn>
           </v-col>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6">
-            <v-img :src="item.gambar" max-height="305" max-width="859" aspect-ratio="1.6" contain />
+            <v-img
+              :src="item.gambar"
+              max-height="1024"
+              max-width="900"
+              aspect-ratio="1.4"
+              contain
+              class="ma-4"
+            />
           </v-col>
         </v-row>
       </ContainerWidu>
@@ -60,7 +67,7 @@
         :key="index"
         style="background: #FCFCFC"
       >
-        <h1 class="text-center primary--text">{{item.subjudul}}</h1>
+        <Subjudul :subjudul="item.subjudul"></Subjudul>
         <v-row no-gutters>
           <v-col
             v-for="(data, index) in item.Dcard"
@@ -102,7 +109,7 @@
       >
         <v-row>
           <v-col cols="12">
-            <h1 class="text-center primary--text">{{item.subjudul}}</h1>
+            <Subjudul :subjudul="item.subjudul" class="text-center"></Subjudul>
           </v-col>
           <v-col
             cols="12"
