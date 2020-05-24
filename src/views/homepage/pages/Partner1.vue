@@ -24,7 +24,7 @@
     <!-- section #2  -->
     <v-row>
       <v-col cols="12" md="6">
-        <v-img src="@/assets/image/artwork-02-cp.png" width="649" height="461" contain />
+        <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" contain />
       </v-col>
       <v-col cols="12" md="6" align-self="center">
         <v-card flat class="pl-12 ml-6">
@@ -106,7 +106,7 @@
 <!-- section #7  -->
 <v-row style="background-color:#F2F2F2;" class="justify-space-around">
   <v-col cols="12" md="5">
-    <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" contain />
+    <v-img src="@/assets/image/gambar lain-05.png" width="549" height="361" contain />
   </v-col>
   <v-col cols="12" md="7" align-self="center">
     <v-card flat class="pl-12 ml-6" style="background-color:#F2F2F2;">
@@ -122,10 +122,10 @@
 </v-row>
 <!--  -->
 <!-- section #8 -->
-<v-row class="justify-space-around">
-  <v-card width="350" v-for="z in img" :key="z.image">
+<v-row class="pl-md-12 ml-md-12">
+  <v-card width="30%" v-for="z in img" :key="z.image" flat>
     <v-col>
-      <v-img :src="z.image" aspect-ratio="1.5" />
+      <v-img :src="z.image" aspect-ratio="1.5" contain/>
     </v-col>
   </v-card>
 </v-row>
