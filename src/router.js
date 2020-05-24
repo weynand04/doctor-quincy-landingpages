@@ -22,7 +22,7 @@ export default new Router({
         {
           name: 'BeourPartners',
           path: '/bepartners',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Investor')
         },
         {
           name: 'Help',
