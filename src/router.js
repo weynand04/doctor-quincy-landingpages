@@ -27,7 +27,7 @@ export default new Router({
         {
           name: 'Help',
           path: 'help',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Help')
         },
 
         // menu drawer
@@ -69,7 +69,7 @@ export default new Router({
         {
           name: 'Medaidanberita',
           path: 'blog',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Blog')
         },
         {
           name: 'Lowongankerja',
