@@ -17,7 +17,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-img src="@/assets/image/gambar lain-07.png" width="562px" height="506px" contain />
+        <v-img src="@/assets/image/svg/new-12.svg" width="562px" height="506px" contain />
       </v-col>
     </v-row>
 
@@ -69,8 +69,9 @@
   <v-col sm="1"></v-col>
   <!-- bagian kiri -->
   <v-col md="1" sm="2">
-    <v-avatar color="#F8B218">
-      <v-icon dark>{{ x.icon1 }}</v-icon>
+    <v-avatar size="80">
+      <!-- <v-icon dark>{{ x.icon1 }}</v-icon> -->
+      <img :src="x.icon1">
     </v-avatar>
   </v-col>
   <v-col class="hidden-xs-only" sm="6" md="4">
@@ -78,8 +79,9 @@
   </v-col>
   <!-- bagian kanan -->
   <v-col md="1" sm="2">
-    <v-avatar color="#F8B218">
-      <v-icon dark>{{ x.icon2 }}</v-icon>
+    <v-avatar size="80">
+      <!-- <v-icon dark>{{ x.icon2 }}</v-icon> -->
+      <img :src="x.icon2">
     </v-avatar>
   </v-col>
   <v-col class="hidden-xs-only" sm="6" md="4">
@@ -106,7 +108,7 @@
 <!-- section #7  -->
 <v-row style="background-color:#F2F2F2;" class="justify-space-around">
   <v-col cols="12" md="5">
-    <v-img src="@/assets/image/gambar lain-05.png" width="549" height="361" contain />
+    <v-img src="@/assets/image/svg/new-13.svg" width="549" height="361" contain />
   </v-col>
   <v-col cols="12" md="7" align-self="center">
     <v-card flat class="pl-12 ml-6" style="background-color:#F2F2F2;">
@@ -173,33 +175,33 @@ export default {
   data: () => ({
     list1: [
     {
-      icon1: "mdi-cellphone",
+      icon1: require("@/assets/image/Group 2684@2x.png"),
       text1: "Meningkatkan pelayanan kesehatan yang lebih baik dengan teknologi end-to-end untuk populasi berisiko.",
-      icon2: "mdi-calendar",
+      icon2: require("@/assets/image/Group 2689@2x.png"),
       text2: "Perhatian medis yang baik dan kemampuan untuk mengoptimalkan jadwal antara dokter dan pasien."
     },
     {
-     icon1: "mdi-heart",
+     icon1: require("@/assets/image/Group 2685@2x.png"),
      text1: "Berfokus pada pasien dan mutu layanan kesehatan yang baik, ini adalah prinsip yang tidak dapat dinegosiasikan.",
-     icon2: "mdi-chart-pie",
+     icon2: require("@/assets/image/Group 2690@2x.png"),
      text2: "Strategi pemasaran berkelanjutan untuk meningkatkan jangkauan layanan, bahkan ke daerah paling terpencil di seluruh negeri."
    },
    {
-     icon1: "mdi-cash-usd",
+     icon1: require("@/assets/image/Group 2693@2x.png"),
      text1: "Sistem ini dirancang untuk mengurangi biaya perawatan kesehatan dan merestrukturisasi pelayanan kesehatan.",
-     icon2: "mdi-account-multiple",
+     icon2: require("@/assets/image/Group 2691@2x.png"),
      text2: "Solusi Telehealth yang disesuaikan dan dapat diukur untuk semua organisasi besar atau kecil. Efisien dan tanpa khawatir."
    },
    {
-    icon1: "mdi-human-greeting",
+    icon1: require("@/assets/image/Group 2687@2x.png"),
     text1: "Layanan kesehatan kapan saja dimana saja. Dapat mendorong peningkatan produktivitas. Mengurangi absensi kerja.",
-    icon2: "mdi-chart-bar",
+    icon2: require("@/assets/image/Group 2692@2x.png"),
     text2: "Platform kami membantu mempromosikan dan meningkatkan kesadaran merek mitra dan investor kami, serta loyalitas pelanggan."
   },
   {
-    icon1: "mdi-ambulance",
+    icon1: require("@/assets/image/Group 2688@2x.png"),
     text1: "Kunjungan dokter mengurangi biaya 'ER'. Perawatan sesuai permintaan, mudah diakses kapan saja, dimana saja.",
-    icon2: "mdi-cash",
+    icon2: require("@/assets/image/Group 2693@2x.png"),
     text2: "Platform kami menciptakan dan memberikan pertumbuhan ekonomi baru untuk mitra bisnis dan investor kami."
   }],
   list2: [
@@ -226,13 +228,13 @@ export default {
   }],
   img: [
   {
-    image: require("@/assets/image/Image 23.png")
+    image: require("@/assets/image/Mask Group 19@2x.png")
   },
   {
-    image: require("@/assets/image/Image 24.png")
+    image: require("@/assets/image/Mask Group 20@2x.png")
   },
   {
-    image: require("@/assets/image/Image 25.png")
+    image: require("@/assets/image/Mask Group 21@2x.png")
   }],
   contentTiga: [
   {
