@@ -64,7 +64,7 @@ export default new Router({
         {
           name: 'Mitradaninvestor',
           path: 'ourpartners',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Partner1')
         },
         {
           name: 'Medaidanberita',
