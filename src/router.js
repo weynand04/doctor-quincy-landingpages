@@ -74,7 +74,7 @@ export default new Router({
         {
           name: 'Lowongankerja',
           path: 'carrer',
-          component: () => import('@/views/homepage/pages/UnderConstruct')
+          component: () => import('@/views/homepage/pages/Loker')
         },
         {
           name: 'Eventkesehatan',

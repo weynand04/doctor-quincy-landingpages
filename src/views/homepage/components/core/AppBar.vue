@@ -35,10 +35,8 @@
   <v-app-bar id="Appbar" app elevate-on-scroll height="50" class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col cols="4" class="d-flex justify-left pl-md-12" align-self="center">
-        <v-toolbar-title>
+      <v-col cols="4" class="d-flex justify-left pl-md-12 align-content-center" align-self="center">
           <v-img src="@/assets/image/logo.svg" contain max-height="35" max-width="180"></v-img>
-        </v-toolbar-title>
       </v-col>
 
       <v-col cols="4" class="hidden-md-and-down d-md-flex justify-center">
