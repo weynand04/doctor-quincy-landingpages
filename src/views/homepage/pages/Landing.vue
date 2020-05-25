@@ -85,11 +85,7 @@
           <v-col cols="12">
             <Subjudul :subjudul="item.judul" />
             <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
-            <p
-              v-for="p in item.teks"
-              :key="p.paragraf"
-              class="body-1 font-weight-medium py-2"
-            >{{p.paragraf}}</p>
+            <p v-for="p in item.teks" :key="p.paragraf" class="body-1 py-2">{{p.paragraf}}</p>
           </v-col>
         </v-row>
       </v-container>
@@ -167,11 +163,7 @@
         <v-row class="pl-md-12">
           <v-col cols="12" class="pl-md-6">
             <Subjudul :subjudul="item.judul" />
-            <p
-              class="body-1 font-weight-medium"
-              v-for="p in item.teks"
-              :key="p.paragraf"
-            >{{p.paragraf}}</p>
+            <p class="body-1 text-justify" v-for="p in item.teks" :key="p.paragraf">{{p.paragraf}}</p>
           </v-col>
         </v-row>
       </v-container>
@@ -251,8 +243,7 @@ export default {
           {
             tag:
               "Pendekatan kami terhadap perawatan kesehatan adalah membuatnya mudah dan bebas repot untuk semua orang, meruntuhkan penghalang birokrasi dengan mendukung kesehatan kamu dimanapun kamu berada. Dokter dan psikolog berlisensi kami tersedia 24 jam setiap hari.",
-            class:
-              "body-2 white--text font-weight-medium col-12 col-md-8 ma-0 pa-0 mx-auto",
+            class: "body-2 white--text col-12 col-md-8 ma-0 pa-0 mx-auto",
             style: "background-color:#6B6B6B;"
           }
         ]
@@ -295,27 +286,27 @@ export default {
             image: require("@/assets/image/gambar lain-01.png"),
             teks: [
               {
-                class: "text__widu font-weight-medium",
+                class: "body-1",
                 paragraf:
                   "Dokter Quincy memberikan layanan langsung kepada konsumen, puluhan juta orang Indonesia akan menikmati kunjungan kesehatan medis termasuk layanan kesehatan jiwa, perawatan pencegahan, perawatan kronis, perawatan darurat, dan kesehatan perilaku. "
               },
               {
-                class: "text__widu font-weight-medium",
+                class: "body-1",
                 paragraf:
                   "Misi Doctor Quincy adalah meningkatkan kesehatan masyarakat melalui perawatan dan inovasi yang penuh kasih. Untuk mengakses Doctor Quincy, kamu dapat mengunduh aplikasi kami secara gratis di (iTunes atau Google Play)."
               },
               {
-                class: "text__widu font-weight-medium",
+                class: "body-1",
                 paragraf:
                   "Dokter Quincy secara langsung sedang mengubah kehidupan lebih dari 100 juta jiwa orang dengan akses melalui layanan kesehatan berkualitas tanpa harus meninggalkan rumah mereka."
               },
               {
-                class: "text__widu font-weight-bold blue--text",
+                class: "body-1 font-weight-bold blue--text",
                 paragraf:
                   "Kendalikan Kesehatan Kamu Hari Ini Juga! Bergabunglah Dengan Jutaan Orang Yang Memiliki Akses Dokter Quincy 24 Jam Sehari, 365 Hari Setahun"
               },
               {
-                class: "text__widu font-weight-medium red--text",
+                class: "body-1 red--text",
                 paragraf: "Sekarang Giliran Kamu!"
               }
             ]
@@ -330,7 +321,7 @@ export default {
               "Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
           },
           {
-            class: "body-2 font-weight-regular red--text",
+            class: "body-1 red--text",
             teks: "Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
           }
         ]

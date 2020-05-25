@@ -1,10 +1,10 @@
 <template>
-  <div id="healthcarePage">
+  <div id="healthcare">
     <!-- banner -->
     <v-container fluid>
       <v-row class="pl-md-12">
         <v-col cols="12">
-          <h1 class="font-weight-bold pl-md-2 black--text text-break">Home Health Care</h1>
+          <h1 class="font-weight-bold black--text text-break">Home Health Care</h1>
           <div class="d-inline-block">
             <v-img
               src="@/assets/image/svg/gambar lain-02.svg"
@@ -14,17 +14,16 @@
               max-width="500"
               aspect-ratio="1.9"
               contain
-              position="left 30% center"
               class="col-md-6 ma-0 float-md-right"
             />
             <p
-              class="text__widu font-weight-medium text-break my-4 col-md-12"
+              class="body-1 my-4 col-md-12"
             >Berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit atau cedera.</p>
             <p
-              class="text__widu font-weight-medium text-break my-4 col-md-12"
+              class="body-1 my-4 col-md-12"
             >Perawatan kesehatan di rumah dapat mencakup erapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.</p>
             <p
-              class="text__widu font-weight-medium text-break my-4 col-md-12"
+              class="body-1 my-4 col-md-12"
             >Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
           </div>
         </v-col>
@@ -35,7 +34,7 @@
     <v-container fluid>
       <v-row class="pl-md-12 list__widu">
         <v-col cols="12" md="6">
-          <v-row no-gutters class="elevation-2 text-center" style="background: red">
+          <v-row class="elevation-1 text-center" style="background: red">
             <v-col>
               <v-card-title
                 class="title__widu white--text font-weight-bold text-break justify-center"
@@ -55,20 +54,20 @@
           <v-row no-gutters justify="space-between">
             <v-col cols="4" class="mx-0 my-1 fill-height">
               <ul class="my-5">
-                <li class="text__widu font-weight-medium my-4">Keperawatan Terampil</li>
-                <li class="text__widu font-weight-medium my-4">Kesehatan Rumah</li>
-                <li class="text__widu font-weight-medium my-4">Terapi di Rumah</li>
-                <li class="text__widu font-weight-medium my-4">Terapis Bersertifikat</li>
-                <li class="text__widu font-weight-medium my-4">Bersifat Medis</li>
+                <li class="body-1 my-4">Keperawatan Terampil</li>
+                <li class="body-1 my-4">Kesehatan Rumah</li>
+                <li class="body-1 my-4">Terapi di Rumah</li>
+                <li class="body-1 my-4">Terapis Bersertifikat</li>
+                <li class="body-1 my-4">Bersifat Medis</li>
               </ul>
             </v-col>
             <v-col cols="4" class="mx-0 my-1 fill-height">
               <ul>
-                <li class="text__widu font-weight-medium my-4">Pekerjaan Rumah Umum</li>
-                <li class="text__widu font-weight-medium my-4">Membersihkan Rumah</li>
-                <li class="text__widu font-weight-medium my-4">Mencuci Pakaian</li>
-                <li class="text__widu font-weight-medium my-4">Pekerjaan Rumah Tangga</li>
-                <li class="text__widu font-weight-medium my-4">Tidak bersifat medis</li>
+                <li class="body-1 my-4">Pekerjaan Rumah Umum</li>
+                <li class="body-1 my-4">Membersihkan Rumah</li>
+                <li class="body-1 my-4">Mencuci Pakaian</li>
+                <li class="body-1 my-4">Pekerjaan Rumah Tangga</li>
+                <li class="body-1 my-4">Tidak bersifat medis</li>
               </ul>
             </v-col>
           </v-row>
@@ -83,12 +82,12 @@
     <v-row no-gutters>
       <v-col cols="12" class="d-flex justify-center" style="background: #9E9E9E">
         <p
-          class="col-md-10 text-center ma-0 my-0 white--text font-weight-bold"
+          class="col-md-10 text-center ma-0 my-0 white--text body-1"
         >Home Health Care ini dirancang khusus untuk pasien yang memiliki masalah meninggalkan rumah atau tidak dapat melangsungkan kegiatan sehari-hari dengan sendiri sebagaimana semestinya dan membutuhkan perawatan medis karena cedera atau penyakit.</p>
       </v-col>
       <v-col cols="12" style="background: #F8F8F8" class="d-flex justify-center">
         <p
-          class="col-md-10 text-center font-weight-bold"
+          class="col-md-10 text-center body-1"
         >Profesional perawatan kesehatan di rumah ini sering kali adalah perawat berlisensi, terapis, atau asisten kesehatan rumah. Sebagian besar dari mereka bekerja untuk klinik kesehatan umum, rumah sakit, atau lembaga kesehatan masyarakat lainnya, mereka terlatih dan bersertifikat.</p>
       </v-col>
     </v-row>
@@ -131,7 +130,7 @@
           >Contoh Layanan Kesehatan Di Rumah Yang Terampil Meliputi:</v-card-title>
           <v-card-text class="list__widu">
             <ul>
-              <li class="text__widu font-weight-medium" v-for="x in list" :key="x.text">{{ x.text }}</li>
+              <li class="body-1" v-for="x in list" :key="x.text">{{ x.text }}</li>
             </ul>
           </v-card-text>
           <v-card-title
@@ -139,11 +138,7 @@
           >Secara Umum, Tujuan Perawatan Kesehatan Di Rumah Ini Adalah Untuk Mengobati Penyakit Atau Cedera. Perawatan Kesehatan Di Rumah Dapat Membantu Kamu Sebagai Berikut:</v-card-title>
           <v-card-text class="list__widu">
             <ul>
-              <li
-                class="text__widu font-weight-medium"
-                v-for="x in list1"
-                :key="x.text"
-              >{{ x.text }}</li>
+              <li class="body-1" v-for="x in list1" :key="x.text">{{ x.text }}</li>
             </ul>
           </v-card-text>
         </v-col>
@@ -157,39 +152,30 @@
           src="@/assets/image/svg/gambar lain-04.svg"
           max-height="850"
           max-width="550"
-          min-width="500"
-          min-height="450"
           contain
-          position="center center"
           class="float-md-right"
         />
-        <div class="pl-md-12">
-          <v-container class="pl-md-12">
+        <v-container>
+          <div>
             <v-card-title
               class="title__widu font-weight-bold orange--text text-break"
             >Contoh Apa Yang Harus Dilakukan Staf Kesehatan Di Rumah:</v-card-title>
             <v-card-text class="list__widu">
               <ul>
-                <li
-                  class="text__widu font-weight-medium"
-                  v-for="x in list2"
-                  :key="x.text"
-                >{{ x.text }}</li>
+                <li class="body-1" v-for="x in list2" :key="x.text">{{ x.text }}</li>
               </ul>
             </v-card-text>
-          </v-container>
-        </div>
-        <div class="mx-md-n12" style="background: #FFFF">
-          <v-container class="pl-md-12">
+          </div>
+          <div>
             <v-card-title
               class="title__widu font-weight-bold orange--text text-break"
             >Pilih Layanan Yang Sesuai Dengan Kebutuhan-mu</v-card-title>
-            <v-card-text class="text__widu font-weight-medium">
+            <v-card-text class="body-1">
               <p>Kamu dapat memilih untuk mengundang perawatan kesehatan di rumah untuk setiap situasi. Kami bangga menawarkan layanan perawatan rumah berkualitas tinggi yang tidak bisa kamu temukan di tempat lain, dan memberikannya dengan belas kasih, keunggulan, dan keandalan. Kami memiliki hak istimewa menyediakan perawatan di rumah untuk ribuan klien di seluruh negeri. Masing-masing klien memiliki kebutuhan unik masing-masing, dan kami telah bekerja dengan masing-masing klien untuk mengembangkan dan memberikan rencana perawatan yang dipersonalisasi berdasarkan tujuan kesehatan mereka.</p>
               <p>Perawatan Kesehatan Rumah Dengan Perhatian Khusus Dokter kami mengunjungi rumah kamu untuk perawatan berkelanjutan dan memberikan perawatan yang disesuaikan dengan resep dokter sebelumnya atau setelah meninggalkan rumah sakit. Penyakit, atau cedera untuk membantu kamu merehabilitasi dan mencapai tingkat kemandirian yang optimal atau secara proaktif mengelola kondisi kesehatan kronis kamu untuk membantu mencegah rawat inap lagi di rumah sakit.</p>
             </v-card-text>
-          </v-container>
-        </div>
+          </div>
+        </v-container>
       </v-container>
     </v-row>
 
@@ -213,9 +199,9 @@
             class="title__widu font-weight-bold orange--text text-break"
           >Layanan Terapis Perawatan & Persahabatan</v-card-title>
           <v-card-text
-            class="text__widu font-weight-medium"
+            class="body-1"
           >Perawatan di rumah dengan kegiatan sehari-hari dapat menghadirkan kemandirian dan ketenangan pikiran, terutama bagi keluarga yang hidup dengan seorang lansia yang menderita penyakit Alzheimer atau Demensia. Perawatan dibagi dalam 3 shift hingga 24 jam sehari.</v-card-text>
-          <v-card-text class="text__widu font-weight-medium list__widu">
+          <v-card-text class="body-1 list__widu">
             <ul>
               <li>Membantu mandi, berpakaian, menggunakan toilet, menyikat gigi, menyikat rambut, dan merias wajah</li>
               <li>Membantu memberi makan, menyiapkan makanan, dan pengingat waktu minum obat</li>
@@ -236,9 +222,9 @@
             class="title__widu font-weight-bold orange--text text-break"
           >Layanan Perawatan Kesehatan Rumah Dengan Perawat Welas Asih</v-card-title>
           <v-card-text
-            class="text__widu font-weight-medium black--text"
+            class="body-1 black--text"
           >Perawatan berkelanjutan, penuh kasih sayang untuk individu dengan cedera tulang belakang, cedera otak traumatis, ALS, MS, dan banyak lagi, diberikan setiap 4 jam oleh perawat selama 3 kali sehari.</v-card-text>
-          <v-card-text class="text__widu font-weight-medium list__widu">
+          <v-card-text class="body-1 list__widu">
             <ul>
               <li>Perawatan trakeostomi dan ventilator</li>
               <li>Perawatan gastrostomi (tabung makanan)</li>
@@ -274,7 +260,7 @@
             class="title__widu font-weight-bold orange--text text-break"
           >Perawatan Kesehatan Rumah Dengan Perhatian Khusus</v-card-title>
           <v-card-text
-            class="text__widu font-weight-medium black--text"
+            class="body-1 black--text"
           >Dokter kami mengunjungi rumah kamu untuk perawatan berkelanjutan dan memberikan perawatan yang disesuaikan dengan resep dokter sebelumnya atau setelah meninggalkan rumah sakit. Penyakit, atau cedera untuk membantu kamu merehabilitasi dan mencapai tingkat kemandirian yang optimal — atau secara proaktif mengelola kondisi kesehatan kronis kamu untuk membantu mencegah rawat inap lagi di rumah saki.</v-card-text>
         </v-col>
         <v-col cols="12" md="6">
@@ -288,7 +274,7 @@
             contain
           />
         </v-col>
-        <v-col cols="12" md="6" class="list__widu text__widu font-weight-medium py-4">
+        <v-col cols="12" md="6" class="list__widu body-1 py-4">
           <ul>
             <li class="py-1">Kunjungan perawatan untuk kebutuhan medis</li>
             <li
@@ -316,7 +302,7 @@
           <v-card-title
             class="title__widu font-weight-bold orange--text text-break"
           >Layanan Home Health Care Termasuk Berikut ini:</v-card-title>
-          <v-card-text class="list__widu text__widu font-weight-medium">
+          <v-card-text class="list__widu body-1">
             <ul>
               <li class="my-1">Kunjungan Dokter Spesialis</li>
               <li class="my-1">Kunjungan Dokter Umum</li>

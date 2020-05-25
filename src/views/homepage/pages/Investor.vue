@@ -9,7 +9,7 @@
           </v-col>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
-            <p class="body-1 font-weight-medium">{{item.teks}}</p>
+            <p class="body-1">{{item.teks}}</p>
             <v-btn rounded max-width="100" height="40" class="elevation-0" color="primary">DAFTAR</v-btn>
           </v-col>
         </v-row>
