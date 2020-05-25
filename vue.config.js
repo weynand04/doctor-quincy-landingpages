@@ -1,4 +1,11 @@
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production' ?
+//     '/drquincy/' : '/'
+// }
+
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ?
-    '/drquincy/' : '/'
+  devServer: {
+    disableHostCheck: true,
+  },
+  transpileDependencies: ['vuetify'],
 }
