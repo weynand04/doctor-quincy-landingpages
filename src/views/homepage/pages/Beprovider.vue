@@ -48,14 +48,20 @@
       <ContainerWidu v-for="(item, index) in section.ContentDua" :key="index">
         <v-row no-gutters class="pl-sm-6 pl-md-2">
           <v-col cols="12" class="d-flex justify-space-around">
-            <v-row>
-              <v-col v-for="m in item.viedos" :key="m.src" cols="12" md="6">
+            <v-row justify="space-around">
+              <v-col
+                v-for="m in item.viedos"
+                :key="m.src"
+                cols="12"
+                md="6"
+                class="d-flex justify-space-around"
+              >
                 <iframe width="390" height="270" :src="m.src" frameborder="0" class="mx-5"></iframe>
                 <!-- <v-img :src="m.src" max-width="669" max-height="377" aspect-ratio="2.4" contain /> -->
               </v-col>
             </v-row>
           </v-col>
-          <v-col>
+          <v-col class="d-flex justify-space-around">
             <p class="body-1 font-weight-medium">{{item.teks}}</p>
           </v-col>
         </v-row>
@@ -67,7 +73,7 @@
         :key="index"
         style="background: #FCFCFC"
       >
-        <Subjudul :subjudul="item.subjudul"></Subjudul>
+        <Subjudul :subjudul="item.subjudul" class="text-center"></Subjudul>
         <v-row no-gutters>
           <v-col
             v-for="(data, index) in item.Dcard"
@@ -76,12 +82,12 @@
             md="6"
             class="d-flex justify-space-around"
           >
-            <v-card max-width="380" max-height="650" class="elevation-1">
+            <v-card max-width="480" max-height="650" class="elevation-1">
               <v-img :src="data.image">
                 <div class="fill-height mygradient"></div>
               </v-img>
               <v-card-title class="justify-center text-break">{{data.title}}</v-card-title>
-              <v-card-text>
+              <v-card-text class="body-1">
                 <p v-for="(p, i) in data.text" :key="i">{{p.paragraf}}</p>
               </v-card-text>
             </v-card>
@@ -92,10 +98,10 @@
       <!-- contentEmpat -->
       <ContainerWidu v-for="(item, index) in section.ContentEmpat" :key="index">
         <v-row>
-          <v-col cols="12" md="6" align-self="center" class="fill-height d-flex justify-end">
+          <v-col cols="12" md="6" align-self="center" class="fill-height d-flex justify-center">
             <v-img :src="item.logo" max-height="450" max-width="400" contain />
           </v-col>
-          <v-col cols="12" md="6" class="elevation-1">
+          <v-col cols="12" md="6" align-self="center">
             <p v-for="(p, i) in item.teks" :key="i">{{p.paragraf}}</p>
           </v-col>
         </v-row>

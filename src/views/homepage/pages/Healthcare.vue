@@ -346,24 +346,6 @@
 
     <!-- content #9 -->
     <Bannerbot />
-    <!-- <v-row>
-      <v-container fluid>
-        <v-row class="pl-md-12">
-          <v-col>
-            <v-card-title
-              class="text-break title__widu font-weight-bold primary--text col-md-10"
-            >Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy</v-card-title>
-            <v-card-text class="text__widu font-weight-medium">
-              <p>Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai "Dokter Profesional Sesuai Permintaan". Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy.</p>
-              <p>PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya. Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka.</p>
-              <P
-                class="text-center text__widu font-weight-bold red--text"
-              >Percayalah Pada Perawatan Di Rumah Hanya Dengan Doctor Quincy Saja</P>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-row>-->
   </div>
 </template>
 

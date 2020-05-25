@@ -22,89 +22,91 @@
     </v-row>
 
     <!-- section #2  -->
-    <v-row>
-      <v-col cols="12" md="6">
-        <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" contain />
-      </v-col>
-      <v-col cols="12" md="6" align-self="center">
-        <v-card flat class="pl-12 ml-6">
+    <ContainerWidu>
+      <v-row>
+        <v-col cols="12" md="6">
+          <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" contain />
+        </v-col>
+        <v-col cols="12" md="6" align-self="center">
           <v-card-title
-            class="title1__widu font-weight-bold orange--text text-break"
+            class="title__widu font-weight-bold orange--text text-break"
           >Perawatan Yang Tepat Pada Waktu Yang Tepat!</v-card-title>
-          <v-card-subtitle
-            class="text__widu font-weight-medium pt-3"
-          >Teknologi dan strategi online Doctor Quincy memberikan solusi perawatan virtual yang komprehensif, langsung dan ujung-ke-ujung yang memungkinkan organisasi kami menciptakan strategi digital pintu depan digital yang holistik. Sistem ini dirancang untuk mengurangi biaya perawatan kesehatan pasien.</v-card-subtitle>
-          <v-card-subtitle>Kami membutuhkan Mitra dan Investor untuk bergabung dengan kami untuk mencapai tujuan ini sepenuhnya. Sistem ini juga dirancang untuk mempercepat pendapatan dan meningkatkan akses sambil menghilangkan hambatan antara pasien dengan memberikan perawatan kesehatan yang sangat baik dan berkelanjutan - Kapan Dan Dimana Saja Mereka Membutuhkannya.</v-card-subtitle>
-        </v-card>
-      </v-col>
-    </v-row>
+          <v-card-text
+            class="body-1 font-weight-medium pt-3"
+          >Teknologi dan strategi online Doctor Quincy memberikan solusi perawatan virtual yang komprehensif, langsung dan ujung-ke-ujung yang memungkinkan organisasi kami menciptakan strategi digital pintu depan digital yang holistik. Sistem ini dirancang untuk mengurangi biaya perawatan kesehatan pasien.</v-card-text>
+          <v-card-text
+            class="body-1 font-weight-medium pt-3"
+          >Kami membutuhkan Mitra dan Investor untuk bergabung dengan kami untuk mencapai tujuan ini sepenuhnya. Sistem ini juga dirancang untuk mempercepat pendapatan dan meningkatkan akses sambil menghilangkan hambatan antara pasien dengan memberikan perawatan kesehatan yang sangat baik dan berkelanjutan - Kapan Dan Dimana Saja Mereka Membutuhkannya.</v-card-text>
+        </v-col>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
 
     <!-- Section #3 -->
-    <v-row class="justify-space-around">
-      <v-card flat color="transparent" width="88%" class="pl-md-12">
+    <ContainerWidu>
+      <v-row class="justify-space-around">
         <v-col>
-          <p>Ada begitu banyak perusahaan besar di Indonesia dengan ribuan karyawan, pegawai negeri sipil, atau seluruh masyarakat pada umumnya - Doctor Quincy dapat mengurangi biaya perawatan kesehatan mereka secara keseluruhan.</p>
-          <p>Kami percaya bahwa ketika karyawan selalu mengambil cuti karena sakit, itu jelas akan berdampak pada semua orang yang dilayani oleh perusahaan itu. Dokter Quincy memperluas akses layanan kesehatan berkualitas tinggi dan terjangkau yang mudah dan nyaman digunakan.</p>
+          <p
+            class="body-1 font-weight-medium"
+          >Ada begitu banyak perusahaan besar di Indonesia dengan ribuan karyawan, pegawai negeri sipil, atau seluruh masyarakat pada umumnya - Doctor Quincy dapat mengurangi biaya perawatan kesehatan mereka secara keseluruhan.</p>
+          <p
+            class="body-1 font-weight-medium"
+          >Kami percaya bahwa ketika karyawan selalu mengambil cuti karena sakit, itu jelas akan berdampak pada semua orang yang dilayani oleh perusahaan itu. Dokter Quincy memperluas akses layanan kesehatan berkualitas tinggi dan terjangkau yang mudah dan nyaman digunakan.</p>
         </v-col>
-      </v-card>
-    </v-row>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
 
     <!-- Section #4 -->
-    <v-row style="background-color:#F2F2F2;" class="justify-space-around">
-      <v-card flat color="transparent" width="88%" class="pl-md-12">
-        <v-col>
-          <v-card-title
-            class="title__widu font-weight-bold text orange--text darken-3 ma-n6"
-          >Perawatan Yang Tepat Pada Waktu Yang Tepat!</v-card-title>
+    <ContainerWidu style="background-color:#F2F2F2;">
+      <v-row class="justify-space-around">
+        <v-col cols="12">
+          <h1
+            class="title__widu font-weight-bold text orange--text"
+          >Perawatan Yang Tepat Pada Waktu Yang Tepat!</h1>
+          <p>Karena platform aman Doctor Quincy memastikan bahwa pasien kami akan memiliki akses langsung dan mudah ke salah satu jaringan penyedia telehealth satu-satunya dan terbesar di Indonesia melalui suara, video, dan perangkat seluler.</p>
         </v-col>
-        <v-card-subtitle>Karena platform aman Doctor Quincy memastikan bahwa pasien kami akan memiliki akses langsung dan mudah ke salah satu jaringan penyedia telehealth satu-satunya dan terbesar di Indonesia melalui suara, video, dan perangkat seluler.</v-card-subtitle>
-        <v-col>
-          <v-card-title
-            class="title__widu font-weight-bold text orange--text darken-3 ma-n6"
-          >Mengapa Berinvestasi Dengan Dokter Quincy?</v-card-title>
+        <v-col cols="12">
+          <h1
+            class="title__widu font-weight-bold text orange--text"
+          >Mengapa Berinvestasi Dengan Dokter Quincy?</h1>
+          <p>Karena Dokter Quincy menyesuaikan paket investasi investor dengan solusi telehealth berkualitas, sesuai permintaan yang dirancang untuk bekerja bahu-membahu dengan program insentif kesehatan untuk mengurangi biaya perawatan kesehatan keseluruhan pasien dan membiarkan anggota kami mengambil kendali lebih besar atas kesehatan mereka. Hasilnya adalah anggota yang lebih sehat yang lebih produktif.</p>
         </v-col>
-        <v-card-subtitle>Karena Dokter Quincy menyesuaikan paket investasi investor dengan solusi telehealth berkualitas, sesuai permintaan yang dirancang untuk bekerja bahu-membahu dengan program insentif kesehatan untuk mengurangi biaya perawatan kesehatan keseluruhan pasien dan membiarkan anggota kami mengambil kendali lebih besar atas kesehatan mereka. Hasilnya adalah anggota yang lebih sehat yang lebih produktif.</v-card-subtitle>
-      </v-card>
-    </v-row>
+      </v-row>
+    </ContainerWidu>
 
     <!-- section #5 -->
-    <v-row
-      class="spacer"
-      align="center"
-      style="background-color:#F2F2F2;"
-      v-for="x in list1"
-      :key="x.icon1"
-    >
-      <v-col sm="1"></v-col>
-      <!-- bagian kiri -->
-      <v-col md="1" sm="2">
-        <v-avatar size="80">
-          <!-- <v-icon dark>{{ x.icon1 }}</v-icon> -->
-          <img :src="x.icon1" />
-        </v-avatar>
-      </v-col>
-      <v-col class="hidden-xs-only" sm="6" md="4">
-        <strong>{{ x.text1 }}</strong>
-      </v-col>
-      <!-- bagian kanan -->
-      <v-col md="1" sm="2">
-        <v-avatar size="80">
-          <!-- <v-icon dark>{{ x.icon2 }}</v-icon> -->
-          <img :src="x.icon2" />
-        </v-avatar>
-      </v-col>
-      <v-col class="hidden-xs-only" sm="6" md="4">
-        <strong>{{ x.text2 }}</strong>
-      </v-col>
-    </v-row>
+    <ContainerWidu style="background-color:#F2F2F2;">
+      <v-row class="spacer" align="center" v-for="x in list1" :key="x.icon1">
+        <v-col sm="1"></v-col>
+        <!-- bagian kiri -->
+        <v-col md="1" sm="2">
+          <v-avatar size="80">
+            <!-- <v-icon dark>{{ x.icon1 }}</v-icon> -->
+            <img :src="x.icon1" />
+          </v-avatar>
+        </v-col>
+        <v-col class="hidden-xs-only" sm="6" md="4">
+          <strong>{{ x.text1 }}</strong>
+        </v-col>
+        <!-- bagian kanan -->
+        <v-col md="1" sm="2">
+          <v-avatar size="80">
+            <!-- <v-icon dark>{{ x.icon2 }}</v-icon> -->
+            <img :src="x.icon2" />
+          </v-avatar>
+        </v-col>
+        <v-col class="hidden-xs-only" sm="6" md="4">
+          <strong>{{ x.text2 }}</strong>
+        </v-col>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
 
     <!-- Section #6 -->
-    <v-row>
-      <v-col cols="12" class="d-flex justify-space-around">
-        <v-card width="85%" flat>
+    <ContainerWidu>
+      <v-row>
+        <v-col cols="12" class="d-flex justify-space-around">
           <v-card-text>
             <p
               class="text__widu font-weight-ligh"
@@ -125,52 +127,45 @@
               class="text__widu font-weight-ligh"
             >Singkatnya, kami membantu menyediakan layanan kesehatan yang tepat pada waktu yang tepat - kapan dan di mana saja dibutuhkan.</p>
           </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
+
     <!-- section #7  -->
-    <v-row style="background-color:#F2F2F2;" class="justify-space-around">
-      <v-col cols="12" md="5">
-        <v-img src="@/assets/image/svg/new-13.svg" width="549" height="361" contain />
-      </v-col>
-      <v-col cols="12" md="7" align-self="center">
-        <v-card flat class="pl-12 ml-6" style="background-color:#F2F2F2;">
+    <ContainerWidu style="background-color:#F2F2F2;">
+      <v-row class="justify-space-around">
+        <v-col cols="12" md="6">
+          <v-img src="@/assets/image/svg/new-13.svg" width="549" height="361" contain />
+        </v-col>
+        <v-col cols="12" md="6" align-self="center">
           <p
             class="title__widu font-weight-bold text orange--text"
           >Bergabunglah Dengan Kami Untuk Memperluas Perusahaan Anda Lebih Jauh</p>
           <div class="list__widu">
-            <ul class="headline font-weight-medium">
+            <ul class="body-1 font-weight-medium">
               <li v-for="y in list2" :key="y.text">{{y.text}}</li>
             </ul>
           </div>
-        </v-card>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
 
     <!-- section #8 -->
-    <v-row class="pl-md-12 ml-md-12">
-      <v-card width="30%" v-for="z in img" :key="z.image" flat>
-        <v-col>
-          <v-img :src="z.image" aspect-ratio="1.5" contain />
+    <ContainerWidu>
+      <v-row>
+        <v-col cols="12" class="d-flex">
+          <v-card width="30%" v-for="z in img" :key="z.image" flat>
+            <v-img :src="z.image" aspect-ratio="1.5" contain />
+          </v-card>
         </v-col>
-      </v-card>
-    </v-row>
-    <!--  -->
-
-    <!-- Section #9 -->
-    <v-row class="mt-1" no-gutters>
-      <v-col md="5" sm="12" align-self="rigth" class="justify-spcace-around"></v-col>
-      <v-col cols="12" md="6">
-        <v-card flat color="transparent">
-          <v-card-actions>
-            <v-btn rounded to="/mitra" color="primary" class="elevation-0">Mitra</v-btn>
-            <v-btn rounded to="/investor" outlined color="primary">Investor</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
+        <v-col cols="12" class="d-flex justify-center">
+          <v-btn rounded to="/mitra" color="primary" class="elevation-0">Mitra</v-btn>
+          <v-btn rounded to="/investor" outlined color="primary">Investor</v-btn>
+        </v-col>
+      </v-row>
+    </ContainerWidu>
     <!--  -->
 
     <!-- Section #10 -->
@@ -180,11 +175,13 @@
 </template>
 <script>
 import Bannerbot from "../components/base/BannerBot";
+import ContainerWidu from "../components/base/ContainerWidu";
 
 export default {
   name: "Ourpartners",
   components: {
-    Bannerbot
+    Bannerbot,
+    ContainerWidu
   },
   data: () => ({
     list1: [
