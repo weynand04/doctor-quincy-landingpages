@@ -191,47 +191,20 @@
           </v-card-actions>
         </v-col>
       </v-row>
-
-      <!-- contentLima -->
-      <v-container
-        v-for="item in section.contentLima"
-        :key="item.image"
-        style="background-color:#ffff;"
-        fluid
-      >
-        <v-img
-          :src="item.image"
-          aspect-ratio="5.4"
-          position="top center"
-          gradient="to top right, rgba(248, 178, 24, 0.9), rgba(248, 178, 24, 0.1)"
-        >
-          <v-row class="pl-md-10">
-            <v-col align-self="center">
-              <h1
-                class="text-center title__widu font-weight-bold black--text darken-3"
-              >{{item.judul}}</h1>
-              <p
-                v-for="p in item.teks1"
-                :key="p.paragraf"
-                class="text__widu font-weight-bold py-1"
-              >{{p.paragraf}}</p>
-              <p
-                v-for="p in item.teks1"
-                :key="p.paragraf1"
-                class="text-center text__widu font-weight-bold red--text"
-              >{{p.paragraf1}}</p>
-              <v-row></v-row>
-            </v-col>
-          </v-row>
-        </v-img>
-      </v-container>
     </div>
+    <!-- Bannerbot -->
+    <Bannerbot />
   </div>
 </template>
 
 <script>
+import Bannerbot from "../components/base/BannerBot";
+
 export default {
   name: "event",
+  components: {
+    Bannerbot
+  },
   data: () => ({
     list1: [
       {
@@ -407,32 +380,6 @@ export default {
                 class: "body-1 font-weight-medium",
                 paragraf:
                   "Platform dan antarmuka kami yang mudah digunakan memberikan pengalaman yang luarbiasa dan hubungan yang erat antara pasien dan penyedia kami, meningkatkan koordinasi perawatan, mengurangi beban penyedia dan akses perawatan kesehatan yang lebih baik. Dengan menggabungkan pengetahuan kami di industri kesehatan ini dan kekuatan AI (artificial intelligence) yang terus berkembang, hasil akhirnya adalah komunitas yang lebih sehat dengan perawatan yang terkoordinasi dengan baik sehingga terjadi hubungan yang lebih kuat dengan mitra and investor kami."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        contentLima: [
-          {
-            judul:
-              "Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy",
-            image: require("@/assets/image/Mask Group 9.png"),
-            teks1: [
-              {
-                class: "body-1 font-weight-bold",
-                paragraf:
-                  "Dokter Quincy bekerja bahu-membahu dengan pasien untuk mengembangkan solusi perawatan dan strategi kebutuhan kesehatan masing-masing pasien. Pengalaman telehealth yang komprehensif dan dapat disesuaikan untuk mengurangi biaya pengoperasian sambil meningkatkan efisiensi dan kualitas penyedia."
-              },
-              {
-                class: "body-1 font-weight-bold",
-                paragraf:
-                  "Platform dan antarmuka kami yang mudah digunakan memberikan pengalaman yang luarbiasa dan hubungan yang erat antara pasien dan penyedia kami, meningkatkan koordinasi perawatan, mengurangi beban penyedia dan akses perawatan kesehatan yang lebih baik. Dengan menggabungkan pengetahuan kami di industri kesehatan ini dan kekuatan AI (artificial intelligence) yang terus berkembang, hasil akhirnya adalah komunitas yang lebih sehat dengan perawatan yang terkoordinasi dengan baik sehingga terjadi hubungan yang lebih kuat dengan mitra and investor kami."
-              },
-              {
-                class: "text-center text__widu font-weight-bold red--text",
-                paragraf1:
-                  "Percayalah Pada Perawatan Di Rumah Hanya Dengan Doctor Quincy Saja"
               }
             ]
           }

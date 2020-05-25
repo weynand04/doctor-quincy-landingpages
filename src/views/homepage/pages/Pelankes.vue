@@ -66,30 +66,22 @@
           >{{item.paragraf}}</p>
         </v-row>
       </v-container>
-
-      <!-- banner bottom -->
-      <ContainerWidu v-for="item in section.contentTiga" :key="item.judul" class="bg-img">
-        <v-row>
-          <v-col cols="12">
-            <v-card-title
-              class="title font-weight-bold primary--text text-break col-md-10"
-            >{{item.judul}}</v-card-title>
-            <v-card-text>
-              <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </ContainerWidu>
     </div>
+    <!-- banner bottom -->
+    <Bannerbot />
   </div>
 </template>
 
 <script>
-import ContainerWidu from "../components/base/ContainerWidu";
 import CardWidu from "../components/base/CardWidu";
+import Bannerbot from "../components/base/BannerBot";
 
 export default {
   name: "pelankes",
+  components: {
+    CardWidu,
+    Bannerbot
+  },
   data: () => ({
     pelankes: [
       {
@@ -169,38 +161,8 @@ export default {
               "Penyedia kami mendukung pendidikan kesehatan masyarakat, berpartisipasi dalam penelitian klinis, dan melayani populasi berisiko individu yang tidak diasuransikan atau kurang diasuransikan. Singkatnya, penyedia kami menjawab panggilan masyarakat Indonesia dengan memastikan akses yang lebih besar untuk perawatan kesehatan yang terjangkau, berkualitas tinggi dan pengalaman pasien yang luar biasa."
           }
         ]
-      },
-      {
-        contentTiga: [
-          {
-            image: require("@/assets/image/Mask Group 9.png"),
-            judul:
-              "Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy",
-            teks: [
-              {
-                class: "body-1 font-weight-medium",
-                paragraf:
-                  "Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter dan terapis berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai “Doctor Quincy” – ini adalah dokter-dokter profesional sesuai permintaan pasien.Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy. PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya, melainkan melalui tim profesional dokter ini kepada pasien di seluruh Indonesia. Kapan Dan Dimana Saja Mereka Membutuhkannya."
-              },
-              {
-                class: "body-1 font-weight-medium",
-                paragraf:
-                  "Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka."
-              },
-              {
-                class: "red--text body-1 font-weight-bold text-center",
-                paragraf:
-                  "Percayalah Pada Perawatan Di Rumah Hanya Dengan Doctor Quincy Saja"
-              }
-            ]
-          }
-        ]
       }
     ]
-  }),
-  components: {
-    CardWidu,
-    ContainerWidu
-  }
+  })
 };
 </script>

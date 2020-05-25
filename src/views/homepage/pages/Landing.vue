@@ -24,7 +24,7 @@
                   >{{item.teks}}</v-card-subtitle>
                   <v-card-actions>
                     <v-btn rounded color="primary" class="elevation-0">Member</v-btn>
-                    <v-btn rounded outlined color="primary">Partner</v-btn>
+                    <v-btn rounded to="/beprovider" outlined color="primary">Partner</v-btn>
                   </v-card-actions>
                 </div>
               </div>
@@ -54,9 +54,7 @@
           </v-col>
           <v-col style="z-index: 1" cols="6" md="6" align-self="center">
             <div class="flex-row align-content-center">
-              <h1
-                class="title__widu font-weight-bold primary--text darken-3 text-break"
-              >{{item.judul}}</h1>
+              <Subjudul :subjudul="item.judul" />
               <p class="text__widu font-weight-medium">{{item.teks}}</p>
               <v-row no-gutters class="d-flex justify-start">
                 <v-img
@@ -82,15 +80,15 @@
       </v-container>
 
       <!-- Content #2 -->
-        <v-container fluid v-for="item in section.contentDua" :key="item.judul">
+      <v-container fluid v-for="item in section.contentDua" :key="item.judul">
         <v-row class="pl-md-12">
           <v-col cols="12">
-            <h1 class="title__widu font-weight-bold primary--text text-break">{{item.judul}}</h1>
+            <Subjudul :subjudul="item.judul" />
             <v-img :src="item.image" max-width="400" max-height="450" contain class="float-left" />
             <p
               v-for="p in item.teks"
               :key="p.paragraf"
-              class="text__widu font-weight-medium py-1"
+              class="body-1 font-weight-medium py-2"
             >{{p.paragraf}}</p>
           </v-col>
         </v-row>
@@ -167,17 +165,13 @@
       <!-- Content #5 -->
       <v-container fluid v-for="item in section.contentLima" :key="item.judul">
         <v-row class="pl-md-12">
-          <v-col cols="12">
-            <h1
-              class="title__widu col-12 col-md-10 primary--text font-weight-bold text-break"
-            >{{item.judul}}</h1>
-            <v-card-text>
-              <p
-                class="text__widu font-weight-medium"
-                v-for="p in item.teks"
-                :key="p.paragraf"
-              >{{p.paragraf}}</p>
-            </v-card-text>
+          <v-col cols="12" class="pl-md-6">
+            <Subjudul :subjudul="item.judul" />
+            <p
+              class="body-1 font-weight-medium"
+              v-for="p in item.teks"
+              :key="p.paragraf"
+            >{{p.paragraf}}</p>
           </v-col>
         </v-row>
       </v-container>
@@ -186,8 +180,13 @@
 </template>
 
 <script>
+import Subjudul from "../components/base/Judul";
+
 export default {
   name: "Home",
+  components: {
+    Subjudul
+  },
   data: () => ({
     landingpage: [
       {

@@ -1,5 +1,5 @@
 <template>
-  <div id="blog" tag="section">
+  <div id="investor" tag="section">
     <div v-for="(section, insec) in sections" :key="insec">
       <!-- bannerTop -->
       <ContainerWidu v-for="(item, index) in section.bannerTop" :key="index">
@@ -10,7 +10,7 @@
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
             <p class="body-1 font-weight-medium">{{item.teks}}</p>
-            <v-btn rounded max-width="100" height="40" color="primary">DAFTAR</v-btn>
+            <v-btn rounded max-width="100" height="40" class="elevation-0" color="primary">DAFTAR</v-btn>
           </v-col>
         </v-row>
       </ContainerWidu>
@@ -43,36 +43,32 @@
           </v-col>
         </v-row>
       </ContainerWidu>
-
-      <!-- Component banner bottom -->
-      <ContainerWidu v-for="(item, index) in section.bannerbawah" :key="index" class="bg-img">
-        <Subjudul :subjudul="item.subjudul" />
-        <template v-for="(data, index) in item.teks">
-          <p :key="index">{{data.p}}</p>
-        </template>
-      </ContainerWidu>
     </div>
+    <!-- Component banner bottom -->
+    <Bannerbot />
   </div>
 </template>
 
 <script>
 import ContainerWidu from "../components/base/ContainerWidu";
 import Subjudul from "../components/base/Judul";
+import Bannerbot from "../components/base/BannerBot";
 
 export default {
   name: "Help",
   components: {
     ContainerWidu,
-    Subjudul
+    Subjudul,
+    Bannerbot
   },
   data: () => ({
     sections: [
       {
         bannerTop: [
           {
-            judul: "Mitra",
+            judul: "Investor",
             teks:
-              "Tujuan dan sasaran utama Doctor Quincy, adalah untuk meningkatkan pemberian layanan kesehatan kepada populasi yang kurang terlayani secara medis di seluruh negeri, membangun dan mempertahankan praktik-praktik di daerah pedesaan yang tidak terlayani.",
+              "Investor selalu mencari perusahaan dengan nilai terbaik dan memiliki prospek pertumbuhan keuangan masa depan yang kuat. Kabar baiknya, Doctor Quincy adalah tempat yang tepat bagi investor yang dapat melihat potensi besar ini, dan mendanai bisnis yang layak dan berbasis di sistem perawatan kesehatan Jadilah Salah Satu Investor Kami, Pendaftaran Cepat & Mudah.",
             gambar: require("@/assets/image/svg/new-14.svg")
           }
         ]
@@ -82,56 +78,34 @@ export default {
           {
             cards: [
               {
-                title: "Mitra 1",
+                title: "Investor 1",
                 text: "",
                 image: require("@/assets/image/mitra.png")
               },
               {
-                title: "Mitra 2",
+                title: "Investor 2",
                 text: "",
                 image: require("@/assets/image/mitra.png")
               },
               {
-                title: "Mitra 3",
+                title: "Investor 3",
                 text: "",
                 image: require("@/assets/image/mitra.png")
               },
               {
-                title: "Mitra 4",
+                title: "Investor 4",
                 text: "",
                 image: require("@/assets/image/mitra.png")
               },
               {
-                title: "Mitra 5",
+                title: "Investor 5",
                 text: "",
                 image: require("@/assets/image/mitra.png")
               },
               {
-                title: "Mitra 6",
+                title: "Investor 6",
                 text: "",
                 image: require("@/assets/image/mitra.png")
-              }
-            ]
-          }
-        ]
-      },
-      {
-        bannerbawah: [
-          {
-            subjudul:
-              "Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy",
-            teks: [
-              {
-                p:
-                  "Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai Dokter Profesional Sesuai Permintaan Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy."
-              },
-              {
-                p:
-                  "PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya. Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka."
-              },
-              {
-                p:
-                  "Percayalah Pada Perawatan Di Rumah Hanya Dengan Doctor Quincy Saja"
               }
             ]
           }
@@ -143,13 +117,6 @@ export default {
 </script>
 
 <style lang="scss">
-.bg-img {
-  background-image: url("C:/xampp/htdocs/doctorquisy-fe/src/assets/image/Image 14.png"),
-    linear-gradient(rgba(230, 172, 47, 0.178), rgba(216, 160, 40, 0.301));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 20%;
-}
 .mygradient {
   position: relative;
 }

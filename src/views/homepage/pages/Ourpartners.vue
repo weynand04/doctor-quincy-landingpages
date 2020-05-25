@@ -1,6 +1,6 @@
 <template>
-  <v-container id="Ditangani_page" fluid>
-    <!-- section #1 -->
+  <div id="ourpartners" tag="section">
+    <!-- banner #1 -->
     <v-row>
       <v-col cols="12" md="6" align-self="center">
         <v-card flat class="pl-12 ml-8">
@@ -39,6 +39,7 @@
       </v-col>
     </v-row>
     <!--  -->
+
     <!-- Section #3 -->
     <v-row class="justify-space-around">
       <v-card flat color="transparent" width="88%" class="pl-md-12">
@@ -49,6 +50,7 @@
       </v-card>
     </v-row>
     <!--  -->
+
     <!-- Section #4 -->
     <v-row style="background-color:#F2F2F2;" class="justify-space-around">
       <v-card flat color="transparent" width="88%" class="pl-md-12">
@@ -66,6 +68,7 @@
         <v-card-subtitle>Karena Dokter Quincy menyesuaikan paket investasi investor dengan solusi telehealth berkualitas, sesuai permintaan yang dirancang untuk bekerja bahu-membahu dengan program insentif kesehatan untuk mengurangi biaya perawatan kesehatan keseluruhan pasien dan membiarkan anggota kami mengambil kendali lebih besar atas kesehatan mereka. Hasilnya adalah anggota yang lebih sehat yang lebih produktif.</v-card-subtitle>
       </v-card>
     </v-row>
+
     <!-- section #5 -->
     <v-row
       class="spacer"
@@ -97,6 +100,7 @@
       </v-col>
     </v-row>
     <!--  -->
+
     <!-- Section #6 -->
     <v-row>
       <v-col cols="12" class="d-flex justify-space-around">
@@ -144,6 +148,7 @@
       </v-col>
     </v-row>
     <!--  -->
+
     <!-- section #8 -->
     <v-row class="pl-md-12 ml-md-12">
       <v-card width="30%" v-for="z in img" :key="z.image" flat>
@@ -153,6 +158,7 @@
       </v-card>
     </v-row>
     <!--  -->
+
     <!-- Section #9 -->
     <v-row class="mt-1" no-gutters>
       <v-col md="5" sm="12" align-self="rigth" class="justify-spcace-around"></v-col>
@@ -166,33 +172,20 @@
       </v-col>
     </v-row>
     <!--  -->
+
     <!-- Section #10 -->
-    <v-row v-for="item in contentTiga" :key="item.judul">
-      <v-img
-        :src="item.image"
-        aspect-ratio="1"
-        height="400"
-        position="top center"
-        gradient="to top right, rgb(244, 230, 204, 0.9), rgba(255, 217, 133, 0.9)"
-      >
-        <v-row justify="space-around">
-          <v-col cols="12" md="7">
-            <v-card-title
-              class="text-center text-break title font-weight-bold primary--text"
-            >{{item.judul}}</v-card-title>
-          </v-col>
-          <v-col cols="12" md="10">
-            <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
-          </v-col>
-        </v-row>
-      </v-img>
-    </v-row>
+    <Bannerbot />
     <!--  -->
-  </v-container>
+  </div>
 </template>
 <script>
+import Bannerbot from "../components/base/BannerBot";
+
 export default {
-  name: "Partner1",
+  name: "Ourpartners",
+  components: {
+    Bannerbot
+  },
   data: () => ({
     list1: [
       {
@@ -274,32 +267,7 @@ export default {
       {
         image: require("@/assets/image/Mask Group 21@2x.png")
       }
-    ],
-    contentTiga: [
-      {
-        image: require("@/assets/image/Mask Group 9.png"),
-        judul:
-          "Layanan Kesehatan Harusnya Sederhana, Cepat Dan Tidak Rumit Temukan Sendiri Mengapa Begitu Banyak Orang Menyukai Doctor Quincy",
-        teks: [
-          {
-            class: "body-1 font-weight-medium",
-            paragraf:
-              "Layanan kesehatan medis yang tersedia melalui Doctor Quincy disediakan oleh dokter-dokter dan terapis berlisensi yang berpraktik dalam kelompok praktik profesional yang dimiliki secara independen dan secara kolektif dikenal sebagai “Doctor Quincy” – ini adalah dokter-dokter profesional sesuai permintaan pasien.Praktik profesional ini menyediakan layanan melalui platform Doctor Quincy. PT. Prima Shakti Multi Global, tidak dengan sendirinya menyediakan layanan dokter, kesehatan mental, atau penyedia layanan kesehatan lainnya, melainkan melalui tim profesional dokter ini kepada pasien di seluruh Indonesia. Kapan Dan Dimana Saja Mereka Membutuhkannya."
-          },
-          {
-            class: "body-1 font-weight-medium",
-            paragraf:
-              "Doctor Quincy di bawah PT. Prima Shakti Multi Global, adalah layanan kesehatan online untuk perawatan, perawatan dokter di rumah, perawat, terapis dan fisioterapi di Indonesia. Dokter, perawat, terapis dan fisioterapi di Doctor Quincy adalah ahli dalam bidang mereka dan memiliki lisensi bersertifikat, jangkauan luas di kota-kota di seluruh Indonesia dan siap 24 jam. Pelanggan Doctor Quincy dapat memilih layanan yang sesuai dengan anggaran dan kebutuhan mereka."
-          },
-          {
-            class: "red--text body-1 font-weight-bold text-center",
-            paragraf:
-              "Percayalah Pada Perawatan Di Rumah Hanya Dengan Doctor Quincy Saja"
-          }
-        ]
-      }
-    ],
-    onboarding: 0
+    ]
   })
 };
 </script>

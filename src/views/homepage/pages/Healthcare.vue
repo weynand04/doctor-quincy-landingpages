@@ -38,14 +38,18 @@
           <v-row no-gutters class="elevation-2 text-center" style="background: red">
             <v-col>
               <v-card-title
-                class="title__widu font-weight-bold text-break justify-center"
+                class="title__widu white--text font-weight-bold text-break justify-center"
               >HOME HEALTH CARE</v-card-title>
             </v-col>
             <v-col cols="2">
-              <v-card-title class="title__widu font-weight-bold text-break justify-center">VS</v-card-title>
+              <v-card-title
+                class="title__widu white--text font-weight-bold text-break justify-center"
+              >VS</v-card-title>
             </v-col>
             <v-col>
-              <v-card-title class="title__widu font-weight-bold text-break justify-center">HOME CARE</v-card-title>
+              <v-card-title
+                class="title__widu white--text font-weight-bold text-break justify-center"
+              >HOME CARE</v-card-title>
             </v-col>
           </v-row>
           <v-row no-gutters justify="space-between">
@@ -341,7 +345,8 @@
     </v-container>
 
     <!-- content #9 -->
-    <v-row>
+    <Bannerbot />
+    <!-- <v-row>
       <v-container fluid>
         <v-row class="pl-md-12">
           <v-col>
@@ -358,13 +363,18 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-row>
+    </v-row>-->
   </div>
 </template>
 
 <script>
+import Bannerbot from "../components/base/BannerBot";
+
 export default {
   name: "Healthcare",
+  components: {
+    Bannerbot
+  },
   data: () => ({
     list: [
       {
