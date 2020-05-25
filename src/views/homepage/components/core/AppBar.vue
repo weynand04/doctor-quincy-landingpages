@@ -29,14 +29,31 @@
   a:focus::after {
     width: 100%;
   }
+  .logo-link {
+    a:focus::after {
+      width: 0%;
+    }
+    a {
+      color: black;
+      margin: auto 10px !important;
+      font-size: 16px !important;
+      text-decoration: none;
+    }
+  }
 }
 </style>
   <template>
   <v-app-bar id="Appbar" app elevate-on-scroll height="50" class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col cols="4" class="d-flex justify-left pl-md-12 align-content-center" align-self="center">
+      <v-col
+        cols="4"
+        class="d-flex justify-left pl-md-12 align-content-center logo-link"
+        align-self="center"
+      >
+        <a href="/">
           <v-img src="@/assets/image/logo.svg" contain max-height="35" max-width="180"></v-img>
+        </a>
       </v-col>
 
       <v-col cols="4" class="hidden-md-and-down d-md-flex justify-center">
@@ -50,7 +67,7 @@
               <v-icon color="black">{{ expand ? 'mdi-close' : 'mdi-menu' }}</v-icon>
             </v-btn>
           </template>
-          <v-list>
+          <v-list style="max-height: 90vh" class="overflow-y-auto">
             <v-list-item v-for="(Menuitem, index) in Menuitem" :key="index" :class="Menuitem.cls">
               <v-list-item-title>
                 <router-link :to="Menuitem.path">{{Menuitem.title}}</router-link>
