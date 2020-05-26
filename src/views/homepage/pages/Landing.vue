@@ -2,7 +2,7 @@
   <div id="landingPage">
     <div v-for="(section, index) in landingpage" :key="index">
       <!-- Banner -->
-      <v-container v-for="item in section.banner" :key="item.judul">
+      <v-container fluid v-for="item in section.banner" :key="item.judul">
         <v-row no-gutters>
           <v-img
             :src="item.image"
