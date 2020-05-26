@@ -1,6 +1,6 @@
 <template>
-  <v-col cols="12" md="4" align-self="center" class="d-flex justify-space-around">
-    <v-card max-width="300" class="elevation-1 fill-height" id="rounded-card">
+  <v-col cols="12" md="4" sm="6" align-self="center" class="d-flex justify-space-between">
+    <v-card max-width="280" height="400" class="elevation-1 fill-height" id="rounded-card">
       <v-img :src="dataCard.image">
         <div class="fill-height mygradient"></div>
       </v-img>

@@ -38,7 +38,7 @@
         style="background-color:#F2F2F2;"
         fluid
       >
-        <v-row class="pl-md-12">
+        <v-row class="pl-12">
           <v-col cols="12">
             <Subjudul :subjudul="item.judul" />
             <v-row>
@@ -50,7 +50,7 @@
 
       <!-- contentDua -->
       <v-container>
-        <v-row class="pl-md-12 pl-4">
+        <v-row class="pl-6">
           <p
             v-for="(item, index) in section.contentDua"
             :key="index"
