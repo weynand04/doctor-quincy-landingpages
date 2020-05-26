@@ -3,29 +3,26 @@
     <!-- banner -->
     <v-container fluid>
       <v-row class="pl-md-12">
-        <v-col cols="12">
-          <h1 class="font-weight-bold black--text text-break">Home Health Care</h1>
-          <div class="d-inline-block">
-            <v-img
-              src="@/assets/image/svg/gambar lain-02.svg"
-              min-height="200"
-              min-width="300"
-              max-height="500"
-              max-width="500"
-              aspect-ratio="1.9"
-              contain
-              class="col-md-6 ma-0 float-md-right"
-            />
-            <p
-              class="body-1 my-4 col-md-12"
-            >Berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit atau cedera.</p>
-            <p
-              class="body-1 my-4 col-md-12"
-            >Perawatan kesehatan di rumah dapat mencakup erapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.</p>
-            <p
-              class="body-1 my-4 col-md-12"
-            >Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
-          </div>
+        <v-col cols="12" md="10">
+          <v-img
+            src="@/assets/image/svg/gambar lain-02.svg"
+            min-width="400"
+            min-height="200"
+            max-width="600"
+            max-height="400"
+            contain
+            class="float-md-right"
+          />
+          <Subjudul judul="Home Health Care" />
+          <p
+            class="body-1"
+          >Berbagai layanan perawatan kesehatan yang dapat diberikan di rumah untuk penyakit atau cedera. Perawatan kesehatan di rumah ini biasanya lebih murah, lebih nyaman, dan sama efektifnya dengan perawatan yang kamu dapatkan di rumah sakit atau fasilitas perawatan terampil. Perawatan kesehatan di rumah dapat membantu siapa saja, terutama orang lanjut usia, bahkan dengan penyakit atau cedera.</p>
+          <p
+            class="body-1"
+          >Perawatan kesehatan di rumah dapat mencakup erapi okupasi dan fisik, terapi wicara, dan keperawatan yang terampil. Dapat membantu anak-anak, orang dewasa atau yang lebih tua dengan kegiatan hidup sehari-hari, seperti mandi, berpakaian, makan, minum obat dan memantau rejimen pengobatan seseorang.</p>
+          <p
+            class="body-1"
+          >Sangat penting untuk memahami perbedaan antara perawatan kesehatan di rumah dan layanan perawatan di rumah, mungkin terdengar sedikit sama tetapi sama sekali tidak sama. Berikut adalah perbedaannya - perawatan kesehatan di rumah termasuk beberapa layanan perawatan kesehatan di rumah, yang bersifat medis atau berhubungan dengan perawatan kesehatan. Sedangkan layanan perawatan di rumah termasuk pekerjaan rumah pada umumnya seperti membersihkan rumah, memasak, mencuci pakaian, dan pekerjaan rumah tangga lainnya. Tetapi perawatan kesehatan di rumah biasanya melibatkan membantu seseorang untuk pulih dari penyakit atau cedera.</p>
         </v-col>
       </v-row>
     </v-container>
@@ -337,11 +334,13 @@
 
 <script>
 import Bannerbot from "../components/base/BannerBot";
+import Subjudul from "../components/base/Judul";
 
 export default {
   name: "Healthcare",
   components: {
-    Bannerbot
+    Bannerbot,
+    Subjudul
   },
   data: () => ({
     list: [

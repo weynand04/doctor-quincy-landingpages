@@ -5,7 +5,7 @@
 
       <ContainerWidu v-for="(item, index) in section.bannerTop" :key="index" class="bg-banner">
         <v-row no-gutters>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <SubJudul :judul="item.subjudul" class="mb-2" />
 
             <template v-for="(data, index) in item.teks">

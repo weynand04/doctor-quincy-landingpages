@@ -2,22 +2,20 @@
   <div id="tidakditanganiPage">
     <div v-for="(section, index) in sections" :key="index">
       <!-- section #1 -->
-      <v-container v-for="(item, index) in section.banner" :key="index">
-        <v-row>
+      <v-container fluid v-for="(item, index) in section.banner" :key="index">
+        <v-row class="pl-md-12">
           <v-img
             :src="item.image"
-            aspect-ratio="2.4"
-            max-height="100%"
+            aspect-ratio="2.1"
+            max-height="90%"
             max-width="100%"
             position="center right 10%"
             contain
           >
             <v-col cols="12" md="6" class="d-flex fill-height">
               <div class="col-12 align-self-center">
-                <v-card-title
-                  class="title1__widu font-weight-bold black--text text-break"
-                >{{item.judul}}</v-card-title>
-                <v-card-subtitle class="body-1 font-weight-medium pt-3">{{item.teks}}</v-card-subtitle>
+                <Subjudul :judul="item.judul" />
+                <p class="body-1 font-weight-medium pt-3">{{item.teks}}</p>
                 <v-card-actions>
                   <v-btn rounded class="elevation-0" color="primary">Login</v-btn>
                   <v-btn rounded outlined color="primary">Partner</v-btn>
@@ -35,20 +33,20 @@
         style="background: #FCFCFC"
         fluid
       >
-        <v-row class="pl-md-12 ml-md-1">
+        <v-row no-gutters class="pl-md-12 ml-md-1">
           <v-col cols="12">
-            <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
+            <p class="body-1 pt-3">{{item.judul}}</p>
           </v-col>
           <v-col cols="12" md="6">
-            <v-img :src="item.image" max-width="500" aspect-ratio="1.7" contain />
+            <v-img :src="item.image" max-width="500" min-height="200" aspect-ratio="1.9" contain />
           </v-col>
-          <v-col cols="12" md="6" class="list__widu">
+          <v-col align-self="center" cols="12" md="6" class="list__widu">
             <ul v-for="(list, index) in item.list" :key="index">
-              <li>{{list.title}}</li>
+              <li class="body-1 my-1">{{list.title}}</li>
             </ul>
           </v-col>
           <v-col cols="12">
-            <p class="text__widu font-weight-medium pt-3">{{item.teks}}</p>
+            <p class="body-1 pt-3">{{item.teks}}</p>
           </v-col>
           <v-col cols="6" v-for="(list, index) in item.lists" :key="index" class="list__widu">
             <ul>
@@ -62,9 +60,9 @@
       <v-container fluid v-for="(item, index) in section.contentdua" :key="index">
         <v-row class="pl-md-12 ml-md-1">
           <v-col cols="12">
-            <p class="text__widu font-weight-medium pt-3">{{item.judul}}</p>
+            <p class="body-1 pt-3">{{item.judul}}</p>
           </v-col>
-          <v-col cols="12" md="5" class="text__widu list__widu">
+          <v-col cols="12" md="5" class="body-1 list__widu">
             <ul v-for="(list, index) in item.list" :key="index">
               <li>{{list.title}}</li>
             </ul>
@@ -79,8 +77,13 @@
 </template>
 
 <script>
+import Subjudul from "../components/base/Judul";
+
 export default {
   name: "tidak-di-tangani",
+  components: {
+    Subjudul
+  },
   data: () => ({
     sections: [
       {

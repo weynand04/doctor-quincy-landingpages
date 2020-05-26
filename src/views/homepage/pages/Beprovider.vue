@@ -6,7 +6,7 @@
         <v-row no-gutters class="pl-sm-6 pl-md-2 pl-lg-3">
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
-            <p class="body-1 font-weight-medium">{{item.teks}}</p>
+            <p class="body-1">{{item.teks}}</p>
             <v-btn rounded max-width="100" height="40" class="elevation-0" color="primary">Login</v-btn>
             <v-btn rounded outlined max-width="100" height="40" color="primary">Register</v-btn>
           </v-col>
@@ -35,11 +35,7 @@
           </v-col>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :subjudul="item.judul" />
-            <p
-              v-for="items in item.teks"
-              :key="items.p"
-              class="body-1 font-weight-medium"
-            >{{items.p}}</p>
+            <p v-for="items in item.teks" :key="items.p" class="body-1">{{items.p}}</p>
           </v-col>
         </v-row>
       </ContainerWidu>
@@ -82,7 +78,7 @@
             md="6"
             class="d-flex justify-space-around"
           >
-            <v-card max-width="480" max-height="650" class="elevation-1">
+            <v-card max-width="400" max-height="650" class="elevation-1">
               <v-img :src="data.image">
                 <div class="fill-height mygradient"></div>
               </v-img>

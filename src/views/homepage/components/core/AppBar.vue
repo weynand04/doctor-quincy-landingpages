@@ -35,8 +35,6 @@
     }
     a {
       color: black;
-      margin: auto 10px !important;
-      font-size: 16px !important;
       text-decoration: none;
     }
   }
@@ -46,13 +44,9 @@
   <v-app-bar id="Appbar" app elevate-on-scroll height="50" class="elevation-1" color="#FFF">
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
-      <v-col
-        cols="4"
-        class="d-flex justify-left pl-md-12 align-content-center logo-link"
-        align-self="center"
-      >
+      <v-col align-self="center" cols="4" class="logo-link pl-md-12 pl-lg-12">
         <a href="/">
-          <v-img src="@/assets/image/logo.svg" contain max-height="35" max-width="180"></v-img>
+          <v-img src="@/assets/image/logo.svg" contain max-height="40" max-width="180"></v-img>
         </a>
       </v-col>
 
@@ -92,7 +86,7 @@ export default {
         path: "bepartners",
         cls: "hidden-md-and-up"
       },
-      { title: "Help", path: "/*", cls: "hidden-md-and-up" },
+      { title: "Help", path: "/help", cls: "hidden-md-and-up" },
       { title: "Cara kerja", path: "/carakerja" },
       { title: "Home health care", path: "/health-care" },
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },

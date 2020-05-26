@@ -6,7 +6,7 @@
         <v-row no-gutters class="pl-sm-6 pl-md-2 pl-lg-3">
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
-            <p class="body-1 font-weight-medium">{{item.teks}}</p>
+            <p class="body-1">{{item.teks}}</p>
             <v-btn rounded max-width="100" height="40" color="primary">Login</v-btn>
             <v-btn rounded outlined max-width="100" height="40" color="primary">Register</v-btn>
           </v-col>
@@ -38,10 +38,10 @@
               max-height="300"
               position="left center"
               contain
-              class="float-none float-sm-left float-md-left float-xl-left float-lg-left mr-2"
+              class="float-none float-sm-left float-md-left float-xl-left float-lg-left ma-2"
             ></v-img>
             <template v-for="(data, indat) in item.teks">
-              <p :key="indat" class="body-1 font-weight-medium">{{data.p}}</p>
+              <p :key="indat" class="body-1">{{data.p}}</p>
             </template>
           </v-col>
           <v-pagination :length="5" disabled></v-pagination>

@@ -14,11 +14,9 @@
               contain
             >
               <div class="col-md-5 float-md-right">
-                <v-card-title
-                  class="title1__widu font-weight-bold black--text text-break"
-                >{{item.judul}}</v-card-title>
+                <Subjudul :judul="item.judul" />
                 <div class="list__widu">
-                  <ul class="text__widu font-weight-medium">
+                  <ul class="body-1">
                     <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>
                   </ul>
                 </div>
@@ -27,11 +25,7 @@
           </v-col>
           <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
             <v-container width="88%" color="transparent">
-              <p
-                v-for="(s, index) in item.stiker"
-                :key="index"
-                class="body-1 font-weight-medium ma-5"
-              >{{s.paragraf}}</p>
+              <p v-for="(s, index) in item.stiker" :key="index" class="body-1 ma-5">{{s.paragraf}}</p>
             </v-container>
           </v-col>
         </v-row>
@@ -46,9 +40,7 @@
       >
         <v-row class="pl-md-12">
           <v-col cols="12">
-            <v-card-title
-              class="title__widu font-weight-bold text orange--text darken-3 ma-n4 text-break"
-            >{{item.judul}}</v-card-title>
+            <Subjudul :subjudul="item.judul" />
             <v-row>
               <CardWidu v-for="(card, index) in item.cards" :key="index" v-bind:dataCard="card" />
             </v-row>
@@ -62,7 +54,7 @@
           <p
             v-for="(item, index) in section.contentDua"
             :key="index"
-            class="body-1 font-weight-medium"
+            class="body-1"
           >{{item.paragraf}}</p>
         </v-row>
       </v-container>
@@ -75,12 +67,14 @@
 <script>
 import CardWidu from "../components/base/CardWidu";
 import Bannerbot from "../components/base/BannerBot";
+import Subjudul from "../components/base/Judul";
 
 export default {
   name: "pelankes",
   components: {
     CardWidu,
-    Bannerbot
+    Bannerbot,
+    Subjudul
   },
   data: () => ({
     pelankes: [
