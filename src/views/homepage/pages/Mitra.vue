@@ -9,7 +9,7 @@
           </v-col>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
             <subjudul :judul="item.judul" />
-            <p class="body-1 font-weight-medium">{{item.teks}}</p>
+            <p class="body-1">{{item.teks}}</p>
             <v-btn rounded max-width="100" height="40" class="elevation-0" color="primary">DAFTAR</v-btn>
           </v-col>
         </v-row>
@@ -23,14 +23,14 @@
               <v-img contain :src="data.image" gradient="rgba(237,145,17), rgba(237,145,17)">
                 <div class="fill-height mygradient"></div>
               </v-img>
-              <v-card-title class="justify-center">{{data.title}}</v-card-title>
+              <v-card-title class="justify-center pb-4">{{data.title}}</v-card-title>
               <v-card-subtitle>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe deserunt quod harum facere ea ad ex minima accusamus dolore?</v-card-subtitle>
               <v-card-text>
                 <p>
                   <span>
                     <v-icon>mdi-email</v-icon>
                   </span>
-                  www.mitra1.com
+                  www.mitra.com
                 </p>
                 <p>
                   <span>
