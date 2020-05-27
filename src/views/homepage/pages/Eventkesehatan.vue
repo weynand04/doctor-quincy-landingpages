@@ -262,7 +262,7 @@ export default {
               },
               {
                 paragraf:
-                  "Kami percaya bahwa ketika karyawan selalu mengambil cuti karena sakit, itu jelas akan berdampak pada semua orang yang dilayani oleh  perusahaan itu. Dokter Quincy memperluas akses layanan kesehatan berkualitas tinggi dan terjangkau yang mudah dan nyaman digunakan."
+                  "Kami percaya bahwa ketika karyawan selalu mengambil cuti karena sakit, itu jelas akan berdampak pada semua orang yang dilayani oleh  perusahaan itu. Doctor Quincy memperluas akses layanan kesehatan berkualitas tinggi dan terjangkau yang mudah dan nyaman digunakan."
               }
             ]
           }
@@ -271,8 +271,8 @@ export default {
       {
         contentDua: [
           {
-            judul: "Mengapa Bermitra Dengan Dokter Quincy ?",
-            judul1: "Mengapa Berinvestasi Dengan Dokter Quincy ?",
+            judul: "Mengapa Bermitra Dengan Doctor Quincy ?",
+            judul1: "Mengapa Berinvestasi Dengan Doctor Quincy ?",
             image: require("@/assets/image/Image 1.png"),
             teks: [
               {
@@ -281,7 +281,7 @@ export default {
               },
               {
                 paragraf1:
-                  "Karena Dokter Quincy menyesuaikan paket investasi investor dengan solusi telehealth berkualitas, sesuai permintaan yang dirancang untuk bekerja bahu-membahu dengan program insentif kesehatan untuk mengurangi biaya perawatan kesehatan keseluruhan pasien dan membiarkan anggota kami mengambil kendali lebih besar atas kesehatan mereka. Hasilnya adalah anggota yang lebih sehat yang lebih produktif."
+                  "Karena Doctor Quincy menyesuaikan paket investasi investor dengan solusi telehealth berkualitas, sesuai permintaan yang dirancang untuk bekerja bahu-membahu dengan program insentif kesehatan untuk mengurangi biaya perawatan kesehatan keseluruhan pasien dan membiarkan anggota kami mengambil kendali lebih besar atas kesehatan mereka. Hasilnya adalah anggota yang lebih sehat yang lebih produktif."
               }
             ]
           }
@@ -295,7 +295,7 @@ export default {
               {
                 class: "text__widu body-1 font-weight-medium",
                 paragraf:
-                  "Dokter Quincy bekerja bahu-membahu dengan pasien untuk mengembangkan solusi perawatan dan strategi kebutuhan kesehatan masing-masing pasien. Pengalaman telehealth yang komprehensif dan dapat disesuaikan untuk mengurangi biaya pengoperasian sambil meningkatkan efisiensi dan kualitas penyedia."
+                  "Doctor Quincy bekerja bahu-membahu dengan pasien untuk mengembangkan solusi perawatan dan strategi kebutuhan kesehatan masing-masing pasien. Pengalaman telehealth yang komprehensif dan dapat disesuaikan untuk mengurangi biaya pengoperasian sambil meningkatkan efisiensi dan kualitas penyedia."
               },
               {
                 class: "text__widu body-1 font-weight-medium",
@@ -305,7 +305,7 @@ export default {
               {
                 class: "text__widu body-1 font-weight-medium",
                 paragraf2:
-                  "Dokter Quincy bertujuan untuk melampaui cara tradisional pasien menerima perawatan medis. Kami terbuka untuk bermitra dengan organisasi lain besar atau kecil, perusahaan dan instansi pemerintahan, dan rumah sakit untuk membantu meningkatkan kualitas layanankesehatan, mengurangi kasus ruang gawat darurat yang seharunya tidak perlu, mengurangi dan mencegah perawatan yang lebih mahal dan berisiko."
+                  "Doctor Quincy bertujuan untuk melampaui cara tradisional pasien menerima perawatan medis. Kami terbuka untuk bermitra dengan organisasi lain besar atau kecil, perusahaan dan instansi pemerintahan, dan rumah sakit untuk membantu meningkatkan kualitas layanankesehatan, mengurangi kasus ruang gawat darurat yang seharunya tidak perlu, mengurangi dan mencegah perawatan yang lebih mahal dan berisiko."
               },
               {
                 class: "text__widu body-1 font-weight-medium",
@@ -329,7 +329,7 @@ export default {
               {
                 class: "body-1 font-weight-medium",
                 paragraf:
-                  "Dokter Quincy bekerja bahu-membahu dengan pasien untuk mengembangkan solusi perawatan dan strategi kebutuhan kesehatan masing-masing pasien. Pengalaman telehealth yang komprehensif dan dapat disesuaikan untuk mengurangi biaya pengoperasian sambil meningkatkan efisiensi dan kualitas penyedia."
+                  "Doctor Quincy bekerja bahu-membahu dengan pasien untuk mengembangkan solusi perawatan dan strategi kebutuhan kesehatan masing-masing pasien. Pengalaman telehealth yang komprehensif dan dapat disesuaikan untuk mengurangi biaya pengoperasian sambil meningkatkan efisiensi dan kualitas penyedia."
               },
               {
                 class: "body-1 font-weight-medium",

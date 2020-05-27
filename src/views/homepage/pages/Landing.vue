@@ -193,7 +193,7 @@ export default {
       {
         contentSatu: [
           {
-            judul: "Apa Itu Dr.Quincy",
+            judul: "Apa Itu Doctor Quincy",
             teks: "The Envolving Benefits Of Telemedicine",
             image: require("@/assets/image/artwork-02-cp.png")
           }
@@ -202,7 +202,7 @@ export default {
       {
         contentDua: [
           {
-            judul: "Kamu Akan Jauh Merasa Lebih Baik Dengan Dokter Quincy",
+            judul: "Kamu Akan Jauh Merasa Lebih Baik Dengan Doctor Quincy",
             image: require("@/assets/image/Image 1.png"),
             teks: [
               {
@@ -211,7 +211,7 @@ export default {
               },
               {
                 paragraf:
-                  "Layanan kesehatan harusnya sederhana, cepat dan tidak rumit. Dokter Quincy memudahkan dokter mengunjungi kamu dalam beberapa menit melalui aplikasi seluler kami dan online."
+                  "Layanan kesehatan harusnya sederhana, cepat dan tidak rumit. Doctor Quincy memudahkan dokter mengunjungi kamu dalam beberapa menit melalui aplikasi seluler kami dan online."
               },
               {
                 paragraf:
@@ -229,7 +229,7 @@ export default {
         stikers: [
           {
             tag:
-              "Dokter Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
+              "Doctor Quincy Juga Menawarkan Program “CrystalCare” Generasi-Baru Perawatan Kesehatan Primer Untuk Pegawai Pengusahaan & Pegawai Negeri",
             class: "text__widu font-weight-bold red--text col-12 col-sm-6  ",
             style: "mx-2"
           },
@@ -259,7 +259,7 @@ export default {
                 teks: [
                   {
                     paragraf:
-                      "Kami menjamin kesehatan kamu dari A hingga Z dan Dokter Quincy disini untuk mendukung kesejahteraan kamu seiring waktu. Dari dokter hingga psikolog, kami membantu mendukung perjalanan kesehatan kamu. Tim dokter kami yang penuh kasih dan tepercaya berasal dari berbagai latar belakang dan spesialisasi. Mereka akan menciptakan jenis hubungan baru dengan kamu dengan meluangkan waktu untuk mendengarkan dan memperhatikan detail masalah kesehatan kamu. Dokter kami sedang merevolusi akses layanan kesehatan yang berkualitas. Mereka dilatih secara profesional untuk menggunakan teknologi virtual untuk menangani banyak kondisi non-darurat. Tim ahli medis kami adalah para dokter dengan pengalaman bertahun-tahun."
+                      "Kami menjamin kesehatan kamu dari A hingga Z dan Doctor Quincy disini untuk mendukung kesejahteraan kamu seiring waktu. Dari dokter hingga psikolog, kami membantu mendukung perjalanan kesehatan kamu. Tim dokter kami yang penuh kasih dan tepercaya berasal dari berbagai latar belakang dan spesialisasi. Mereka akan menciptakan jenis hubungan baru dengan kamu dengan meluangkan waktu untuk mendengarkan dan memperhatikan detail masalah kesehatan kamu. Dokter kami sedang merevolusi akses layanan kesehatan yang berkualitas. Mereka dilatih secara profesional untuk menggunakan teknologi virtual untuk menangani banyak kondisi non-darurat. Tim ahli medis kami adalah para dokter dengan pengalaman bertahun-tahun."
                   }
                 ]
               },
@@ -288,7 +288,7 @@ export default {
               {
                 class: "body-1",
                 paragraf:
-                  "Dokter Quincy memberikan layanan langsung kepada konsumen, puluhan juta orang Indonesia akan menikmati kunjungan kesehatan medis termasuk layanan kesehatan jiwa, perawatan pencegahan, perawatan kronis, perawatan darurat, dan kesehatan perilaku. "
+                  "Doctor Quincy memberikan layanan langsung kepada konsumen, puluhan juta orang Indonesia akan menikmati kunjungan kesehatan medis termasuk layanan kesehatan jiwa, perawatan pencegahan, perawatan kronis, perawatan darurat, dan kesehatan perilaku. "
               },
               {
                 class: "body-1",
@@ -298,12 +298,12 @@ export default {
               {
                 class: "body-1",
                 paragraf:
-                  "Dokter Quincy secara langsung sedang mengubah kehidupan lebih dari 100 juta jiwa orang dengan akses melalui layanan kesehatan berkualitas tanpa harus meninggalkan rumah mereka."
+                  "Doctor Quincy secara langsung sedang mengubah kehidupan lebih dari 100 juta jiwa orang dengan akses melalui layanan kesehatan berkualitas tanpa harus meninggalkan rumah mereka."
               },
               {
                 class: "body-1 font-weight-bold blue--text",
                 paragraf:
-                  "Kendalikan Kesehatan Kamu Hari Ini Juga! Bergabunglah Dengan Jutaan Orang Yang Memiliki Akses Dokter Quincy 24 Jam Sehari, 365 Hari Setahun"
+                  "Kendalikan Kesehatan Kamu Hari Ini Juga! Bergabunglah Dengan Jutaan Orang Yang Memiliki Akses Doctor Quincy 24 Jam Sehari, 365 Hari Setahun"
               },
               {
                 class: "body-1 red--text",
@@ -318,11 +318,11 @@ export default {
           {
             class: "col-12 col-md-8 text__widu font-weight-medium ",
             teks:
-              "Gunakan Dokter Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
+              "Gunakan Doctor Quincy Saat Bepergian Dengan Aplikasi Seluler Kami Unduh Sekarang Aplikasi Gratis Kami Dapatkan Akses Perawatan Medis Kapan Saja Di Smartphone Kamu"
           },
           {
             class: "body-1 red--text",
-            teks: "Dokter Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
+            teks: "Doctor Quincy Dirancang Untuk Menjadi Teman Medis Online-mu"
           }
         ]
       },

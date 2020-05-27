@@ -18,7 +18,7 @@
       <!-- ContentSatu -->
       <ContainerWidu v-for="(item, index) in section.ContentSatu" :key="index">
         <v-row>
-          <v-col cols="12" sm="2" md="4" lg="4" v-for="(data, index) in item.cards" :key="index">
+          <v-col cols="12" sm="6" md="4" lg="4" v-for="(data, index) in item.cards" :key="index">
             <v-card max-width="412" max-height="550">
               <v-img contain :src="data.image" gradient="rgba(237,145,17), rgba(237,145,17)">
                 <div class="fill-height mygradient"></div>

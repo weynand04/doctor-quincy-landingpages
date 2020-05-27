@@ -66,7 +66,7 @@
         <v-row class="pl-md-8">
           <v-col cols="12">
             <p class="title__widu font-weight-text orange--text darken-3">Daftar Sekarang</p>
-            <p>Kamu tidak bisa membuat rencana saat kamu jatuh sakit, akan tetapi kamu dapat memiliki Dokter Quincy setiap saat, dan mendapatkan layanan kesehatan yang kamu butuhkan di manapun saja kamu berada.</p>
+            <p>Kamu tidak bisa membuat rencana saat kamu jatuh sakit, akan tetapi kamu dapat memiliki Doctor Quincy setiap saat, dan mendapatkan layanan kesehatan yang kamu butuhkan di manapun saja kamu berada.</p>
           </v-col>
           <v-row>
             <CardWidu v-for="(n, i) in langka_kerja" :key="i" v-bind:dataCard="n" />

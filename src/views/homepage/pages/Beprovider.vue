@@ -171,7 +171,7 @@ export default {
             teks: [
               {
                 p:
-                  "Dokter Quincy terus memberikan model layanan kesehatan generasi baru dan inovatif, serta memperbaiki hambatan dan meningkatkan aksesibilitas layanan kesehatan yang lebih baik. Kepuasan dokter, kualitas layanan, dan (Patient-Doctor Relationships) hubungan pasien-dokter yang bermakna adalah prioritas utama kami."
+                  "Doctor Quincy terus memberikan model layanan kesehatan generasi baru dan inovatif, serta memperbaiki hambatan dan meningkatkan aksesibilitas layanan kesehatan yang lebih baik. Kepuasan dokter, kualitas layanan, dan (Patient-Doctor Relationships) hubungan pasien-dokter yang bermakna adalah prioritas utama kami."
               },
               {
                 p:
@@ -270,7 +270,7 @@ export default {
             teks: [
               {
                 paragraf:
-                  "Bergabunglah dengan Dokter Quincy, karena perawatan kesehatan yang lebih baik bagi masyarakat berarti negara yang sehat. Mari kita menjadikan Indonesia negara yang sehat dan hebat"
+                  "Bergabunglah dengan Doctor Quincy, karena perawatan kesehatan yang lebih baik bagi masyarakat berarti negara yang sehat. Mari kita menjadikan Indonesia negara yang sehat dan hebat"
               },
               {
                 paragraf:

@@ -160,7 +160,7 @@ export default {
         bg: "background: #E9E9E9",
         judul: "Perawatan Kronis",
         teks:
-          "Pendekatan kami adalah merawat dan memberi kamu dan keluarga sistem perawatan kesehatan yang fleksibel s aat dibutuhkan. Ketika kamu perlu mengelola kondisi kesehatan yang berkelanjutan atau kronis, Dokter Quincy membuatnya mudah hanya dengan satu sentuhan tombol.",
+          "Pendekatan kami adalah merawat dan memberi kamu dan keluarga sistem perawatan kesehatan yang fleksibel s aat dibutuhkan. Ketika kamu perlu mengelola kondisi kesehatan yang berkelanjutan atau kronis, Doctor Quincy membuatnya mudah hanya dengan satu sentuhan tombol.",
         list: [
           {
             title: "Asma",
