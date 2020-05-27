@@ -146,9 +146,9 @@
     <ContainerWidu>
       <v-row>
         <v-col cols="12" class="d-flex">
-          <v-card width="30%" v-for="z in img" :key="z.image" flat>
-            <v-img :src="z.image" aspect-ratio="1.5" contain />
-          </v-card>
+          <template v-for="z in img">
+            <v-img :key="z.image" :src="z.image" aspect-ratio="1.5" contain />
+          </template>
         </v-col>
         <v-col cols="12" class="d-flex justify-center">
           <v-btn rounded to="/mitra" color="primary" class="elevation-0">Mitra</v-btn>
