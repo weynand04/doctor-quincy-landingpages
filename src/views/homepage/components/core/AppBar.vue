@@ -81,11 +81,6 @@ export default {
   data: () => ({
     expand: false,
     Menuitem: [
-      {
-        title: "Be our Partner",
-        path: "bepartners",
-        cls: "hidden-md-and-up"
-      },
       { title: "Help", path: "/help", cls: "hidden-md-and-up" },
       { title: "Cara kerja", path: "/carakerja" },
       { title: "Home health care", path: "/health-care" },
