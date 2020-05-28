@@ -10,6 +10,7 @@
             max-height="100%"
             max-width="100%"
             position="right center"
+            transition="scale-transition"
             contain
             class="mb-0"
           >
