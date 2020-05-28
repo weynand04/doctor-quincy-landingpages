@@ -2,29 +2,19 @@
   <div id="tidakditanganiPage">
     <div v-for="(section, index) in sections" :key="index">
       <!-- section #1 -->
-      <v-container fluid v-for="(item, index) in section.banner" :key="index">
-        <v-row class="pl-md-12">
-          <v-img
-            :src="item.image"
-            aspect-ratio="2.1"
-            max-height="90%"
-            max-width="100%"
-            position="center right 10%"
-            contain
-          >
-            <v-col cols="12" md="6" class="d-flex fill-height">
-              <div class="col-12 align-self-center">
-                <Subjudul :judul="item.judul" />
-                <p class="body-1 font-weight-medium pt-3">{{item.teks}}</p>
-                <v-card-actions>
-                  <v-btn rounded class="elevation-0" color="primary">Login</v-btn>
-                  <v-btn rounded outlined color="primary">Partner</v-btn>
-                </v-card-actions>
-              </div>
-            </v-col>
-          </v-img>
-        </v-row>
-      </v-container>
+
+      <div v-for="(item, index) in section.banner" :key="index">
+        <BannerTop
+          :judul="item.judul"
+          :desc="item.teks"
+          :image="item.image"
+          position="right 20% center"
+          left="left"
+        >
+          <v-btn rounded outlined color="primary" class="elevation-0 mx-2">Register</v-btn>
+          <v-btn rounded color="primary" class="elevation-0 mx-2">Login</v-btn>
+        </BannerTop>
+      </div>
 
       <!-- section #2 -->
       <v-container
@@ -77,12 +67,12 @@
 </template>
 
 <script>
-import Subjudul from "../components/base/Judul";
+import BannerTop from "../components/base/BannerTop";
 
 export default {
   name: "tidak-di-tangani",
   components: {
-    Subjudul
+    BannerTop
   },
   data: () => ({
     sections: [
