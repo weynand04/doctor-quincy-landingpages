@@ -2,8 +2,8 @@
   <div id="landingPage">
     <div v-for="(section, index) in landingpage" :key="index">
       <!-- Banner -->
-      <v-container fluid v-for="item in section.banner" :key="item.judul">
-        <v-row no-gutters>
+      <ContainerWidu v-for="item in section.banner" :key="item.judul">
+        <v-row>
           <v-img
             :src="item.image"
             aspect-ratio="1.9"
@@ -13,7 +13,7 @@
             contain
             class="mb-0"
           >
-            <v-col cols="12" class="d-flex justify-space-between">
+            <v-col cols="12" class="d-flex justify-space-between pl-n12 ml-md-n8 ml-sm-n6 ml-n8">
               <div class="col-12 col-md-4 col-sm-6">
                 <v-card-title
                   class="title1__widu font-weight-bold black--text text-break"
@@ -31,7 +31,7 @@
             </v-col>
           </v-img>
         </v-row>
-      </v-container>
+      </ContainerWidu>
 
       <!-- Content #1 -->
       <v-container
@@ -172,11 +172,13 @@
 </template>
 
 <script>
+import ContainerWidu from "../components/base/ContainerWidu";
 import Subjudul from "../components/base/Judul";
 
 export default {
   name: "Home",
   components: {
+    ContainerWidu,
     Subjudul
   },
   data: () => ({
