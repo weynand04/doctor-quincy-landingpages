@@ -12,7 +12,7 @@
           <v-btn rounded to="/investor" outlined color="primary">Investor</v-btn>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/image/svg/new-12.svg" width="562px" height="506px" contain />
+          <v-img src="@/assets/image/svg/new-12.svg" width="562px" height="506px" transition="scale-transition" contain />
         </v-col>
       </v-row>
     </ContainerWidu>
@@ -21,7 +21,7 @@
     <ContainerWidu>
       <v-row>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" contain />
+          <v-img src="@/assets/image/artwork-02-cp.png" width="549" height="361" transition="scale-transition" contain />
         </v-col>
         <v-col cols="12" md="6" align-self="center">
           <v-card-title
@@ -73,7 +73,7 @@
         <v-col cols="12" md="5">
           <v-list-item>
             <v-list-item-avatar size="80">
-              <v-img contain :src="x.icon1"></v-img>
+              <v-img contain :src="x.icon1" transition="scale-transition"></v-img>
             </v-list-item-avatar>
             <v-list-item-content>
               <v-list-item-title class="body-1 text-wrap" v-text="x.text1"></v-list-item-title>
@@ -83,7 +83,7 @@
         <v-col cols="12" md="5">
           <v-list-item>
             <v-list-item-avatar size="80">
-              <v-img :src="x.icon2"></v-img>
+              <v-img :src="x.icon2" transition="scale-transition"></v-img>
             </v-list-item-avatar>
             <v-list-item-content>
               <v-list-item-title class="body-1 text-wrap" v-text="x.text2"></v-list-item-title>
@@ -126,7 +126,7 @@
     <ContainerWidu style="background-color:#F2F2F2;">
       <v-row class="justify-space-around">
         <v-col cols="12" md="6">
-          <v-img src="@/assets/image/svg/new-13.svg" width="549" height="361" contain />
+          <v-img src="@/assets/image/svg/new-13.svg" width="549" height="361" transition="scale-transition" contain />
         </v-col>
         <v-col cols="12" md="6" align-self="center">
           <Subjudul
@@ -147,7 +147,7 @@
       <v-row>
         <v-col cols="12" class="d-flex">
           <template v-for="z in img">
-            <v-img :key="z.image" :src="z.image" aspect-ratio="1.5" contain />
+            <v-img :key="z.image" :src="z.image" aspect-ratio="1.5" transition="scale-transition" contain />
           </template>
         </v-col>
         <v-col cols="12" class="d-flex justify-center">

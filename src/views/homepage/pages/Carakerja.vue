@@ -25,6 +25,7 @@
         <v-img
           src="@/assets/image/Mask Group 5.png"
           max-height="500"
+          transition="scale-transition"
           contain
           position="right center"
         >
@@ -92,6 +93,7 @@
                   contain
                   class="ml-md-n8 mt-n8"
                   position="center center"
+                  transition="scale-transition"
                 />
               </v-col>
               <v-col cols="4" md="2">
@@ -164,6 +166,7 @@
                 max-height="50"
                 max-width="199"
                 aspect-ratio="1.7"
+                transition="scale-transition"
                 contain
               ></v-img>
               <v-img
@@ -172,6 +175,7 @@
                 max-height="50"
                 max-width="199"
                 aspect-ratio="1.7"
+                transition="scale-transition"
                 contain
               ></v-img>
             </v-card-actions>
