@@ -10,8 +10,10 @@
               aspect-ratio="2.4"
               max-height="100%"
               max-width="100%"
+              transition="scale-transition"
               position="left center"
               contain
+              class="mb-0"
             >
               <div class="col-md-5 float-md-right">
                 <Subjudul :judul="item.judul" />
