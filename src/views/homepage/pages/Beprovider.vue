@@ -2,26 +2,26 @@
   <div id="beprovider" tag="section">
     <div v-for="(section, insec) in sections" :key="insec">
       <!-- bannerTop -->
-      <ContainerWidu v-for="(item, index) in section.bannerTop" :key="index">
-        <v-row no-gutters class="pl-sm-6 pl-md-2 pl-lg-3">
-          <v-col cols="12" md="6" sm="6" lg="6" xl="6" align-self="center">
-            <subjudul :judul="item.judul" />
-            <p class="body-1">{{item.teks}}</p>
-            <v-btn rounded max-width="100" height="40" class="elevation-0" color="primary">Login</v-btn>
-            <v-btn rounded outlined max-width="100" height="40" color="primary">Register</v-btn>
-          </v-col>
-          <v-col cols="12" md="6" sm="6" lg="6" xl="6">
-            <v-img
-              :src="item.gambar"
-              max-height="1024"
-              max-width="900"
-              aspect-ratio="1.4"
-              contain
-              class="ma-4"
-            />
-          </v-col>
-        </v-row>
-      </ContainerWidu>
+      <div v-for="(item, index) in section.bannerTop" :key="index">
+        <Bannertop
+          :judul="item.judul"
+          :desc="item.teks"
+          :image="item.gambar"
+          max_h="400"
+          btn="btn"
+          btnName="Register"
+          left="left"
+        >
+          <v-btn
+            rounded
+            color="primary"
+            max-width="100"
+            height="40"
+            class="elevation-0 mx-2"
+          >Register</v-btn>
+          <v-btn rounded color="primary" max-width="100" height="40" class="elevation-0 mx-2">Login</v-btn>
+        </Bannertop>
+      </div>
 
       <!-- ContentSatu -->
       <ContainerWidu
@@ -144,13 +144,15 @@
 import ContainerWidu from "../components/base/ContainerWidu";
 import Subjudul from "../components/base/Judul";
 import Bannerbot from "../components/base/BannerBot";
+import Bannertop from "../components/base/BannerTop";
 
 export default {
   name: "Help",
   components: {
     ContainerWidu,
     Subjudul,
-    Bannerbot
+    Bannerbot,
+    Bannertop
   },
   data: () => ({
     sections: [

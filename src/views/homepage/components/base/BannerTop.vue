@@ -4,7 +4,7 @@
       <v-img
         :src="image"
         :position="position"
-        max-height="500"
+        :max-height="max_h"
         transition="scale-transition"
         contain
       >
@@ -57,6 +57,10 @@ export default {
     right: {
       type: Boolean,
       default: false
+    },
+    max_h: {
+      type: Number,
+      default: 500
     }
   }
 };
