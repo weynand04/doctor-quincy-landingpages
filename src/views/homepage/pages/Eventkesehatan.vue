@@ -2,17 +2,18 @@
   <div id="eventPage">
     <div v-for="(section, index) in event" :key="index">
       <!-- banner -->
-      <ContainerWidu v-for="item in section.banner" :key="item.judul">
-        <v-row>
-          <v-col cols="12" md="6" align-self="center">
-            <v-img :src="item.image" min-width="360" min-height="360" transition="scale-transition" contain></v-img>
-          </v-col>
-          <v-col cols="12" md="6" align-self="center">
-            <Subjudul :judul="item.judul" />
-            <p v-for="(p, index) in item.teks" :key="index" :class="p.class">{{p.paragraf}}</p>
-          </v-col>
-        </v-row>
-      </ContainerWidu>
+      <div v-for="item in section.banner" :key="item.judul">
+        <Bannertop
+          :judul="item.judul"
+          :desc="item.desc"
+          :image="item.image"
+          position="left center"
+          max_h="380"
+          btn="btn"
+          btnName="Register"
+          right="right"
+        ></Bannertop>
+      </div>
 
       <!-- contentSatu -->
       <ContainerWidu
@@ -21,7 +22,14 @@
         style="background-color:#ffff;"
         fluid
       >
-        <v-img :src="item.image" max-height="280" max-width="600" transition="scale-transition" contain class="float-md-left"></v-img>
+        <v-img
+          :src="item.image"
+          max-height="280"
+          max-width="600"
+          transition="scale-transition"
+          contain
+          class="float-md-left"
+        ></v-img>
         <Subjudul :subjudul="item.judul" />
         <p v-for="p in item.teks" :key="p.paragraf" class="body-1 py-2">{{p.paragraf}}</p>
       </ContainerWidu>
@@ -153,13 +161,15 @@
 import ContainerWidu from "../components/base/ContainerWidu";
 import Subjudul from "../components/base/Judul";
 import Bannerbot from "../components/base/BannerBot";
+import Bannertop from "../components/base/BannerTop";
 
 export default {
   name: "event",
   components: {
     Bannerbot,
     ContainerWidu,
-    Subjudul
+    Subjudul,
+    Bannertop
   },
   data: () => ({
     list1: [
@@ -236,13 +246,8 @@ export default {
           {
             judul: "Kalender Event Kesehatan Doctor Quincy",
             image: require("@/assets/image/Group 2683.png"),
-            teks: [
-              {
-                class: "body-1",
-                paragraf:
-                  "Informasi lengkap kalender kesehatan Doctor Quincy dan pemberdayaan masyarakat tentang hari kesehatan dalam format kalender"
-              }
-            ]
+            desc:
+              "Informasi lengkap kalender kesehatan Doctor Quincy dan pemberdayaan masyarakat tentang hari kesehatan dalam format kalender"
           }
         ]
       },
