@@ -1,29 +1,24 @@
 <template>
-  <div id="pelankesPage">
+  <div id="pelankesPage" tag="section">
     <div v-for="(section, index) in pelankes" :key="index">
       <!-- banner -->
       <v-container v-for="item in section.banner" :key="item.judul">
         <v-row>
           <v-col cols="12">
-            <v-img
-              :src="item.image"
-              aspect-ratio="2.4"
-              max-height="100%"
-              max-width="100%"
-              transition="scale-transition"
-              position="left center"
-              contain
-              class="mb-0"
-            >
-              <div class="col-md-5 float-md-right">
-                <Subjudul :judul="item.judul" />
+              <Bannertop
+              :judul="item.judul"
+              :image="item.image"
+               right="right"
+               position="left center"
+            > <v-col>
+              <div class="col-ml-5 float-ml-right">
                 <div class="list__widu">
-                  <ul class="body-1">
+                  <ul class="body-1 my-2">
                     <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>
                   </ul>
                 </div>
               </div>
-            </v-img>
+            </v-col></Bannertop>
           </v-col>
           <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
             <v-container width="88%" color="transparent">
@@ -70,12 +65,14 @@
 import CardWidu from "../components/base/CardWidu";
 import Bannerbot from "../components/base/BannerBot";
 import Subjudul from "../components/base/Judul";
+import Bannertop from "../components/base/BannerTop";
 
 export default {
   name: "pelankes",
   components: {
     CardWidu,
     Bannerbot,
+    Bannertop,
     Subjudul
   },
   data: () => ({
