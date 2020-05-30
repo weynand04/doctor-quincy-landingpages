@@ -4,16 +4,16 @@
       <!-- banner -->
       <v-container v-for="item in section.banner" :key="item.judul">
         <v-row>
-          <v-col class="pl-2">
+          <v-col cols="12">
               <Bannertop
               :judul="item.judul"
               :image="item.image"
                right="right"
                position="left center"
             > <v-col>
-              <div class="pl-5">
+              <div class="col-ml-2 float-ml-right">
                 <div class="list__widu">
-                  <ul class="body-1 my-2">
+                  <ul class="body-1">
                     <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>
                   </ul>
                 </div>
