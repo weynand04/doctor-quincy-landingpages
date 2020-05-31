@@ -4,7 +4,7 @@
       <!-- bannerTop -->
 
       <ContainerWidu v-for="(item, index) in section.bannerTop" :key="index" class="bg-banner">
-        <v-row no-gutters>
+        <v-row no-gutters class="img-opacity">
           <v-col cols="12" md="6">
             <SubJudul :judul="item.subjudul" class="mb-2" />
 
@@ -193,5 +193,15 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+@media only screen and (max-width: 600px) {
+  .img-opacity {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .img-opacity {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }
 </style>
