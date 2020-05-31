@@ -11,8 +11,9 @@
       <v-row class="d-flex align-content-center fill-height img-opacity">
         <v-col v-if="right = right" cols="4"></v-col>
         <v-col cols="12" md="4">
-          <!-- <Subjudul :judul1="judul1" /> -->
-          <div class="title1__widu font-weight-bold black--text text-break">{{judul1}}</div>
+          <div class="display-1 font-weight-light col-12 text-left pa-0 text-break">
+            <h5 class="font-weight-bold black--text">{{ judul1 }}</h5>
+          </div>
           <p class="body-1">{{desc1}}</p>
           <v-btn rounded color="primary" class="elevation-0">Register</v-btn>
           <div>
@@ -20,18 +21,19 @@
           </div>
         </v-col>
         <v-col cols="12" md="4">
-          <!-- <Subjudul :judul2="judul2" /> -->
-          <div class="title1__widu font-weight-bold black--text text-break">{{judul2}}</div>
-          <p class="body-1">{{desc2}}</p>
-          <v-btn rounded outlined color="primary">Member</v-btn>
-          <div>
-            <slot />
-          </div>
-        </v-col>
-        <v-col v-if="left = left" cols="4"></v-col>
-      </v-row>
-    </v-img>
-  </ContainerWidu>
+         <div class="display-1 font-weight-light col-12 text-left pa-0 text-break">
+          <h5 class="font-weight-bold black--text">{{ judul2 }}</h5>
+        </div>
+        <p class="body-1">{{desc2}}</p>
+        <v-btn rounded outlined color="primary">Member</v-btn>
+        <div>
+          <slot />
+        </div>
+      </v-col>
+      <v-col v-if="left = left" cols="4"></v-col>
+    </v-row>
+  </v-img>
+</ContainerWidu>
 </div>
 </template>
 <script>
