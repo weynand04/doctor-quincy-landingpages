@@ -1,37 +1,38 @@
 <template>
-  <div id="pelankesPage">
+  <div id="pelankesPage" tag="section">
     <div v-for="(section, index) in pelankes" :key="index">
       <!-- banner -->
       <v-container v-for="item in section.banner" :key="item.judul">
         <v-row>
           <v-col cols="12">
-            <v-img
-              :src="item.image"
-              aspect-ratio="2.4"
-              max-height="100%"
-              max-width="100%"
-              transition="scale-transition"
-              position="left center"
-              contain
-              class="mb-0"
-            >
-              <div class="col-md-5 float-md-right">
-                <Subjudul :judul="item.judul" />
+              <Bannertop
+              :judul="item.judul"
+              :image="item.image"
+               right="right"
+               position="left center"
+            > <v-col>
+              <div class="col-ml-2 float-ml-right">
                 <div class="list__widu">
                   <ul class="body-1">
                     <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>
                   </ul>
                 </div>
               </div>
-            </v-img>
+            </v-col></Bannertop>
           </v-col>
+          </v-row>
+      </v-container>
+
+      <!-- contentNol -->
+      <v-container v-for="item in section.contentNol"
+        :key="item.judul"
+        style="background: #FCFCFC;"
+        color="transparent" class="body-1" fluid>
           <v-col cols="12" class="d-flex justify-center" style="background:#FCFCFC">
-            <v-container width="88%" color="transparent">
+            <v-container >
               <p v-for="(s, index) in item.stiker" :key="index" class="body-1 ma-5">{{s.paragraf}}</p>
             </v-container>
-          </v-col>
-        </v-row>
-      </v-container>
+          </v-col> </v-container>
 
       <!-- contentSatu -->
       <v-container
@@ -70,12 +71,14 @@
 import CardWidu from "../components/base/CardWidu";
 import Bannerbot from "../components/base/BannerBot";
 import Subjudul from "../components/base/Judul";
+import Bannertop from "../components/base/BannerTop";
 
 export default {
   name: "pelankes",
   components: {
     CardWidu,
     Bannerbot,
+    Bannertop,
     Subjudul
   },
   data: () => ({
@@ -105,8 +108,14 @@ export default {
                 list:
                   "Semua penyedia kami menjalani pemeriksaan latar belakang dengan verifikasi sumber primer melalui Data Doktr Nasional (DDN) dan Indonesian Medical Association atau “Ikatan Dokter Indonesia” (IDI) untuk lisensi medis, pelatihan dan pendidikan, sejarah kerja dan sejarah malpraktik."
               }
-            ],
-            stiker: [
+            ]
+          }
+        ]
+      },
+      {
+      contentNol: [
+        {
+              stiker: [
               {
                 paragraf:
                   "Kesehatan untuk Indonesia yang Lebih Baik berpusat pada keyakinan yang membimbing bahwa kesehatan adalah hak asasi manusia. Kami percaya bahwa setiap orang pantas mendapat kesempatan and menjalani kehidupan yang lebih sehat. Itulah sebabnya kami terus berinovasi untuk menciptakan akses bagi semua dan menumbuhkan komunitas yang lebih sehat. Kami percaya bahwa untuk membuat dampak terbesar kami perlu bermitra dengan dokter-dokter lokal dengan niat baik yang secara langsung menangani kebutuhan mendasar dengan melayani di luar klinik atau rumah sakit"
@@ -116,8 +125,8 @@ export default {
                   "Kita perlu memahami dan mengatasi akar penyebab kesehatan yang buruk di Negara ini dan menemukan cara holistik bagi masyarakat untuk meningkatkan kesejahteraan secara keseluruhan. Kami membutuhkan keberanian dan fleksibilitas untuk membantu mereka yang paling rentan dan berkomitmen untuk menyediakan perawatan kesehatan yang aman, berkualitas dan terjangkau bagi semua. Bersama-sama, warisan ini adalah dasar bagi komitmen kami untuk terus maju."
               }
             ]
-          }
-        ]
+        }
+      ]
       },
       {
         contentSatu: [
