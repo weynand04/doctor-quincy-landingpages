@@ -97,7 +97,7 @@ export default {
     toolitems: [
       { path: "/", title: "Home" },
       { path: "/ourpartners", title: "Be our Partner" },
-      { path: "/help", title: "Help" }
+      { path: "/konseling", title: "Konseling" }
     ]
   }),
   methods: {

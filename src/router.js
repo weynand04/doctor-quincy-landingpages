@@ -95,6 +95,11 @@ export default new Router({
           name: 'Investor',
           path: 'investor',
           component: () => import('@/views/homepage/pages/Investor')
+        },
+        {
+          name: 'Konseling',
+          path: 'konseling',
+          component: () => import('@/views/homepage/pages/Konseling')
         }
       ]
     },
