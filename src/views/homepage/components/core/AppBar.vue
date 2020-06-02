@@ -45,7 +45,7 @@
     <v-row no-gutters class="d-flex">
       <!-- logo FIX -->
       <v-col align-self="center" cols="4" class="logo-link pl-md-12 pl-lg-12">
-        <a href="/">
+        <a href="/home">
           <v-img src="@/assets/image/logo.svg" contain max-height="40" max-width="180"></v-img>
         </a>
       </v-col>
@@ -82,6 +82,7 @@ export default {
     expand: false,
     Menuitem: [
       { title: "Help", path: "/help", cls: "hidden-md-and-up" },
+      { title: "Konseling", path: "/konseling", cls: "hidden-md-and-up" },
       { title: "Cara kerja", path: "/carakerja" },
       { title: "Home health care", path: "/health-care" },
       { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
@@ -92,10 +93,11 @@ export default {
       { title: "Media dan Berita", path: "/blog" },
       { title: "Lowongan kerja", path: "/carrer" },
       { title: "Event kesehatan", path: "/event" },
-      { title: "Awesome promo", path: "/promo" }
+      { title: "Awesome promo", path: "/promo" },
+      { title: "Formulir", path: "/form" }
     ],
     toolitems: [
-      { path: "/", title: "Home" },
+      { path: "/home", title: "Home" },
       { path: "/ourpartners", title: "Be our Partner" },
       { path: "/konseling", title: "Konseling" }
     ]

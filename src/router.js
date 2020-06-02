@@ -20,6 +20,11 @@ export default new Router({
           component: () => import('@/views/homepage/pages/Landing')
         },
         {
+          name: 'Home',
+          path: '/home',
+          component: () => import('@/views/homepage/pages/Landing')
+        },
+        {
           name: 'BeourPartners',
           path: '/bepartners',
           component: () => import('@/views/homepage/pages/Investor')
@@ -100,7 +105,13 @@ export default new Router({
           name: 'Konseling',
           path: 'konseling',
           component: () => import('@/views/homepage/pages/Konseling')
-        }
+        },
+        {
+          name: 'formLoker',
+          path: 'form',
+          component: () => import('@/views/homepage/forms/LowonganKerja')
+        },
+
       ]
     },
     {
