@@ -111,6 +111,11 @@ export default new Router({
           path: 'form',
           component: () => import('@/views/homepage/forms/LowonganKerja')
         },
+        {
+          name: 'formEvenkesehatan',
+          path: 'formEvent',
+          component: () => import('@/views/homepage/forms/Event')
+        },
 
       ]
     },
