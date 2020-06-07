@@ -11,7 +11,7 @@
                right="right"
                position="left center"
             > <v-col>
-              <div class="col-ml-2 float-ml-right">
+              <div class="pl-md-8 float-ml-right">
                 <div class="list__widu">
                   <ul class="body-1">
                     <li v-for="(li, index) in item.teks" :key="index" class="mx-1">{{li.list}}</li>

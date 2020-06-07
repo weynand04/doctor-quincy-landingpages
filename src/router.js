@@ -116,6 +116,11 @@ export default new Router({
           path: 'formEvent',
           component: () => import('@/views/homepage/forms/Event')
         },
+        {
+          name: 'formPermintaanDokter',
+          path: 'formPermintanDokter',
+          component: () => import('@/views/homepage/forms/PermintaanDokter')
+        },
 
       ]
     },
