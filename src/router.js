@@ -12,28 +12,28 @@ export default new Router({
   }),
   base: process.env.BASE_URL,
   routes: [{
-    path: '/',
-    component: () => import('@/views/homepage/Index'),
-    children: [{
-      name: 'Home',
       path: '/',
-      component: () => import('@/views/homepage/pages/Landing')
-    },
-    {
-      name: 'Home',
-      path: '/home',
-      component: () => import('@/views/homepage/pages/Landing')
-    },
-    {
-      name: 'BeourPartners',
-      path: '/bepartners',
-      component: () => import('@/views/homepage/pages/Investor')
-    },
-    {
-      name: 'Help',
-      path: 'help',
-      component: () => import('@/views/homepage/pages/Help')
-    },
+      component: () => import('@/views/homepage/Index'),
+      children: [{
+          name: 'Home',
+          path: '/',
+          component: () => import('@/views/homepage/pages/Landing')
+        },
+        {
+          name: 'Home',
+          path: '/home',
+          component: () => import('@/views/homepage/pages/Landing')
+        },
+        {
+          name: 'BeourPartners',
+          path: '/bepartners',
+          component: () => import('@/views/homepage/pages/Investor')
+        },
+        {
+          name: 'Help',
+          path: 'help',
+          component: () => import('@/views/homepage/pages/Help')
+        },
 
         // menu drawer
         {
@@ -112,16 +112,22 @@ export default new Router({
           component: () => import('@/views/homepage/forms/LowonganKerja')
         },
         {
-          name: 'KeluhanPasien',
-          path: 'keluhan',
-          component: () => import('@/views/homepage/forms/KeluhanPasien')
-        }
-        ]
-      },
-      {
-        path: '/pages',
-        component: () => import('@/views/pages/Index'),
-        children: [{
+          name: 'formEvenkesehatan',
+          path: 'formEvent',
+          component: () => import('@/views/homepage/forms/Event')
+        },
+        {
+          name: 'formPermintaanDokter',
+          path: 'formPermintanDokter',
+          component: () => import('@/views/homepage/forms/PermintaanDokter')
+        },
+
+      ]
+    },
+    {
+      path: '/pages',
+      component: () => import('@/views/pages/Index'),
+      children: [{
           name: 'Lock',
           path: 'lock',
           component: () => import('@/views/pages/Lock')
@@ -141,12 +147,12 @@ export default new Router({
           path: 'register',
           component: () => import('@/views/pages/Register')
         }
-        ]
-      },
-      {
-        path: '/admin',
-        component: () => import('@/views/dashboard/Index'),
-        children: [
+      ]
+    },
+    {
+      path: '/admin',
+      component: () => import('@/views/dashboard/Index'),
+      children: [
         // Dashboard
         {
           name: 'Dashboard',
@@ -254,16 +260,16 @@ export default new Router({
           path: '/calendar',
           component: () => import('@/views/dashboard/Calendar')
         }
-        ]
-      },
-      {
-        path: '*',
-        component: () => import('@/views/pages/Index'),
-        children: [{
-          name: '404 Error',
-          path: '',
-          component: () => import('@/views/pages/Error')
-        }]
-      }
       ]
-    })
+    },
+    {
+      path: '*',
+      component: () => import('@/views/pages/Index'),
+      children: [{
+        name: '404 Error',
+        path: '',
+        component: () => import('@/views/pages/Error')
+      }]
+    }
+  ]
+})

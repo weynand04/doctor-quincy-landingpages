@@ -81,26 +81,27 @@ export default {
   data: () => ({
     expand: false,
     Menuitem: [
-    { title: "Help", path: "/help", cls: "hidden-md-and-up" },
-    { title: "Konseling", path: "/konseling", cls: "hidden-md-and-up" },
-    { title: "Cara kerja", path: "/carakerja" },
-    { title: "Home health care", path: "/health-care" },
-    { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
-    { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
-    { title: "Penyedia layanan kesehatan", path: "/pelankes" },
-    { title: "Menjadi penyedia", path: "/beprovider" },
-    { title: "Mitra & Investor", path: "/ourpartners" },
-    { title: "Media dan Berita", path: "/blog" },
-    { title: "Lowongan kerja", path: "/carrer" },
-    { title: "Event kesehatan", path: "/event" },
-    { title: "Awesome promo", path: "/promo" },
-    { title: "Formulir Lowongan Kerja", path: "/form" },
-    { title: "Formulir Keluhan Pasien", path: "/keluhan" }
+      { title: "Help", path: "/help", cls: "hidden-md-and-up" },
+      { title: "Konseling", path: "/konseling", cls: "hidden-md-and-up" },
+      { title: "Cara kerja", path: "/carakerja" },
+      { title: "Home health care", path: "/health-care" },
+      { title: "Penyakit yang kami tangani", path: "/yang-di-tangani" },
+      { title: "Penyakit yang tidak kami tangani", path: "/tidak-di-tangani" },
+      { title: "Penyedia layanan kesehatan", path: "/pelankes" },
+      { title: "Menjadi penyedia", path: "/beprovider" },
+      { title: "Mitra & Investor", path: "/ourpartners" },
+      { title: "Media dan Berita", path: "/blog" },
+      { title: "Lowongan kerja", path: "/carrer" },
+      { title: "Event kesehatan", path: "/event" },
+      { title: "Awesome promo", path: "/promo" },
+      { title: "Formulir", path: "/form" },
+      { title: "Formulir Event kesehatan", path: "/formEvent" },
+      { title: "Formulir Permintaan Dokter", path: "/formPermintanDokter" }
     ],
     toolitems: [
-    { path: "/home", title: "Home" },
-    { path: "/ourpartners", title: "Be our Partner" },
-    { path: "/konseling", title: "Konseling" }
+      { path: "/home", title: "Home" },
+      { path: "/ourpartners", title: "Be our Partner" },
+      { path: "/konseling", title: "Konseling" }
     ]
   }),
   methods: {
