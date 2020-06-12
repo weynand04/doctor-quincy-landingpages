@@ -37,7 +37,7 @@ export default {
   data: () => ({
     bannerTop: [
       {
-        judul: "Lorem ipsum dolor sit.",
+        judul: "List form yang sudah jadi",
         teks:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas quasi cupiditate id? Animi ducimus laborum neque id expedita, possimus tempore, hic nam inventore enim itaque consequatur corrupti commodi quisquam!",
         gambar: require("@/assets/image/gambar lain-11.png")

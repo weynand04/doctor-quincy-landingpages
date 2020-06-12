@@ -47,7 +47,7 @@
             <SubJudul :subjudul="i.tag" class="text-center" />
           </v-col>
           <v-col class="d-flex justify-center">
-            <v-btn rounded color="primary" elevation="0" class>{{i.btn}}</v-btn>
+            <v-btn rounded color="primary" to="forms/lowongankerja" elevation="0" class>{{i.btn}}</v-btn>
           </v-col>
         </v-row>
       </ContainerWidu>

@@ -94,9 +94,6 @@ export default {
       { title: "Lowongan kerja", path: "/carrer" },
       { title: "Event kesehatan", path: "/event" },
       { title: "Awesome promo", path: "/promo" },
-      { title: "Formulir", path: "/form" },
-      { title: "Formulir Event kesehatan", path: "/formEvent" },
-      { title: "Formulir Permintaan Dokter", path: "/formPermintanDokter" }
     ],
     toolitems: [
       { path: "/home", title: "Home" },

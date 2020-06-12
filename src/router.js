@@ -105,23 +105,32 @@ export default new Router({
           name: 'Konseling',
           path: 'konseling',
           component: () => import('@/views/homepage/pages/Konseling')
+        }
+      ]
+    },
+    {
+      path: '/forms',
+      component: () => import('@/views/homepage/Index'),
+      children: [
+        {
+          path: '/forms',
+          component: () => import('@/views/homepage/pages/Help'),
         },
         {
-          name: 'formLoker',
-          path: 'form',
+          name: 'LowonganKerja',
+          path: 'lowongankerja',
           component: () => import('@/views/homepage/forms/LowonganKerja')
         },
         {
-          name: 'formEvenkesehatan',
-          path: 'formEvent',
+          name: 'EvenKesehatan',
+          path: 'event',
           component: () => import('@/views/homepage/forms/Event')
         },
         {
-          name: 'formPermintaanDokter',
-          path: 'formPermintanDokter',
+          name: 'PermintaanDokter',
+          path: 'formpermintandokter',
           component: () => import('@/views/homepage/forms/PermintaanDokter')
-        },
-
+        }
       ]
     },
     {

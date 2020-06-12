@@ -144,8 +144,7 @@
           </v-col>
           <v-col cols="12" class="d-flex justify-space-around">
             <v-card-actions>
-              <v-btn rounded to="/formEvent" class="elevation-0" color="primary">Patner</v-btn>
-              <v-btn rounded to="/investor" outlined color="primary">Investor</v-btn>
+              <v-btn rounded to="/forms/event" class="elevation-0" color="primary">DAFTARKAN EVENT</v-btn>
             </v-card-actions>
           </v-col>
         </v-row>
